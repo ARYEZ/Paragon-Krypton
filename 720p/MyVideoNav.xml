@@ -11,7 +11,7 @@
     <onload condition="IsEmpty(Skin.String(TileViewWideThumbTVShows))">Skin.SetString(TileViewWideThumbTVShows,1)</onload>
     <onload condition="IsEmpty(Skin.String(BelloViewThumbs))">Skin.SetString(BelloViewThumbs,1)</onload>
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <include>VideoViews</include>
         <include condition="[Skin.HasSetting(NextAiredEnabled) + !Skin.HasSetting(EnableNextAiredNotifications)]">NextAiredNotifications</include>
         <!-- ================ -->

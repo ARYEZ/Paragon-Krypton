@@ -4,7 +4,7 @@
     <onunload condition="Window.IsVisible(home) + !StringCompare(Window.Property(groupname),mainmenu)">ReplaceWindow(Startup)</onunload>
     <onunload condition="![Window.IsVisible(home) | StringCompare(Window.Property(groupname),mainmenu)]">RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=20&amp;options=noGroups)</onunload>
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <control type="group">
             <include>CommonDialogsAnimation</include>
             <visible>IsEmpty(Window.Property(additionalDialog)) + !Window.IsActive(1119) + !Window.IsActive(SelectDialog) + !Window.IsActive(DialogSelect.xml) + !Window.IsActive(FileBrowser) + !Window.IsActive(VirtualKeyboard) + !Window.IsActive(progressdialog) + !Window.IsActive(okdialog) + !Window.IsActive(yesnodialog)</visible>

@@ -4,7 +4,7 @@
     <backgroundcolor>bgcolor</backgroundcolor>
     <views>50</views>
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <include>AddonsViews</include>
         <include>CommonItems</include>
         <include condition="Skin.HasSetting(EnableAddonsNotifications)">AddonsNotifications</include>
@@ -15,7 +15,7 @@
             <include>ShutdownMenuAnimation</include>
             <include>OptionsTopMenuAnimation</include>
             <include>OptionsTopMenuHeader</include>
-            <include>BackgroundItems4</include>
+            <include>BackgroundItems51</include>
             <!-- Options -->
             <control type="label">
                 <description>Header Categories</description>

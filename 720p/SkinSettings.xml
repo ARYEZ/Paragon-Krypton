@@ -7,7 +7,7 @@
     <onload condition="IsEmpty(Skin.String(DialogSeekBarStyle))">Skin.SetString(DialogSeekBarStyle,1)</onload>
     <onunload condition="!IsEmpty(Window.Property(resetbusy))">ClearProperty(resetbusy)</onunload>
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <control type="group">
             <include>CommonViews_VerticalAnimation</include>
             <include>VisibleHiddenSlideAnimation</include>
