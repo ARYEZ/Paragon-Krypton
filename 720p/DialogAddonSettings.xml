@@ -161,11 +161,11 @@
                             <top>0</top>
                             <width>25</width>
                             <height>303</height>
-                            <texturesliderbackground border="0,14,0,14">scrollbar/ScrollBarV.png</texturesliderbackground>
-                            <texturesliderbar border="0,14,0,14">scrollbar/ScrollBarV_bar.png</texturesliderbar>
-                            <texturesliderbarfocus border="0,14,0,14">scrollbar/ScrollBarV_bar_focus.png</texturesliderbarfocus>
-                            <textureslidernib>scrollbar/ScrollBarNib.png</textureslidernib>
-                            <textureslidernibfocus>scrollbar/ScrollBarNib.png</textureslidernibfocus>
+                            <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                            <texturesliderbar border="0,14,0,14"/>
+                            <texturesliderbarfocus border="0,14,0,14"/>
+                            <textureslidernib/>
+                            <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                             <pulseonselect>false</pulseonselect>
                             <orientation>vertical</orientation>
                             <showonepage>false</showonepage>

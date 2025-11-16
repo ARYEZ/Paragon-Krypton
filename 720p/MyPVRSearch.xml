@@ -318,13 +318,13 @@
             <control type="scrollbar" id="60">
                 <left>896</left>
                 <top>269</top>
-                <width>2</width>
+                <width>25</width>
                 <height>347</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
-                <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
+                <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14"/>
+                <texturesliderbarfocus border="0,14,0,14"/>
+                <textureslidernib/>
+                <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                 <onleft>50</onleft>
                 <onright>50</onright>
                 <showonepage>false</showonepage>

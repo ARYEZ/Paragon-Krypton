@@ -909,13 +909,13 @@
             <control type="scrollbar" id="60">
                 <left>980</left>
                 <top>438</top>
-                <width>8</width>
+                <width>25</width>
                 <height>152</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar border="4,19,4,19">views/scrollbar/scrollbar.png</texturesliderbar>
-                <texturesliderbarfocus border="4,19,4,19">views/scrollbar/scrollbar.png</texturesliderbarfocus>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
+                <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14"/>
+                <texturesliderbarfocus border="0,14,0,14"/>
+                <textureslidernib/>
+                <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                 <onleft>10000</onleft>
                 <onright>10000</onright>
                 <showonepage>false</showonepage>
