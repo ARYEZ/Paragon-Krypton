@@ -8,7 +8,7 @@
             <visible>Control.IsVisible(50)</visible>
             <visible>Window.IsVisible(AddonBrowser) | Window.IsVisible(Programs) | Container.Content(Addons)</visible>
             <include>CommonViews_VerticalAnimation</include>
-            <include>BackgroundItems51</include>
+            <include>BackgroundItems4</include>
             <control type="group">
                 <control type="label">
                     <description>header label</description>
