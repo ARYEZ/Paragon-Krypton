@@ -5,7 +5,7 @@
         <control type="group">
             <visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(selectdialog) + !Window.IsActive(Filebrowser)</visible>
             <include>CommonDialogsAnimation</include>
-            <include>BackgroundItems4</include>
+            <include>BackgroundItems51</include>
             <control type="label">
                 <description>header label</description>
                 <left>92</left>

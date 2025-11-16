@@ -2,7 +2,7 @@
 <window id="7">
     <defaultcontrol always="true">95</defaultcontrol>
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <control type="group">
             <include>CommonViews_VerticalAnimation</include>
             <include>VisibleHiddenSlideAnimation</include>
