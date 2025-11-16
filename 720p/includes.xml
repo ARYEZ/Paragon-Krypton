@@ -76,7 +76,7 @@
             <left>0</left>
             <height/>
             <width/>
-            <texture>SETTINGS BG.png</texture>
+            <texture>SETTINGS1 BG.png</texture>
         </control>
     </include>
     <include name="BackgroundItems5">
