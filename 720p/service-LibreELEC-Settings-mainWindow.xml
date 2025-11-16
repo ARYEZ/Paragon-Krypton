@@ -297,6 +297,116 @@
                 </focusedlayout>
             </control>
 
+            <!-- System Information Panel (Control 1900) -->
+            <control type="group" id="1900">
+                <left>400</left>
+                <top>75</top>
+                <width>760</width>
+                <height>395</height>
+                <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1900)</visible>
+
+                <!-- Distribution Label -->
+                <control type="label">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>blue</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$ADDON[service.libreelec.settings 606]</label>
+                </control>
+                <control type="label">
+                    <left>210</left>
+                    <top>0</top>
+                    <width>550</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>white</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Window.Property(Distri)] ($INFO[Window.Property(build)])</label>
+                </control>
+
+                <!-- Version Label -->
+                <control type="label">
+                    <left>0</left>
+                    <top>40</top>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>blue</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$ADDON[service.libreelec.settings 607]</label>
+                </control>
+                <control type="label">
+                    <left>210</left>
+                    <top>40</top>
+                    <width>550</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>white</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Window.Property(Version)]</label>
+                </control>
+
+                <!-- Architecture Label -->
+                <control type="label">
+                    <left>0</left>
+                    <top>80</top>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>blue</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$ADDON[service.libreelec.settings 608]</label>
+                </control>
+                <control type="label">
+                    <left>210</left>
+                    <top>80</top>
+                    <width>550</width>
+                    <height>30</height>
+                    <font>fontsize_26</font>
+                    <textcolor>white</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Window.Property(Arch)]</label>
+                </control>
+
+                <!-- Information Textboxes -->
+                <control type="textbox">
+                    <left>0</left>
+                    <top>120</top>
+                    <width>760</width>
+                    <height>120</height>
+                    <font>fontsize_20</font>
+                    <textcolor>white</textcolor>
+                    <label>$ADDON[service.libreelec.settings 609]</label>
+                </control>
+                <control type="textbox">
+                    <left>0</left>
+                    <top>180</top>
+                    <width>760</width>
+                    <height>150</height>
+                    <font>fontsize_20</font>
+                    <textcolor>white</textcolor>
+                    <label>$ADDON[service.libreelec.settings 610]</label>
+                </control>
+                <control type="textbox">
+                    <left>0</left>
+                    <top>340</top>
+                    <width>760</width>
+                    <height>50</height>
+                    <font>fontsize_20</font>
+                    <textcolor>white</textcolor>
+                    <align>left</align>
+                </control>
+            </control>
+
             <!-- Info/Help Text Area -->
             <control type="textbox" id="1400">
                 <description>Info Text</description>
