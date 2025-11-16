@@ -287,53 +287,6 @@
             <scrollspeed>20</scrollspeed>
             <label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
         </control>
-        <control type="group">
-            <left>780</left>
-            <top>208</top>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/static_busy.png</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/animation_1.png</texture>
-                <aspectratio>keep</aspectratio>
-                <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-            </control>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/animation_2.png</texture>
-                <aspectratio>keep</aspectratio>
-                <animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-            </control>
-            <control type="label">
-                <description>Busy label</description>
-                <left>-50</left>
-                <top>120</top>
-                <width>400</width>
-                <height>40</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[System.Progressbar,,%]</label>
-                <font>FontSize_140</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>IntegerGreaterThan(System.Progressbar,0)</visible>
-            </control>
-        </control>
         <control type="image">
             <left>-200</left>
             <top>-12</top>

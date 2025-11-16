@@ -6,7 +6,6 @@
             <left>40</left>
             <top>505</top>
             <include>VisibleHiddenSlideAnimation</include>
-            <animation effect="slide" start="0,0" end="0,-50" time="200" condition="Window.IsActive(notification) | Window.IsActive(busydialog)">Conditional</animation>
             <visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(NumericInput)]</visible>
             <control type="panel" id="11">
                 <left>0</left>
