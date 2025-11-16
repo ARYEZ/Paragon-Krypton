@@ -1187,24 +1187,6 @@
             </control>
         </control>
         <include>CommonDialogsFadeOutBG</include>
-        <control type="group" id="9333">
-            <include>BusyAnimation</include>
-            <include>NotificationsAnimations</include>
-            <visible>StringCompare(Window.Property(resetbusy),show)</visible>
-            <control type="label">
-                <left>0</left>
-                <top>320</top>
-                <width>1280</width>
-                <height>42</height>
-                <label>$LOCALIZE[31007]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>FontSize_50</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>77000000</shadowcolor>
-                <scroll>false</scroll>
-            </control>
-        </control>
         <include>CommonNowPlaying</include>
         <include>SettingsCategoryContentInfo</include>
     </controls>

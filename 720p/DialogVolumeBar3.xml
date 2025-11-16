@@ -105,52 +105,6 @@
                 <width>1680</width>
                 <texture>views/gallery/top_bottom_shadows.png</texture>
             </control>
-            <control type="group">
-                <left>780</left>
-                <top>208</top>
-                <control type="image">
-                    <description>Busy animation</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>300</width>
-                    <height>300</height>
-                    <texture>dialogs/busy/static_busy.png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="image">
-                    <description>Busy animation</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>300</width>
-                    <height>300</height>
-                    <texture>dialogs/busy/animation_1.png</texture>
-                    <aspectratio>keep</aspectratio>
-                    <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-                </control>
-                <control type="image">
-                    <description>Busy animation</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>300</width>
-                    <height>300</height>
-                    <texture>dialogs/busy/animation_2.png</texture>
-                    <aspectratio>keep</aspectratio>
-                    <animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-                </control>
-                <control type="label">
-                    <description>Busy label</description>
-                    <left>-90</left>
-                    <top>90</top>
-                    <width>400</width>
-                    <height>35</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[Control.GetLabel(10),,%]</label>
-                    <font>FontSize_26</font>
-                    <textcolor>99white</textcolor>
-                    <visible>IntegerGreaterThan(Control.GetLabel(10),0)</visible>
-                </control>
-            </control>
             <control type="image">
                 <posx>31</posx>
                 <posy>307</posy>

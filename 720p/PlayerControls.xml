@@ -21,7 +21,6 @@
             </animation>
             <visible>[Window.IsActive(PlayerControls) + ![Skin.HasSetting(DisableQuickNav) + !Player.HasMedia]] + !Window.IsVisible(BusyDialog) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
             <width>1280</width>
-            <!-- <animation effect="slide" start="0,0" end="0,-50" time="200" condition="Window.IsActive(notification) | Window.IsActive(extendedprogressdialog) | Window.IsActive(busydialog)">Conditional</animation> -->
             <!-- ===================== -->
             <!-- == QuickNav Widget == -->
             <!-- ===================== -->
