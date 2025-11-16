@@ -1078,7 +1078,7 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">dialogs/busy/panel_busy.png</texture>
             </control>
-            <control type="label.">
+            <control type="label">
                 <left>0</left>
                 <top>0</top>
                 <width>46</width>
@@ -1112,7 +1112,7 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">views/other/panel_logo.png</texture>
             </control>
-            <control type="label...">
+            <control type="label">
                 <left>0</left>
                 <top>0</top>
                 <width>62</width>

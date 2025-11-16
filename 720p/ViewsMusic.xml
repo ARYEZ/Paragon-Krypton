@@ -67,8 +67,6 @@
                     <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
                     <visible>![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]</visible>
                     <control type="image">
-	</control>
-                    <control type="image">
                         <left>555</left>
                         <top>200</top>
                         <width>530</width>
@@ -180,7 +178,7 @@
                     <visible>Control.IsVisible(50)</visible>
                 </control>
                 <control type="group">
-                    <control type="image.">
+                    <control type="image">
                         <left>-230</left>
                         <top>-88</top>
                         <width>1700</width>
