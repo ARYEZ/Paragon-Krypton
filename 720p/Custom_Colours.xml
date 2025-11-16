@@ -155,7 +155,7 @@
                         <!-- Default -->
                         <onclick>Skin.Reset(Textures.GlobalColor)</onclick>
                         <onclick>Dialog.Close(1113)</onclick>
-                        <thumb>icons/bello.png</thumb>
+                        <thumb>icons/paragon.png</thumb>
                         <visible>StringCompare(Window(SkinSettings).Property(CustomColor),textures)</visible>
                     </item>
                     <item id="2">
@@ -646,7 +646,7 @@
                         <!-- Default -->
                         <onclick>Skin.Reset(Text.GlobalColor)</onclick>
                         <onclick>Dialog.Close(1113)</onclick>
-                        <thumb>icons/bello.png</thumb>
+                        <thumb>icons/paragon.png</thumb>
                         <visible>StringCompare(Window(SkinSettings).Property(CustomColor),text)</visible>
                     </item>
                     <item id="2">
@@ -1134,7 +1134,7 @@
                     </item>
                     <!-- BG Colours -->
                     <item id="1">
-                        <!-- Bello <onclick>Skin.SetString(BG.GlobalColor,FF12B2E7)</onclick> -->
+                        <!-- Paragon <onclick>Skin.SetString(BG.GlobalColor,FF12B2E7)</onclick> -->
                         <onclick>Skin.SetString(BG.GlobalColor,FFFFFFFF)</onclick>
                         <onclick>Dialog.Close(1113)</onclick>
                         <thumb>special://skin/extras/colors/none.png</thumb>

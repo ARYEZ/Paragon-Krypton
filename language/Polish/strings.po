@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Bello
-# Addon id: skin.bello
+# Addon Name: Paragon
+# Addon id: skin.paragon
 # Addon Provider: Nessus
 msgid ""
 msgstr ""
@@ -821,8 +821,8 @@ msgid "Custom Items"
 msgstr "Niestandardowe pozycje"
 
 msgctxt "#31409"
-msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Wybierz z pośród różnych ustawień i opcji, aby skórka \"Bello\" jak najbardziej odpowiadała Twoim potrzebom i upodobaniom. "
+msgid "Choose from a variety of settings and customization options to make \"Paragon\" fit your needs and taste."
+msgstr "Wybierz z pośród różnych ustawień i opcji, aby skórka \"Paragon\" jak najbardziej odpowiadała Twoim potrzebom i upodobaniom. "
 
 msgctxt "#31410"
 msgid "With Kodi you can have several profiles and the auto login option if the login screen is disabled."

@@ -11,9 +11,9 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Videos</include>
             <!-- id = 50 -->
-            <include condition="!Skin.HasSetting(BelloViewVideos)">BelloView_VideoLibrary</include>
+            <include condition="!Skin.HasSetting(ParagonViewVideos)">ParagonView_VideoLibrary</include>
             <!-- id = 66 -->
-            <include condition="!Skin.HasSetting(BelloViewVideos)">BelloView_VideoFiles</include>
+            <include condition="!Skin.HasSetting(ParagonViewVideos)">ParagonView_VideoFiles</include>
             <!-- id = 661 -->
             <include condition="!Skin.HasSetting(SlideViewVideos)">SlideView_Videos</include>
             <!-- id = 51 -->
@@ -52,7 +52,7 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Music</include>
             <!-- id = 50 -->
-            <include condition="!Skin.HasSetting(BelloViewMusic)">BelloView</include>
+            <include condition="!Skin.HasSetting(ParagonViewMusic)">ParagonView</include>
             <!-- id = 660 -->
             <include condition="!Skin.HasSetting(SlideViewMusic)">SlideView_Music</include>
             <!-- id = 51 -->
@@ -75,7 +75,7 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Pictures</include>
             <!-- id = 50 -->
-            <include>BelloView</include>
+            <include>ParagonView</include>
             <!-- id = 660 -->
             <include>GalleryView_Pictures</include>
             <!-- id = 52 -->
@@ -91,7 +91,7 @@
             <include>InfoDialogs_ContentInfoAnimation</include>
             <include>ListView_Addons</include>
             <!-- id = 50 -->
-            <include>BelloView</include>
+            <include>ParagonView</include>
             <!-- id = 660 -->
             <include>ThumbnailsView</include>
             <!-- id = 56 -->
@@ -104,7 +104,7 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Addons</include>
             <!-- id = 50 -->
-            <include>BelloView</include>
+            <include>ParagonView</include>
             <!-- id = 660 -->
             <include>ThumbnailsView</include>
             <!-- id = 56 -->
@@ -117,7 +117,7 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Videos</include>
             <!-- id = 50 -->
-            <include condition="!Skin.HasSetting(BelloViewVideos)">BelloView_VideoLibrary</include>
+            <include condition="!Skin.HasSetting(ParagonViewVideos)">ParagonView_VideoLibrary</include>
             <!-- id = 66 -->
         </control>
     </include>
@@ -126,7 +126,7 @@
             <include>InfoDialogsVisible_ZoomAnimation</include>
             <include>ListView_Music</include>
             <!-- id = 50 -->
-            <include condition="!Skin.HasSetting(BelloViewMusic)">BelloView</include>
+            <include condition="!Skin.HasSetting(ParagonViewMusic)">ParagonView</include>
             <!-- id = 660 -->
         </control>
     </include>
@@ -1309,10 +1309,10 @@
         <value condition="Control.IsVisible(562) + [Container.Content(Movies) | Container.Content(Sets)] + String.IsEqual(Skin.String(TileViewWideThumbMovies),2)">$LOCALIZE[31218]</value>
         <value condition="Control.IsVisible(562) + [Container.Content(Movies) | Container.Content(Sets)] + String.IsEqual(Skin.String(TileViewWideThumbMovies),3)">$LOCALIZE[31219]</value>
     </variable>
-    <variable name="BelloViewThumbsOptionsLabels">
-        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(BelloViewThumbs),1)">Square</value>
-        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(BelloViewThumbs),2)">Poster</value>
-        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(BelloViewThumbs),3)">Landscape</value>
+    <variable name="ParagonViewThumbsOptionsLabels">
+        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(ParagonViewThumbs),1)">Square</value>
+        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(ParagonViewThumbs),2)">Poster</value>
+        <value condition="Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + String.IsEqual(Skin.String(ParagonViewThumbs),3)">Landscape</value>
     </variable>
     <variable name="GlobalInfo">
         <value condition="String.StartsWith(ListItem.Path,videodb://movies/sets/) + ListItem.IsFolder + !String.IsEmpty(ListItem.Title)">$LOCALIZE[20457]</value>

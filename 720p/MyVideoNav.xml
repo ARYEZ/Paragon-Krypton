@@ -9,7 +9,7 @@
     <onload condition="IsEmpty(Skin.String(ListViewWideThumbTVShows))">Skin.SetString(ListViewWideThumbTVShows,1)</onload>
     <onload condition="IsEmpty(Skin.String(GalleryViewWideThumbTVShows))">Skin.SetString(GalleryViewWideThumbTVShows,1)</onload>
     <onload condition="IsEmpty(Skin.String(TileViewWideThumbTVShows))">Skin.SetString(TileViewWideThumbTVShows,1)</onload>
-    <onload condition="IsEmpty(Skin.String(BelloViewThumbs))">Skin.SetString(BelloViewThumbs,1)</onload>
+    <onload condition="IsEmpty(Skin.String(ParagonViewThumbs))">Skin.SetString(ParagonViewThumbs,1)</onload>
     <controls>
         <include>BackgroundItems4</include>
         <include>VideoViews</include>
@@ -129,12 +129,12 @@
                     <visible>Control.IsVisible(59) + [Container.Content(Movies) | Container.Content(TVShows)] + !substring(Container.FolderPath,plugin://plugin.video,left)</visible>
                 </control>
                 <control type="button" id="287">
-                    <description>BelloView Thumbs Layout</description>
-                    <label>$LOCALIZE[21371]: $VAR[BelloViewThumbsOptionsLabels]</label>
-                    <onclick condition="Stringcompare(Skin.String(BelloViewThumbs),3)">Skin.SetString(BelloViewThumbs,1)</onclick>
-                    <onclick condition="Stringcompare(Skin.String(BelloViewThumbs),2)">Skin.SetString(BelloViewThumbs,3)</onclick>
-                    <onclick condition="Stringcompare(Skin.String(BelloViewThumbs),1)">Skin.SetString(BelloViewThumbs,2)</onclick>
-                    <onclick condition="Stringcompare(Skin.String(BelloViewThumbs),3)">Skin.SetString(BelloViewThumbs,1)</onclick>
+                    <description>ParagonView Thumbs Layout</description>
+                    <label>$LOCALIZE[21371]: $VAR[ParagonViewThumbsOptionsLabels]</label>
+                    <onclick condition="Stringcompare(Skin.String(ParagonViewThumbs),3)">Skin.SetString(ParagonViewThumbs,1)</onclick>
+                    <onclick condition="Stringcompare(Skin.String(ParagonViewThumbs),2)">Skin.SetString(ParagonViewThumbs,3)</onclick>
+                    <onclick condition="Stringcompare(Skin.String(ParagonViewThumbs),1)">Skin.SetString(ParagonViewThumbs,2)</onclick>
+                    <onclick condition="Stringcompare(Skin.String(ParagonViewThumbs),3)">Skin.SetString(ParagonViewThumbs,1)</onclick>
                     <include>TopLeftMenusButton</include>
                     <visible>Control.IsVisible(661) + [Container.Content(Files) | Container.Content(Videos)] + ![[Container.HasFolders + Container.HasFiles] | Container.HasFiles]</visible>
                 </control>

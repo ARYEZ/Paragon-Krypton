@@ -345,9 +345,9 @@
                 <control type="radiobutton" id="8510">
                     <width>425</width>
                     <include>DialogsButton</include>
-                    <label>Bello</label>
-                    <onclick>Skin.ToggleSetting(BelloViewVideos)</onclick>
-                    <selected>!Skin.HasSetting(BelloViewVideos)</selected>
+                    <label>Paragon</label>
+                    <onclick>Skin.ToggleSetting(ParagonViewVideos)</onclick>
+                    <selected>!Skin.HasSetting(ParagonViewVideos)</selected>
                     <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
                 </control>
                 <control type="radiobutton" id="8511">
@@ -458,9 +458,9 @@
                 <control type="radiobutton" id="8530">
                     <width>425</width>
                     <include>DialogsButton</include>
-                    <label>Bello</label>
-                    <onclick>Skin.ToggleSetting(BelloViewMusic)</onclick>
-                    <selected>!Skin.HasSetting(BelloViewMusic)</selected>
+                    <label>Paragon</label>
+                    <onclick>Skin.ToggleSetting(ParagonViewMusic)</onclick>
+                    <selected>!Skin.HasSetting(ParagonViewMusic)</selected>
                     <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
                 </control>
                 <control type="radiobutton" id="8531">

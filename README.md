@@ -1,4 +1,4 @@
-# Bello 6
+# Paragon 6
 ### A GUI for Kodi Media Center
 
 ![Image of Yaktocat](http://i.imgur.com/BXRDEwC.jpg)
@@ -14,20 +14,20 @@
 <br>
 
 ### **About**
-This is the 6th generation of Bello skin for Kodi.
-<br>Bello 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!
+This is the 6th generation of Paragon skin for Kodi.
+<br>Paragon 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!
 
 <br>
 
 ### **Installation**
-Bello 6 is available for download on Kodi's official repository. Please refer to [this page](http://wiki.kodi.tv/index.php?title=HOW-TO:Change_skins) for instructions.
+Paragon 6 is available for download on Kodi's official repository. Please refer to [this page](http://wiki.kodi.tv/index.php?title=HOW-TO:Change_skins) for instructions.
 <br>PLEASE DO NOT INSTALL THE SKIN FROM GITHUB, I WILL NOT PROVIDE SUPPORT FOR THAT!
 <br>USE ONLY OFFICIAL VERSION FROM KODI REPO.
 
 <br>
 
 ### **Required Add-ons**
-These Add-ons are required by Bello so the skin to work properly. The versions numbers mentioning here are the minimum so you wont get any "dependencies not met" issues, but any higher version should work fine.
+These Add-ons are required by Paragon so the skin to work properly. The versions numbers mentioning here are the minimum so you wont get any "dependencies not met" issues, but any higher version should work fine.
 
 <ul>
 <li><a href="http://mirrors.xbmc.org/addons/krypton/script.skinshortcuts/">script.skinshortcuts v1.0.17</a></li>
@@ -40,7 +40,7 @@ These Add-ons are required by Bello so the skin to work properly. The versions n
 <br>
 
 ### **Supported Add-ons**
-To get the most out of Bello 6 the following add-ons are required. These add-ons should be installed automatically when you install the skin. If they are not, please install manually using the links below. Certain skin features will not be available if one or more of these add-ons are not installed on your system.
+To get the most out of Paragon 6 the following add-ons are required. These add-ons should be installed automatically when you install the skin. If they are not, please install manually using the links below. Certain skin features will not be available if one or more of these add-ons are not installed on your system.
 
 <ul>
 <li><a href="http://mirrors.xbmc.org/addons/krypton/script.skin.helper.backgrounds/">script.skin.helper.backgrounds</a></li>
@@ -67,26 +67,26 @@ To get the most out of Bello 6 the following add-ons are required. These add-ons
 
 ### **F.A.Q.**
 **Where is my mouse pointer ?**
-<br>Mouse usage is not supported in Bello and will never be.
+<br>Mouse usage is not supported in Paragon and will never be.
 <br>Please disable it from Settings > System > Input Devices > Enable mouse and touch screen support.
 
 **I only see unwatched status indicators. Is there an option to display watched status indicators as well?**
 <br>No, there isn't and will never be. There is an indicator if the item is unwatched. If there is no indicator, the item is watched. I find this obvious and logical, and thus feel there is no added value in placing an indicator on files that have been watched. 
 
-**Can i play games using Bello ?. Is there any support for this ?**
+**Can i play games using Paragon ?. Is there any support for this ?**
 <br>No and will never be. Why ?... because Kodi is not a games console and as surprising as it sounds to some people... i don't play games!
 
 **Can you add the X or Y feature ?**
-<br>Mostly...not. As much as i hope people will enjoy using Bello, development is also driven by my own preferences. Apart from that, i just have no motivation to add features i wouldn't ever use myself and most importantly, my free time these days is very limited and it's unlikely to find more time besides some bug fixing.
+<br>Mostly...not. As much as i hope people will enjoy using Paragon, development is also driven by my own preferences. Apart from that, i just have no motivation to add features i wouldn't ever use myself and most importantly, my free time these days is very limited and it's unlikely to find more time besides some bug fixing.
 
-**Where is the X or Y feature from the old Bello? Can you add it back?**
-<br>Well...if is not there then mostly i've removed it either because i didn't like it anymore, or because wasn't fit with the new style of Bello 6. And no... i wont add it back.
+**Where is the X or Y feature from the old Paragon? Can you add it back?**
+<br>Well...if is not there then mostly i've removed it either because i didn't like it anymore, or because wasn't fit with the new style of Paragon 6. And no... i wont add it back.
 
 **It's been days that a i've posted a question/request/suggestion in the forum and still i don't have any answer. Are you ignoring me ?**
 <br>Maybe yes, maybe not. I am pretty busy ATM with other stuff outside of Kodi so any help or explanations they might be delay. So if you couldn't get any help from other users please be patient!. Also any requests or suggestions whom i don't agree or like will be ignored. Sorry guys, but i don't have the time to answer no & why to all of these stuff.
 
 **Where i can find support for this ?**
-<br>[Bello forum at Kodi.tv community.](http://forum.kodi.tv/forumdisplay.php?fid=198)
+<br>[Paragon forum at Kodi.tv community.](http://forum.kodi.tv/forumdisplay.php?fid=198)
 
 <br>
 
@@ -96,14 +96,14 @@ To Kodi/XBMC Team and to all addon developers.
 <br>
 
 ### **Important Legal Notice**
-_**BELLO 6 IS STRICTLY FOR PERSONAL OR HOUSEHOLD USE. THEREFORE YOU MAY NOT RIPP-OFF, COPY, MODIFY OR USE THIS WORK OR ANY PART OF IT IN ANY WAY FOR COMMERCIAL OR BUSINESS PURPOSES. THIS ALSO APPLIES TO ALL KODI BOX SELLERS. YOU ARE NOT ALLOWED TO SELL PRODUCTS WITH BELLO 6 PRE-INSTALLED WITHOUT MY PRIOR WRITTEN CONSENT!.
+_**PARAGON 6 IS STRICTLY FOR PERSONAL OR HOUSEHOLD USE. THEREFORE YOU MAY NOT RIPP-OFF, COPY, MODIFY OR USE THIS WORK OR ANY PART OF IT IN ANY WAY FOR COMMERCIAL OR BUSINESS PURPOSES. THIS ALSO APPLIES TO ALL KODI BOX SELLERS. YOU ARE NOT ALLOWED TO SELL PRODUCTS WITH PARAGON 6 PRE-INSTALLED WITHOUT MY PRIOR WRITTEN CONSENT!.
 <br>
 <br>PLEASE RESPECT DEVELOPER'S WORK!**_
 
 <br>
 
 ### **Donations**
-Even though i always enjoy working on Bello, thousands of hours of work have gone into it's development.
+Even though i always enjoy working on Paragon, thousands of hours of work have gone into it's development.
 If you enjoy using it and would like to show your appreciation, any donation it's greatly appreciated.
 <br>
 <br>[![paypal](http://i40.tinypic.com/hrj05j.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3NXT6PHCY45RJ)  [![pledgie](http://www.pledgie.com/campaigns/20571.png)](http://www.pledgie.com/campaigns/20571)

@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Bello
-# Addon id: skin.bello
+# Addon Name: Paragon
+# Addon id: skin.paragon
 # Addon Provider: Nessus
 msgid ""
 msgstr ""
@@ -681,8 +681,8 @@ msgid "Custom Item"
 msgstr "Custom Item"
 
 msgctxt "#31409"
-msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Choose from a variety of settings and customisation options to make \"Bello\" fit your needs and taste."
+msgid "Choose from a variety of settings and customization options to make \"Paragon\" fit your needs and taste."
+msgstr "Choose from a variety of settings and customisation options to make \"Paragon\" fit your needs and taste."
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
