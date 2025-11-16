@@ -552,33 +552,6 @@
     </include>
     <include name="BackgroundItems45">
         <control type="image">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1200</height>
-            <aspectratio/>
-            <texture/>
-        </control>
-        <control type="image">
-            <top>0</top>
-            <left>0</left>
-            <height/>
-            <width/>
-            <texture>VERT ADDON SETTINGS BG.png</texture>
-        </control>
-        <control type="image">
-            <left>-102</left>
-            <top>201</top>
-            <width>590</width>
-            <height>332</height>
-            <aspectratio>keep</aspectratio>
-            <description>Homescreen Artwork</description>
-            <texture/>
-            <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-        </control>
-    </include>
-    <include name="BackgroundItems45">
-        <control type="image">
             <top>0</top>
             <left>0</left>
             <height/>
@@ -640,6 +613,42 @@
             <imagepath background="true">xxxxAurora Effect/Backgrounds1</imagepath>
             <animation effect="fade" start="10" end="100" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+        </control>
+    </include>
+	<include name="BackgroundItems50">
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1200</height>
+            <aspectratio/>
+            <texture/>
+        </control>
+        <control type="image">
+            <top>0</top>
+            <left>0</left>
+            <height/>
+            <width/>
+            <texture>VERT ADDON SETTINGS BG.png</texture>
+        </control>
+        <control type="image">
+            <left>-102</left>
+            <top>201</top>
+            <width>590</width>
+            <height>332</height>
+            <aspectratio>keep</aspectratio>
+            <description>Homescreen Artwork</description>
+            <texture/>
+            <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
+        </control>
+    </include>
+	<include name="BackgroundItems51">
+        <control type="image">
+            <top>0</top>
+            <left>0</left>
+            <height/>
+            <width/>
+            <texture>SETTINGS BG.png</texture>
         </control>
     </include>
     <include name="BackgroundItemsPVR">

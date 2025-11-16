@@ -3,7 +3,7 @@
     <defaultcontrol>3</defaultcontrol>
     <!-- <onload condition="[system.getbool(input.enablemouse) + Window.Previous(AppearanceSettings)]">ActivateWindow(1110)</onload> -->
     <controls>
-        <include>BackgroundItems4</include>
+        <include>BackgroundItems51</include>
         <control type="button" id="10">
             <description>Default Category Button</description>
             <width>285</width>
