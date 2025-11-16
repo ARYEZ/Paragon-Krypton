@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- ======================== -->
+    <!-- ==== List View "50" ==== -->
+    <!-- ======================== -->
+    <include name="ListView_Addons">
+        <control type="group">
+            <visible>Control.IsVisible(50)</visible>
+            <visible>Window.IsVisible(AddonBrowser) | Window.IsVisible(Programs) | Container.Content(Addons)</visible>
+            <include>CommonViews_VerticalAnimation</include>
+            <include>BackgroundItems4</include>
+            <control type="group">
+                <control type="label">
+                    <description>header label</description>
+                    <left>100</left>
+                    <top>200</top>
+                    <width>772</width>
+                    <height>40</height>
+                    <font>fontsize_70</font>
+                    <label>Kodi Addon browser</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+            </control>
+            <!-- ==== Main List ==== -->
+            <control type="group">
+                <control type="list" id="50">
+                    <left>27</left>
+                    <top>275</top>
+                    <width>1190</width>
+                    <height>185</height>
+                    <onleft>60</onleft>
+                    <onright>9000</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <viewtype label="535">list</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="cubic" easing="out">300</scrolltime>
+                    <include>ListViewVars</include>
+                    <itemlayout height="45" width="710">
+                        <control type="image">
+                            <left>55</left>
+                            <top>0</top>
+                            <width>285</width>
+                            <height/>
+                            <texture>buttons/catbullet_nofo.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>95</left>
+                            <top>0</top>
+                            <width>455</width>
+                            <height>44</height>
+                            <font>FontSize_32</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>77000000</shadowcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <left>251</left>
+                            <top>0</top>
+                            <width>300</width>
+                            <height>45</height>
+                            <font>FontSize_32</font>
+                            <textcolor>77white</textcolor>
+                            <shadowcolor>77000000</shadowcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <visible>IsEmpty(ListItem.Property(Addon.Broken))</visible>
+                            <visible>!Stringcompare(ListItem.Label,..)</visible>
+                            <label>$VAR[AddonsLabel2]</label>
+                            <visible>!ListItem.IsParentFolder</visible>
+                        </control>
+                        <control type="label">
+                            <left>251</left>
+                            <top>0</top>
+                            <width>300</width>
+                            <height>45</height>
+                            <font>FontSize_32</font>
+                            <textcolor>77white</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                            <label>$VAR[AddonsLabel2]</label>
+                            <visible>!ListItem.IsParentFolder</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="45" width="710">
+                        <control type="group">
+                            <include>ListFocusAnimation</include>
+                            <control type="image">
+                                <left>62</left>
+                                <top>0</top>
+                                <width>505</width>
+                                <height>45</height>
+                                <texture>buttons/focus.png</texture>
+                                <texturenofocus>buttons/catbullet_nf.png</texturenofocus>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <label>$VAR[MusicLabel]</label>
+                            </control>
+                            <control type="label">
+                                <left>95</left>
+                                <top>0</top>
+                                <width>400</width>
+                                <height>45</height>
+                                <font>FontSize_32</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor/>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>true</scroll>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>251</left>
+                                <top>0</top>
+                                <width>300</width>
+                                <height>45</height>
+                                <font>FontSize_32</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>77000000</shadowcolor>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <scroll>true</scroll>
+                                <label>$VAR[AddonsLabel2]</label>
+                                <visible>!ListItem.IsParentFolder</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <include>ListView_Scrollbar</include>
+                <include>ListView_Arrows</include>
+            </control>
+        </control>
+    </include>
+</includes>
