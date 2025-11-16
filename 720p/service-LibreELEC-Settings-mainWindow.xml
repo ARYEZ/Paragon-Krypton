@@ -297,6 +297,20 @@
                 </focusedlayout>
             </control>
 
+            <!-- Bluetooth Info Label (Control 1301) -->
+            <control type="label" id="1301">
+                <description>Bluetooth Info Label</description>
+                <left>400</left>
+                <top>75</top>
+                <width>760</width>
+                <height>395</height>
+                <font>fontsize_26</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1300) + String.IsEqual(Window.Property(show_bt_label), true)</visible>
+            </control>
+
             <!-- System Information Panel (Control 1900) -->
             <control type="group" id="1900">
                 <left>400</left>
