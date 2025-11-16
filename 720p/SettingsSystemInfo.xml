@@ -246,7 +246,7 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>99000000</shadowcolor>
                 </control>
-                <control type="label.">
+                <control type="label">
                     <description>CPU Text</description>
                     <left>1040</left>
                     <top>420</top>
@@ -259,7 +259,7 @@
                     <shadowcolor>99000000</shadowcolor>
                     <font>FontSize_16</font>
                 </control>
-                <control type="progress.">
+                <control type="progress">
                     <description>CPU BAR</description>
                     <left>790</left>
                     <top>425</top>
@@ -267,7 +267,7 @@
                     <height>16</height>
                     <info>System.CPUUsage</info>
                 </control>
-                <control type="label.">
+                <control type="label">
                     <description>Memory Text</description>
                     <left>1040</left>
                     <top>440</top>
@@ -280,7 +280,7 @@
                     <shadowcolor>99000000</shadowcolor>
                     <font>FontSize_16</font>
                 </control>
-                <control type="progress.">
+                <control type="progress">
                     <description>Memory BAR</description>
                     <left>790</left>
                     <top>445</top>
