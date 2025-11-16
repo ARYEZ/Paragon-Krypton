@@ -98,7 +98,6 @@
                 <ondown>1100</ondown>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>300</scrolltime>
-                <visible>StringCompare(Container(1000).ListItem.Property(Type),simple)</visible>
                 <itemlayout height="45" width="760">
                     <control type="label">
                         <left>0</left>
