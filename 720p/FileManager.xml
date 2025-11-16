@@ -131,13 +131,13 @@
                 <control type="scrollbar" id="60">
                     <left>-7</left>
                     <top>1</top>
-                    <width>3</width>
+                    <width>25</width>
                     <height>407</height>
-                    <texturesliderbackground>-</texturesliderbackground>
-                    <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
-                    <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
-                    <textureslidernib>-</textureslidernib>
-                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14"/>
+                    <texturesliderbarfocus border="0,14,0,14"/>
+                    <textureslidernib/>
+                    <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                     <onleft>21</onleft>
                     <onright>20</onright>
                     <showonepage>false</showonepage>
@@ -259,13 +259,13 @@
                 <control type="scrollbar" id="61">
                     <left>519</left>
                     <top>1</top>
-                    <width>3</width>
+                    <width>25</width>
                     <height>407</height>
-                    <texturesliderbackground>-</texturesliderbackground>
-                    <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
-                    <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
-                    <textureslidernib>-</textureslidernib>
-                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14"/>
+                    <texturesliderbarfocus border="0,14,0,14"/>
+                    <textureslidernib/>
+                    <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                     <onleft>21</onleft>
                     <onright>20</onright>
                     <showonepage>false</showonepage>

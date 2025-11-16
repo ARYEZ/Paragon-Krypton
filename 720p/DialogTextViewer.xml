@@ -56,17 +56,17 @@
                     <top>0</top>
                     <width>25</width>
                     <height>490</height>
-                    <texturesliderbackground>-</texturesliderbackground>
-                    <texturesliderbar>-</texturesliderbar>
-                    <texturesliderbarfocus>-</texturesliderbarfocus>
-                    <textureslidernib>-</textureslidernib>
-                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14"/>
+                    <texturesliderbarfocus border="0,14,0,14"/>
+                    <textureslidernib/>
+                    <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
                     <onleft>Close</onleft>
                     <onright>Close</onright>
                     <oninfo>Close</oninfo>
                     <ondown>61</ondown>
                     <onup>61</onup>
-                    <showonepage>true</showonepage>
+                    <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
                 </control>
             </control>
