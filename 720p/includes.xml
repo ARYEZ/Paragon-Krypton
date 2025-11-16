@@ -154,7 +154,7 @@
             <left>0</left>
             <height/>
             <width/>
-            <texture>WEATHER BG.png</texture>
+            <texture>WEATHER BG2.png</texture>
         </control>
     </include>
     <include name="BackgroundItems13">
