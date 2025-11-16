@@ -104,4 +104,14 @@
         <thumb/>
         <action>ActivateWindow(Settings)</action>
     </shortcut>
+    <!-- LibreELEC -->
+    <shortcut>
+        <label>LibreELEC</label>
+        <label2>32034</label2>
+        <defaultID>libreelec</defaultID>
+        <icon>DefaultAddon.png</icon>
+        <thumb/>
+        <action>RunAddon(service.libreelec.settings)</action>
+        <visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
+    </shortcut>
 </shortcuts>
