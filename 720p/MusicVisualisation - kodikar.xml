@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2006">
+    <defaultcontrol>-</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <include>BackgroundItems</include>
+        <control type="multiimage">
+            <randomize>false</randomize>
+            <timeperimage>12000</timeperimage>
+            <fadetime>4000</fadetime>
+            <pauseatend>0</pauseatend>
+            <loop>true</loop>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1580</width>
+            <height>720</height>
+            <imagepath background="true">Aurora Effect/Backgrounds</imagepath>
+            <animation effect="fade" start="10" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
+            <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+        </control>
+        <control type="image">
+            <height>720</height>
+            <width>3280</width>
+            <texture>colors_pulse7.png</texture>
+        </control>
+        <control type="image">
+            <texture>spectrum0.png</texture>
+        </control>
+        <control type="image">
+            <top>-56</top>
+            <left>-200</left>
+            <height>206</height>
+            <width>1680</width>
+            <texture>views/gallery/top_bottom_shadows.png</texture>
+        </control>
+        <control type="image">
+            <top>569</top>
+            <left>-200</left>
+            <height>206</height>
+            <width>1680</width>
+            <texture>views/gallery/top_bottom_shadows.png</texture>
+        </control>
+        <control type="image">
+            <top>-15</top>
+            <left>-200</left>
+            <height>743</height>
+            <width>1680</width>
+            <texture>views/gallery/top_bottom_shadows.png</texture>
+        </control>
+        <control type="group">
+            <posx>30</posx>
+            <posy>200</posy>
+            <width>100</width>
+            <control type="label">
+                <description>Title label</description>
+                <posx>-5</posx>
+                <posy>25</posy>
+                <height>30</height>
+                <width>900</width>
+                <label>$INFO[MusicPlayer.Title]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_100</font>
+                <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+                <description>Title label</description>
+                <posx>-1</posx>
+                <posy>20</posy>
+                <height>30</height>
+                <width>1000</width>
+                <label>$INFO[MusicPlayer.Title]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_100</font>
+                <textcolor>white</textcolor>
+                <autoscroll>true</autoscroll>
+            </control>
+            <control type="label">
+                <description>Artist Label</description>
+                <posx>-4</posx>
+                <posy>129</posy>
+                <height>30</height>
+                <width>1000</width>
+                <label>$INFO[MusicPlayer.Artist]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_90</font>
+                <textcolor>black</textcolor>
+                <shadowcolor>55000000</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Artist Label</description>
+                <posx>0</posx>
+                <posy>124</posy>
+                <height>30</height>
+                <width>1000</width>
+                <label>$INFO[MusicPlayer.Artist]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_90</font>
+                <textcolor>white</textcolor>
+                <scrolltime tween="cubic" easing="out">300</scrolltime>
+                <shadowcolor>55000000</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Album Label</description>
+                <posx>-4</posx>
+                <posy>224</posy>
+                <height>30</height>
+                <width>1000</width>
+                <label>$INFO[MusicPlayer.Album]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_75</font>
+                <textcolor>black</textcolor>
+                <shadowcolor>55000000</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Album Label</description>
+                <posx>0</posx>
+                <posy>219</posy>
+                <height>30</height>
+                <width>820</width>
+                <label>$INFO[MusicPlayer.Album]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>FontSize_75</font>
+                <autoscroll>true</autoscroll>
+                <scrolltime tween="cubic" easing="out">10</scrolltime>
+                <textcolor>white</textcolor>
+                <shadowcolor>55000000</shadowcolor>
+            </control>
+        </control>
+        <control type="image">
+            <top>-45</top>
+            <left>760</left>
+            <height>802</height>
+            <width>505</width>
+            <texture>views/gallery/top_bottom_shadows.png</texture>
+        </control>
+        <control type="group">
+            <posx>40</posx>
+            <posy>440</posy>
+            <control type="group">
+                <posx>-20</posx>
+                <posy>-55</posy>
+                <control type="image">
+                    <left>778</left>
+                    <top>-345</top>
+                    <width>405</width>
+                    <height>405</height>
+                    <texture background="true" diffuse="osd/cd_diffuse.png">osd/cd2.png</texture>
+                    <aspectratio>KEEP</aspectratio>
+                    <include>CDImageAnim</include>
+                </control>
+                <control type="image">
+                    <left>803</left>
+                    <top>-320</top>
+                    <width>355</width>
+                    <height>355</height>
+                    <texture background="true" diffuse="osd/cd_diffuse.png" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <include>CDImageAnim</include>
+                    <visible>!Player.IsInternetStream</visible>
+                </control>
+                <control type="image" id="1">
+                    <posx>751</posx>
+                    <posy>-267</posy>
+                    <width>483</width>
+                    <height>483</height>
+                    <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+                    <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                </control>
+                <control type="multiimage">
+                    <randomize>false</randomize>
+                    <timeperimage>12000</timeperimage>
+                    <fadetime>4000</fadetime>
+                    <pauseatend>0</pauseatend>
+                    <loop>true</loop>
+                    <posx>764</posx>
+                    <posy>-256</posy>
+                    <width>458</width>
+                    <height>460</height>
+                    <imagepath background="true">Aurora Effect/Thumbs</imagepath>
+                    <animation effect="fade" start="0" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
+                    <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+                </control>
+                <control type="image" id="1">
+                    <posx>755</posx>
+                    <posy>-263</posy>
+                    <width>476</width>
+                    <height>476</height>
+                    <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+                    <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                </control>
+                <control type="image">
+                    <posx>772</posx>
+                    <posy>-245</posy>
+                    <width>427</width>
+                    <height>423</height>
+                    <aspectratio align="center" aligny="center">stretch</aspectratio>
+                    <texture>thumbs/music_overlay.png</texture>
+                    <fadetime>800</fadetime>
+                </control>
+                <control type="image">
+                    <top>-285</top>
+                    <left>600</left>
+                    <height>502</height>
+                    <width>787</width>
+                    <texture>views/gallery/side_shadows.png</texture>
+                </control>
+                <control type="image">
+                    <posx>773</posx>
+                    <posy>-248</posy>
+                    <width>414</width>
+                    <height>414</height>
+                    <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
+                    <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+                    <fadetime>800</fadetime>
+                </control>
+            </control>
+            <control type="group">
+                <posx>-8</posx>
+                <posy>-240</posy>
+                <control type="group">
+                    <include>KaiToastSlideAnimations</include>
+                    <include>ScanSlideAnimations</include>
+                    <visible>Player.HasAudio</visible>
+                    <control type="group">
+                        <animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
+                            <effect type="fade" start="0" end="100" time="500" delay="0"/>
+                            <effect type="fade" start="100" end="0" time="500" delay="10000"/>
+                            <effect type="fade" start="100" end="0" time="500" delay="20000"/>
+                        </animation>
+                        <control type="label">
+                            <left>-3</left>
+                            <top>283</top>
+                            <width>300</width>
+                            <height>33</height>
+                            <label>$LOCALIZE[209]:</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_40</font>
+                            <textcolor>black</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <top>280</top>
+                            <width>300</width>
+                            <height>33</height>
+                            <label>$LOCALIZE[209]:</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_40</font>
+                            <textcolor>99white</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>73</left>
+                            <top>284</top>
+                            <width>540</width>
+                            <height>35</height>
+                            <label>$INFO[MusicPlayer.offset(1).Title]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_32</font>
+                            <textcolor>black</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>76</left>
+                            <top>282</top>
+                            <width>540</width>
+                            <height>35</height>
+                            <label>$INFO[MusicPlayer.offset(1).Title]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_32</font>
+                            <textcolor>white</textcolor>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>MusicPlayer.HasNext</visible>
+                        <animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
+                            <effect type="fade" start="0" end="100" time="500" delay="10500"/>
+                            <effect type="fade" start="100" end="0" time="500" delay="20000"/>
+                        </animation>
+                        <control type="label">
+                            <left>-3</left>
+                            <top>283</top>
+                            <width>300</width>
+                            <height>33</height>
+                            <label>then:</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_40</font>
+                            <textcolor>black</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <top>280</top>
+                            <width>300</width>
+                            <height>33</height>
+                            <label>then:</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_40</font>
+                            <textcolor>99white</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>73</left>
+                            <top>284</top>
+                            <width>540</width>
+                            <height>35</height>
+                            <label>$INFO[MusicPlayer.offset(2).Title]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_32</font>
+                            <textcolor>black</textcolor>
+                        </control>
+                        <control type="label">
+                            <left>76</left>
+                            <top>282</top>
+                            <width>540</width>
+                            <height>35</height>
+                            <label>$INFO[MusicPlayer.offset(2).Title]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>Fontsize_32</font>
+                            <textcolor>white</textcolor>
+                        </control>
+                    </control>
+                    <control type="label">
+                        <posx>715</posx>
+                        <posy>278</posy>
+                        <width>645</width>
+                        <height>40</height>
+                        <font>FontSize_50</font>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[Player.Time(mm:ss)]$INFO[Player.Duration, / ]</label>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>55000000</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>719</posx>
+                        <posy>274</posy>
+                        <width>645</width>
+                        <height>40</height>
+                        <font>FontSize_50</font>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[Player.Time(mm:ss)]$INFO[Player.Duration, / ]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>55000000</shadowcolor>
+                    </control>
+                </control>
+                <control type="progress">
+                    <description>Progressbar</description>
+                    <posx>-3</posx>
+                    <posy>80</posy>
+                    <width>725</width>
+                    <height>24</height>
+                    <texturebg border="12">osd/osd_bg_progress_big.png</texturebg>
+                </control>
+                <control type="progress">
+                    <description>Progressbar</description>
+                    <posx>-3</posx>
+                    <posy>180</posy>
+                    <width>725</width>
+                    <height>24</height>
+                    <texturebg border="12">osd/osd_bg_progress_big.png</texturebg>
+                </control>
+                <control type="progress">
+                    <description>Progressbar</description>
+                    <posx>-3</posx>
+                    <posy>315</posy>
+                    <width>725</width>
+                    <height>24</height>
+                    <info>Player.Progress</info>
+                    <reveal>true</reveal>
+                    <texturebg border="12">osd/osd_bg_progress_big.png</texturebg>
+                    <lefttexture>osd/osd_left_progress.png</lefttexture>
+                    <midtexture>osd/osd_center_progress.png</midtexture>
+                    <righttexture>osd/osd_right_progress.png</righttexture>
+                    <overlaytexture>-</overlaytexture>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

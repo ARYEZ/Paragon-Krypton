@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="40">
+    <defaultcontrol always="true">50</defaultcontrol>
+    <backgroundcolor>bgcolor</backgroundcolor>
+    <views>50</views>
+    <controls>
+        <include>BackgroundItems4</include>
+        <include>AddonsViews</include>
+        <include>CommonItems</include>
+        <include condition="Skin.HasSetting(EnableAddonsNotifications)">AddonsNotifications</include>
+        <!-- ================ -->
+        <!-- Top Options Menu -->
+        <!-- ================ -->
+        <control type="group" id="9000">
+            <include>ShutdownMenuAnimation</include>
+            <include>OptionsTopMenuAnimation</include>
+            <include>OptionsTopMenuHeader</include>
+            <include>BackgroundItems4</include>
+            <!-- Options -->
+            <control type="label">
+                <description>Header Categories</description>
+                <left>40</left>
+                <top>200</top>
+                <width>595</width>
+                <height>40</height>
+                <font>FontSize_70</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>99000000</shadowcolor>
+                <label>Addon options menu</label>
+            </control>
+            <control type="grouplist" id="9111">
+                <left>140</left>
+                <top>269</top>
+                <height>185</height>
+                <control type="button" id="2">
+                    <description>View as</description>
+                    <label>-</label>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="togglebutton" id="294">
+                    <description>Change Thumbs Size (Thumbnails View)</description>
+                    <include>TopLeftMenusButton</include>
+                    <label>$LOCALIZE[31098]</label>
+                    <altlabel>$LOCALIZE[31099]</altlabel>
+                    <onclick>Skin.ToggleSetting(ShowSmallAddonsThumbs)</onclick>
+                    <selected>Skin.HasSetting(ShowSmallAddonsThumbs)</selected>
+                    <visible>Control.IsVisible(560)</visible>
+                </control>
+                <control type="togglebutton" id="282">
+                    <description>Disable Poster Glow</description>
+                    <include>TopLeftMenusButton</include>
+                    <label>$LOCALIZE[31100]: $LOCALIZE[31011]</label>
+                    <altlabel>$LOCALIZE[31100]: $LOCALIZE[31012]</altlabel>
+                    <onclick>Skin.ToggleSetting(DisableAddonsListView_PosterGlow)</onclick>
+                    <selected>Skin.HasSetting(DisableAddonsListView_PosterGlow)</selected>
+                    <visible>Control.IsVisible(50) + [Window.IsVisible(AddonBrowser.xml) + Container.HasFiles]</visible>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort by</description>
+                    <label>103</label>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort Ascending/Descending</description>
+                    <label>$LOCALIZE[21429]: $LOCALIZE[584]</label>
+                    <altlabel>$LOCALIZE[21429]: $LOCALIZE[585]</altlabel>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="button" id="9">
+                    <description>Check for Updates</description>
+                    <label>$LOCALIZE[24034]</label>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="togglebutton" id="7">
+                    <description>Hide Foreign</description>
+                    <label>$LOCALIZE[25001]: $LOCALIZE[31012]</label>
+                    <altlabel>$LOCALIZE[25001]: $LOCALIZE[31011]</altlabel>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="togglebutton" id="8">
+                    <description>Hide Incompatible</description>
+                    <label>$LOCALIZE[24999]: $LOCALIZE[31012]</label>
+                    <altlabel>$LOCALIZE[24999]: $LOCALIZE[31011]</altlabel>
+                    <include>TopLeftMenusButton</include>
+                </control>
+                <control type="button" id="5">
+                    <description>Settings</description>
+                    <include>TopLeftMenusButton</include>
+                    <label>$LOCALIZE[10004]</label>
+                </control>
+            </control>
+        </control>
+        <!-- ================ -->
+        <!-- Top Content Info -->
+        <!-- ================ -->
+        <control type="group">
+            <left>45</left>
+            <top>25</top>
+            <include>ShutdownMenuAnimation</include>
+            <include>InfoDialogs_ContentInfoAnimation</include>
+            <include>VisibleHiddenSlideAnimation</include>
+            <visible>!ControlGroup(9000).HasFocus</visible>
+            <control type="grouplist">
+                <left>0</left>
+                <top>0</top>
+                <height>70</height>
+                <width>1000</width>
+                <align>left</align>
+                <itemgap>15</itemgap>
+                <orientation>horizontal</orientation>
+                <include>OpenCloseSlideAnimationTwo</include>
+            </control>
+        </control>
+        <include>JumpToFirstSortLetter</include>
+    </controls>
+</window>

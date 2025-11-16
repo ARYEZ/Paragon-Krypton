@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="136">
+    <controls>
+        <control type="group">
+            <include>BackgroundItems16</include>
+            <control type="group">
+                <left>780</left>
+                <top>208</top>
+                <control type="progress" id="10">
+                    <description>progress control</description>
+                    <texturebg>-</texturebg>
+                    <lefttexture>-</lefttexture>
+                    <midtexture>-</midtexture>
+                    <righttexture>-</righttexture>
+                    <overlaytexture>-</overlaytexture>
+                    <visible>true</visible>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

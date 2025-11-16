@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="3">
+    <defaultcontrol>20</defaultcontrol>
+    <backgroundcolor>bgcolor</backgroundcolor>
+    <controls>
+        <include>BackgroundItems37</include>
+        <control type="group">
+            <include>OpenCloseSlideAnimationTwo</include>
+            <include>InfoDialogs_ContentInfoAnimation</include>
+            <control type="group">
+                <left>118</left>
+                <top>155</top>
+                <control type="label">
+                    <description>Header Categories</description>
+                    <left>-35</left>
+                    <top>35</top>
+                    <width>495</width>
+                    <height>71</height>
+                    <font>FontSize_70</font>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>99000000</shadowcolor>
+                    <label>FILE MANAGER</label>
+                </control>
+                <control type="list" id="20">
+                    <left>-20</left>
+                    <top>120</top>
+                    <width>453</width>
+                    <height>275</height>
+                    <onleft>60</onleft>
+                    <onright>21</onright>
+                    <onup>20</onup>
+                    <ondown>20</ondown>
+                    <viewtype>list</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="Quadratic" easing="out">250</scrolltime>
+                    <animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(20) + Window.IsActive(contextmenu)">Conditional</animation>
+                    <itemlayout height="45" width="515">
+                        <control type="image">
+                            <left>-5</left>
+                            <top/>
+                            <width>295</width>
+                            <height>50</height>
+                            <texture>buttons/catbullet_nofo.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>33</left>
+                            <top>0</top>
+                            <width>450</width>
+                            <height>50</height>
+                            <font>FontSize_30</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>77white</selectedcolor>
+                            <shadowcolor>99000000</shadowcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="label">
+                            <left>183</left>
+                            <top>0</top>
+                            <width>320</width>
+                            <height>50</height>
+                            <font>FontSize_30</font>
+                            <textcolor>77white</textcolor>
+                            <selectedcolor>77white</selectedcolor>
+                            <shadowcolor>99000000</shadowcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label2</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="45" width="515">
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>515</width>
+                            <height>45</height>
+                            <texture background="true" border="1"/>
+                            <texturefocus>buttons/focus.png</texturefocus>
+                            <visible>!Control.HasFocus(20)</visible>
+                            <animation effect="fade" start="100" end="40" time="200" condition="!Control.HasFocus(20)">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>515</width>
+                            <height>45</height>
+                            <texture background="true" border="1">buttons/focus.png</texture>
+                            <visible>!Control.HasFocus(20)</visible>
+                            <animation effect="fade" start="100" end="40" time="200" condition="!Control.HasFocus(20)" reversible="true">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>454</width>
+                            <height>45</height>
+                            <texture background="true" border="1">buttons/focus.png</texture>
+                            <visible>Control.HasFocus(20)</visible>
+                            <include>ListFocusAnimation</include>
+                             --&gt;
+                        </control>
+                        <control type="label">
+                            <left>33</left>
+                            <top>0</top>
+                            <width>450</width>
+                            <height>48</height>
+                            <font>FontSize_30</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="label">
+                            <left>183</left>
+                            <top>0</top>
+                            <width>320</width>
+                            <height>50</height>
+                            <font>FontSize_30</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <shadowcolor>99000000</shadowcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label2</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-7</left>
+                    <top>1</top>
+                    <width>3</width>
+                    <height>407</height>
+                    <texturesliderbackground>-</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
+                    <textureslidernib>-</textureslidernib>
+                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <onleft>21</onleft>
+                    <onright>20</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60)">Conditional</animation>
+                    <visible>Control.IsVisible(20)</visible>
+                </control>
+            </control>
+            <control type="group">
+                <left>645</left>
+                <top>235</top>
+                <control type="label">
+                    <description>Header Categories</description>
+                    <left>83</left>
+                    <top>-32</top>
+                    <width>495</width>
+                    <height>40</height>
+                    <font>FontSize_60</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>99000000</shadowcolor>
+                    <label>destination</label>
+                </control>
+                <control type="list" id="21">
+                    <left>50</left>
+                    <top>40</top>
+                    <width>515</width>
+                    <height>215</height>
+                    <onleft>20</onleft>
+                    <onright>61</onright>
+                    <onup>21</onup>
+                    <ondown>21</ondown>
+                    <viewtype>list</viewtype>
+                    <pagecontrol>61</pagecontrol>
+                    <scrolltime tween="Quadratic" easing="out">250</scrolltime>
+                    <animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(21) + Window.IsActive(contextmenu)">Conditional</animation>
+                    <itemlayout height="45" width="515">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>540</width>
+                            <height>41</height>
+                            <texture border="0,2,0,2">MenuItemNF.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>13</left>
+                            <top>0</top>
+                            <width>450</width>
+                            <height>45</height>
+                            <font>FontSize_30</font>
+                            <textcolor>77white</textcolor>
+                            <selectedcolor>77white</selectedcolor>
+                            <shadowcolor>99000000</shadowcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="label">
+                            <left>183</left>
+                            <top>0</top>
+                            <width>320</width>
+                            <height>45</height>
+                            <font>FontSize_30</font>
+                            <textcolor>77white</textcolor>
+                            <selectedcolor>77white</selectedcolor>
+                            <shadowcolor>99000000</shadowcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label2</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="45" width="515">
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>515</width>
+                            <height>45</height>
+                            <texture background="true" border="1">buttons/focus.png</texture>
+                            <visible>!Control.HasFocus(21)</visible>
+                            <animation effect="fade" start="100" end="40" time="200" condition="!Control.HasFocus(21)" reversible="true">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>515</width>
+                            <height>45</height>
+                            <texture background="true" border="1">buttons/focus.png</texture>
+                            <visible>Control.HasFocus(21)</visible>
+                            <include>ListFocusAnimation</include>
+                             --&gt;
+                        </control>
+                        <control type="label">
+                            <left>13</left>
+                            <top>0</top>
+                            <width>450</width>
+                            <height>45</height>
+                            <font>FontSize_30</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="label">
+                            <left>183</left>
+                            <top>0</top>
+                            <width>320</width>
+                            <height>45</height>
+                            <font>FontSize_30</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label2</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="61">
+                    <left>519</left>
+                    <top>1</top>
+                    <width>3</width>
+                    <height>407</height>
+                    <texturesliderbackground>-</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
+                    <textureslidernib>-</textureslidernib>
+                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <onleft>21</onleft>
+                    <onright>20</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(61)" reversible="true">Conditional</animation>
+                    <visible>Control.IsVisible(21)</visible>
+                </control>
+            </control>
+        </control>
+        <!-- ================ -->
+        <!-- Top Content Info -->
+        <!-- ================ -->
+        <control type="group">
+            <left>45</left>
+            <top>25</top>
+            <include>ShutdownMenuAnimation</include>
+            <include>InfoDialogs_ContentInfoAnimation</include>
+            <include>VisibleHiddenSlideAnimation</include>
+            <visible>!ControlGroup(9000).HasFocus</visible>
+        </control>
+    </controls>
+</window>

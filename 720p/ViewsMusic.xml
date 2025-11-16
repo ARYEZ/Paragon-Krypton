@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- ======================== -->
+    <!-- ==== List View "50" ==== -->
+    <!-- ======================== -->
+    <include name="ListView_Music">
+        <control type="group">
+            <visible>Control.IsVisible(50)</visible>
+            <include>CommonViews_VerticalAnimation</include>
+            <include>BackgroundItems21</include>
+            <control type="group">
+                <left>800</left>
+                <top>202</top>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>300</height>
+                    <texture>dialogs/busy/static_busy.png</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>300</height>
+                    <texture>dialogs/busy/animation_1.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+                    <visible/>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>300</height>
+                    <texture>dialogs/busy/animation_2.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+                </control>
+            </control>
+            <control type="group">
+                <include>ListViewAnimationsRight</include>
+                <control type="group">
+                    <include>ListViewAnimationsRight</include>
+                    <visible>!Stringcompare(ListItem.Label,..)</visible>
+                    <visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] | [Substring(Container.FolderPath,plugin,left) | Container.Content(Addons)] + !IsEmpty(ListItem.Property(Addon.Name))</visible>
+                    <control type="image">
+                        <left>671</left>
+                        <top>198</top>
+                        <width>551</width>
+                        <height>310</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture background="true" fallback="PARAGON TV LOGO 2.png">$VAR[VarArtFanart]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <include>ListViewAnimationsRight</include>
+                    <visible>Stringcompare(ListItem.Label,..)</visible>
+                    <visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] | [Substring(Container.FolderPath,plugin,left) | Container.Content(Addons)] + !IsEmpty(ListItem.Property(Addon.Name))</visible>
+                </control>
+                <control type="group">
+                    <include>ListViewAnimationsRight</include>
+                    <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
+                    <visible>![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]</visible>
+                    <control type="image">
+	</control>
+                    <control type="image">
+                        <left>555</left>
+                        <top>200</top>
+                        <width>530</width>
+                        <height>306</height>
+                        <aspectratio align="right" aligny="center">keep</aspectratio>
+                        <fadetime>150</fadetime>
+                        <texture background="true">$INFO[Listitem.Icon]</texture>
+                    </control>
+                </control>
+            </control>
+            <!-- ==== List ==== -->
+            <control type="group">
+                <include>ListViewAnimationsLeft</include>
+                <control type="list" id="50">
+                    <left>30</left>
+                    <top>202</top>
+                    <width>1190</width>
+                    <height>260</height>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <viewtype label="535">list</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="cubic" easing="out">300</scrolltime>
+                    <itemlayout height="45" width="710">
+                        <control type="image">
+                            <left>-25</left>
+                            <top/>
+                            <width>630</width>
+                            <height>50</height>
+                            <texture>buttons/MenuItemNF.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>15</left>
+                            <top>0</top>
+                            <width>605</width>
+                            <height>45</height>
+                            <font>FontSize_32</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>99white</selectedcolor>
+                            <shadowcolor>77000000</shadowcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="45" width="710">
+                        <control type="group">
+                            <include>ListFocusAnimation</include>
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>595</width>
+                                <width>575</width>
+                                <height>45</height>
+                                <texture>buttons/focus.png</texture>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <label>$VAR[MusicLabel]</label>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <top>0</top>
+                                <width>605</width>
+                                <height>45</height>
+                                <font>FontSize_32</font>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <shadowcolor/>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <scroll>true</scroll>
+                                <label>$VAR[MusicLabel]</label>
+                            </control>
+                            <control type="label">
+                                <left>305</left>
+                                <top>0</top>
+                                <width>300</width>
+                                <height>45</height>
+                                <font>FontSize_22</font>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <shadowcolor/>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
+                                <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
+                                <visible>!Stringcompare(ListItem.Label,..)</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>1260</left>
+                    <top>201</top>
+                    <width>9</width>
+                    <height>262</height>
+                    <texturesliderbackground>-</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
+                    <textureslidernib>-</textureslidernib>
+                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <onleft>9000</onleft>
+                    <onright>50</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                    <visible>Control.IsVisible(50)</visible>
+                </control>
+                <control type="group">
+                    <control type="image.">
+                        <left>-230</left>
+                        <top>-88</top>
+                        <width>1700</width>
+                        <height>860</height>
+                        <aspectratio align="center" aligny="center">stretch</aspectratio>
+                        <texture background="true">views/list/shine.png</texture>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

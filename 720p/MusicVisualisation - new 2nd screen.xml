@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2006">
+    <defaultcontrol>-</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control type="group">
+            <visible>Player.HasAudio</visible>
+            <posx>840</posx>
+            <posy>169</posy>
+            <control type="image">
+                <description>big current temp value</description>
+                <height>230</height>
+                <width min="10" max="800">auto</width>
+                <top>159</top>
+                <left>-82</left>
+                <font>Fontsize_170</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <texture>$INFO[Player.Icon]</texture>
+                <textcolor>white</textcolor>
+                <shadowcolor>99000000</shadowcolor>
+            </control>
+        </control>
+        <control type="group">
+            <posx>-10</posx>
+            <posy>169</posy>
+            <visible>Player.HasAudio</visible>
+            <control type="label">
+                <description>big current temp value</description>
+                <height>230</height>
+                <width min="10" max="800">auto</width>
+                <top>159</top>
+                <left>-270</left>
+                <font>Fontsize_140</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[Weather.Temperature]</label>
+                <textcolor>white</textcolor>
+                <shadowcolor>99000000</shadowcolor>
+            </control>
+        </control>
+        <include>BackgroundItems35</include>
+        <control type="group">
+            <posx>30</posx>
+            <posy>200</posy>
+            <width>100</width>
+            <control type="group">
+                <posx>-8</posx>
+                <posy>-240</posy>
+                <control type="group">
+                    <left>953</left>
+                    <top>522</top>
+                </control>
+                <control type="group">
+                    <top>253</top>
+                    <left>7690</left>
+                    <control type="label">
+                        <description>big current temp value</description>
+                        <height>230</height>
+                        <width min="10" max="500">auto</width>
+                        <font>FontSize_280</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[MusicPlayer.TimeRemaining]</label>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>99000000</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <description>big current temp value</description>
+                        <height>230</height>
+                        <width min="10" max="500">auto</width>
+                        <font>FontSize_280</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[MusicPlayer.TimeRemaining]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>99000000</shadowcolor>
+                    </control>
+                </control>
+                <control type="group">
+                    <top>220</top>
+                    <left>215</left>
+                    <control type="label">
+                        <description>big current temp value</description>
+                        <height>230</height>
+                        <width min="10" max="800">auto</width>
+                        <top>4</top>
+                        <left>-4</left>
+                        <font>FontSize_300</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[MusicPlayer.TimeRemaining]</label>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>99000000</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <description>big current temp value</description>
+                        <height>230</height>
+                        <width min="10" max="800">auto</width>
+                        <font>FontSize_300</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[MusicPlayer.TimeRemaining]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>99000000</shadowcolor>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Player.HasAudio</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>50</posy>
+                    <width>1280</width>
+                    <height>720</height>
+                    <fadetime>1000</fadetime>
+                    <texture background="true">$INFO[Weather.ConditionsIcon]</texture>
+                    <animation effect="fade" start="35" end="35" time="0" condition="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="100" time="1000">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
+                    <include condition="Skin.HasSetting(Vis-Animation)">VizBackAnimation</include>
+                    <visible>Player.HasAudio + Skin.HasSetting(Vis-Fanart)</visible>
+                </control>
+                <control type="grouplist">
+                    <left>55</left>
+                    <top>15</top>
+                    <height/>
+                    <width>1190</width>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <itemgap>5</itemgap>
+                    <orientation>horizontal</orientation>
+                    <control type="group">
+                        <width>840</width>
+                        <control type="label">
+                            <top>30</top>
+                            <description>Header Label</description>
+                            <height/>
+                            <width>840</width>
+                            <font>FontSize_40</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>77000000</shadowcolor>
+                            <align>right</align>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Title Label</description>
+                            <top>40</top>
+                            <height/>
+                            <width>840</width>
+                            <font>FontSize_26</font>
+                            <textcolor>99white</textcolor>
+                            <shadowcolor>77000000</shadowcolor>
+                            <align>right</align>
+                            <scroll>false</scroll>
+                        </control>
+                    </control>
+                    <control type="label">
+                        <height/>
+                        <width>auto</width>
+                        <font>FontSize_110</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>77000000</shadowcolor>
+                        <scroll>false</scroll>
+                        <label>$INFO[Control.GetLabel(32),,%]</label>
+                    </control>
+                </control>
+                <control type="progress">
+                    <description>progress control</description>
+                    <include>HiddenItem</include>
+                    <visible>false</visible>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+	</control>
+    </controls>
+</window>

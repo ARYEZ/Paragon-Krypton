@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2005">
+    <controls>
+        <!-- =========================== -->
+        <!-- == VideoFullcreen Window == -->
+        <!-- =========================== -->
+        <!-- VideoInfo (Default) -->
+        <control type="group" id="1">
+            <left>45</left>
+            <top>645</top>
+            <width>1190</width>
+            <include>BackgroundItems1</include>
+            <control type="image" id="1">
+                <left>-45</left>
+                <top>-585</top>
+                <width>1280</width>
+                <height>720</height>
+                <texture fallback="fanart.jpg">$INFO[Player.Art(fanart)]</texture>
+            </control>
+            <control type="image" id="1">
+                <left>-45</left>
+                <top>-645</top>
+                <width>1280</width>
+                <height>720</height>
+                <texture>VIDEO 2ND SCREEN INFO BG.png</texture>
+            </control>
+            <control type="image" id="1">
+                <posx>-7</posx>
+                <posy>-222</posy>
+                <width>315</width>
+                <height>210</height>
+                <align>center</align>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideoCover.png">$INFO[Player.Art(tvshow.landscape)]</texture>
+                <visible>VideoPlayer.Content(Episodes)</visible>
+            </control>
+            <control type="image" id="1">
+                <posx>-7</posx>
+                <posy>-222</posy>
+                <width>315</width>
+                <height>210</height>
+                <align>center</align>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideoCover.png">$INFO[Player.Art(landscape)]</texture>
+                <visible>VideoPlayer.Content(Movies)</visible>
+            </control>
+            <control type="image" id="1">
+                <posx>-7</posx>
+                <posy>-222</posy>
+                <width>315</width>
+                <height>210</height>
+                <align>center</align>
+                <aspectratio>keep</aspectratio>
+                <texture>Podcasts.png</texture>
+                <visible>VideoPlayer.Content(hdhomerun)</visible>
+                <visible>[substring(Player.FilenameAndPath,hdhomerun)]</visible>
+            </control>
+            <control type="label" id="1">
+                <top>-185</top>
+                <left>774</left>
+                <width>460</width>
+                <height>120</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>FontSize_140</font>
+                <label>$INFO[VideoPlayer.TimeRemaining(hh:mm:ss)]</label>
+                <textcolor>white</textcolor>
+                <shadowcolor>55000000</shadowcolor>
+            </control>
+            <control type="progress" id="1">
+                <description>Progressbar</description>
+                <posx>351l</posx>
+                <posy>-70</posy>
+                <width>890</width>
+                <height>30</height>
+                <info>Player.Progress</info>
+                <reveal>true</reveal>
+                <texturebg border="12">osd/osd_bg_progress.png</texturebg>
+                <lefttexture>osd/osd_left_progress.png</lefttexture>
+                <midtexture>osd/osd_center_progress.png</midtexture>
+                <righttexture>osd/osd_right_progress.png</righttexture>
+                <overlaytexture>-</overlaytexture>
+            </control>
+            <control type="label" id="1">
+                <description>Show Description</description>
+                <top>-526</top>
+                <left>-20</left>
+                <width>1220</width>
+                <height>320</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <wrapmultiline>true</wrapmultiline>
+                <textcolor>white</textcolor>
+                <shadowcolor>ff000000</shadowcolor>
+                <font>fontsize_28</font>
+                <label>$INFO[VideoPlayer.Plot]</label>
+                <scroll>true</scroll>
+            </control>
+            <!-- Info -->
+            <!-- Progress -->
+            <!-- Time Label -->
+            <control type="group" id="1">
+                <left>490</left>
+                <top>545</top>
+                <include>OSDAnimation</include>
+                <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
+                <animation effect="slide" start="0,0" end="180,0" condition="[VideoPlayer.Content(Movies) + !IsEmpty(Player.Art(poster))] | [VideoPlayer.Content(Files) + !IsEmpty(Player.Art(poster))] | [VideoPlayer.Content(Episodes) + !IsEmpty(Player.Art(tvshow.poster))] | VideoPlayer.Content(LiveTV)">Conditional</animation>
+            </control>
+            <!-- Right Fade SubLabels -->
+        </control>
+        <!-- MediaFlags -->
+        <!-- VideoInfo (Simple) -->
+        <control type="group" id="1">
+            <visible>StringCompare(Skin.String(FullScreenVideoStyle),2)</visible>
+            <visible>Player.ShowInfo + ![Window.IsActive(SelectDialog) | Window.IsActive(SliderDialog) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(VideoBookmarks) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+            <include>OSDAnimation</include>
+            <control type="image" id="1">
+                <left>0</left>
+                <top>305</top>
+                <include>FullscreenDimensions</include>
+                <texture background="true">windows/home/menu_overlay.png</texture>
+            </control>
+            <control type="grouplist" id="1">
+                <left>37</left>
+                <top>636</top>
+                <width>1190</width>
+                <height>72</height>
+                <align>left</align>
+                <itemgap>10</itemgap>
+                <orientation>horizontal</orientation>
+                <include>KaiToastSlideAnimations</include>
+                <control type="label" id="1">
+                    <height>60</height>
+                    <width min="10" max="1000">auto</width>
+                    <label>$INFO[Player.Time]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>FontSize_50</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>77000000</shadowcolor>
+                </control>
+                <control type="group" id="1">
+                    <control type="label" id="1">
+                        <left>0</left>
+                        <top>8</top>
+                        <width>1000</width>
+                        <height>25</height>
+                        <label>$VAR[PlayerTitleLabel]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>NotificationsFont</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>77000000</shadowcolor>
+                    </control>
+                    <control type="label" id="1">
+                        <left>0</left>
+                        <top>29</top>
+                        <width>1000</width>
+                        <height>25</height>
+                        <label>$VAR[PlayerSubLabel]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>NotificationsFont</font>
+                        <textcolor>99white</textcolor>
+                        <shadowcolor>77000000</shadowcolor>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <!-- ==================== -->
+        <!-- == Dialog Seekbar == -->
+        <!-- ==================== -->
+        <!-- Seekbar (Simple for Default VideoInfo) -->
+        <control type="group" id="1">
+            <left>45</left>
+            <top>615</top>
+            <visible>!StringCompare(Skin.String(FullScreenVideoStyle),2)</visible>
+            <visible>Window.IsActive(FullScreenVideo) + [[Player.Paused | Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek | Player.Caching] + StringCompare(Skin.String(DialogSeekBarStyle),2)] + ![Player.ShowInfo | Window.IsActive(VideoOSD) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(BusyDialog) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide) | IsEmpty(Player.TimeRemaining)]</visible>
+            <include>OSDAnimation</include>
+            <include content="SeekBarSimple">
+                <param name="progressbar_id" value="3"/>
+            </include>
+            <control type="progress" id="3">
+                <info>Player.Progress</info>
+                <include>HiddenItem</include>
+                <visible>false</visible>
+            </control>
+        </control>
+        <!-- Seekbar (Simple for Simple VideoInfo) -->
+        <control type="group" id="1">
+            <left>45</left>
+            <top>615</top>
+            <visible>StringCompare(Skin.String(FullScreenVideoStyle),2)</visible>
+            <visible>Window.IsActive(FullScreenVideo) + [Player.Paused | Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek | Player.Caching] + ![Player.ShowInfo | Window.IsActive(SelectDialog) | Window.IsActive(SliderDialog) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(VideoBookmarks) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide) | IsEmpty(Player.TimeRemaining)]</visible>
+            <include>OSDAnimation</include>
+            <include>KaiToastSlideAnimations</include>
+            <include content="SeekBarSimple">
+                <param name="progressbar_id" value="4"/>
+            </include>
+            <control type="progress" id="4">
+                <info>Player.Progress</info>
+                <include>HiddenItem</include>
+                <visible>false</visible>
+            </control>
+        </control>
+        <!-- ===================== -->
+        <!-- == Weather & Clock == -->
+        <!-- ===================== -->
+    </controls>
+</window>

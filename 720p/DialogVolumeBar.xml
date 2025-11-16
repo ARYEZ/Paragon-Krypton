@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="104">
+    <defaultcontrol>1</defaultcontrol>
+    <include>NotificationsAnimations</include>
+    <controls>
+        <control type="group">
+            <left>45</left>
+            <top>645</top>
+            <control type="image">
+                <left>-45</left>
+                <top>-645</top>
+                <width>1280</width>
+                <height>720</height>
+                <texture>VOLUME BG.png</texture>
+            </control>
+            <control type="group">
+                <left/>
+                <top>-216</top>
+                <control type="image" id="1">
+                    <posx>-10</posx>
+                    <posy>7</posy>
+                    <width>321</width>
+                    <height>181</height>
+                    <texture>video_overlay.png</texture>
+                    <aspectratio align="center" aligny="center">stretch</aspectratio>
+                </control>
+            </control>
+            <control type="image">
+                <posx>31</posx>
+                <posy>307</posy>
+                <width>695</width>
+                <height>2</height>
+                <texture>pstvButtonFocus.png</texture>
+                <colordiffuse/>
+            </control>
+            <control type="group">
+                <posx>-465</posx>
+                <top>-165</top>
+                <control type="label">
+                    <description/>
+                    <posx>-5</posx>
+                    <top>5</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>$INFO[Player.Volume]</label>
+                    <font>FontSize_120</font>
+                    <textcolor>black</textcolor>
+                    <shadowcolor>99000000</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>!substring(Player.Volume,-60.0)</visible>
+                    <visible>!player.passthrough</visible>
+                </control>
+                <control type="label">
+                    <description/>
+                    <posx>0</posx>
+                    <top>0</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>$INFO[Player.Volume]</label>
+                    <font>FontSize_120</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>99000000</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>!substring(Player.Volume,-60.0)</visible>
+                    <visible>!player.passthrough</visible>
+                </control>
+                <control type="label">
+                    <description>Mute Label</description>
+                    <posx>-5</posx>
+                    <top>5</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>$LOCALIZE[31300]</label>
+                    <font>FontSize_120</font>
+                    <textcolor>black</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>substring(Player.Volume,-60.0)</visible>
+                </control>
+                <control type="label">
+                    <description>Mute Label</description>
+                    <posx>0</posx>
+                    <top>0</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>$LOCALIZE[31300]</label>
+                    <font>FontSize_120</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>substring(Player.Volume,-60.0)</visible>
+                </control>
+                <control type="label">
+                    <description>Volume Label</description>
+                    <posx>-5</posx>
+                    <top>5</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>passed</label>
+                    <font>FontSize_120</font>
+                    <textcolor>black</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>player.passthrough</visible>
+                </control>
+                <control type="label">
+                    <description>Volume Label</description>
+                    <posx>-5</posx>
+                    <top>5</top>
+                    <width>1230</width>
+                    <height>29</height>
+                    <label>passed</label>
+                    <font>FontSize_120</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <visible>player.passthrough</visible>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
