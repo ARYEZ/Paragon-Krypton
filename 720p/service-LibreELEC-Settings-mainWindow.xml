@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="3033">
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <controls>
+        <include>BackgroundItems51</include>
+        <control type="group">
+            <left>60</left>
+            <top>199</top>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225"/>
+                <effect type="fade" start="0" end="100" time="225"/>
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225"/>
+                <effect type="fade" start="100" end="0" time="225"/>
+            </animation>
+
+            <!-- Header -->
+            <control type="label">
+                <description>Header Label</description>
+                <left>0</left>
+                <top>0</top>
+                <width>1160</width>
+                <height>50</height>
+                <font>FontSize_54</font>
+                <label>LibreELEC Settings</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>99000000</shadowcolor>
+            </control>
+
+            <!-- Left Menu Panel -->
+            <control type="list" id="1000">
+                <description>Menu List</description>
+                <left>70</left>
+                <top>75</top>
+                <width>295</width>
+                <height>395</height>
+                <onleft>1500</onleft>
+                <onright>1100</onright>
+                <onup>1000</onup>
+                <ondown>1000</ondown>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>300</scrolltime>
+                <itemlayout height="45" width="285">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>285</width>
+                        <height>45</height>
+                        <texture>buttons/catbullet_nofo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>40</left>
+                        <top>0</top>
+                        <width>245</width>
+                        <height>45</height>
+                        <font>fontsize_32</font>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="45" width="285">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>285</width>
+                        <height>45</height>
+                        <texture border="1">buttons/catbullet_fo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>40</left>
+                        <top>0</top>
+                        <width>245</width>
+                        <height>45</height>
+                        <font>fontsize_32</font>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <!-- Right Content Panel - Simple List (ID 1100) -->
+            <control type="fixedlist" id="1100">
+                <description>Simple Settings List</description>
+                <left>400</left>
+                <top>75</top>
+                <width>760</width>
+                <height>395</height>
+                <onleft>1000</onleft>
+                <onright>1500</onright>
+                <onup>1100</onup>
+                <ondown>1100</ondown>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>300</scrolltime>
+                <visible>StringCompare(Container(1000).ListItem.Property(Type),simple)</visible>
+                <itemlayout height="45" width="760">
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>400</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>410</left>
+                        <top>0</top>
+                        <width>350</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>99white</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="45" width="760">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>760</width>
+                        <height>45</height>
+                        <texture border="1">buttons/catbullet_fo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>400</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>410</left>
+                        <top>0</top>
+                        <width>340</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <!-- Right Content Panel - Network List (ID 1200) -->
+            <control type="list" id="1200">
+                <description>Network List</description>
+                <left>400</left>
+                <top>75</top>
+                <width>760</width>
+                <height>395</height>
+                <onleft>1000</onleft>
+                <onright>1500</onright>
+                <onup>1200</onup>
+                <ondown>1200</ondown>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>300</scrolltime>
+                <visible>StringCompare(Container(1000).ListItem.Property(Type),network)</visible>
+                <itemlayout height="45" width="760">
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>610</left>
+                        <top>0</top>
+                        <width>150</width>
+                        <height>45</height>
+                        <font>fontsize_20</font>
+                        <textcolor>99white</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="45" width="760">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>760</width>
+                        <height>45</height>
+                        <texture border="1">buttons/catbullet_fo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>610</left>
+                        <top>0</top>
+                        <width>140</width>
+                        <height>45</height>
+                        <font>fontsize_20</font>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <!-- Right Content Panel - Bluetooth List (ID 1300) -->
+            <control type="list" id="1300">
+                <description>Bluetooth List</description>
+                <left>400</left>
+                <top>75</top>
+                <width>760</width>
+                <height>395</height>
+                <onleft>1000</onleft>
+                <onright>1500</onright>
+                <onup>1300</onup>
+                <ondown>1300</ondown>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>300</scrolltime>
+                <visible>StringCompare(Container(1000).ListItem.Property(Type),bluetooth)</visible>
+                <itemlayout height="45" width="760">
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>610</left>
+                        <top>0</top>
+                        <width>150</width>
+                        <height>45</height>
+                        <font>fontsize_20</font>
+                        <textcolor>99white</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="45" width="760">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>760</width>
+                        <height>45</height>
+                        <texture border="1">buttons/catbullet_fo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>fontsize_26</font>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>610</left>
+                        <top>0</top>
+                        <width>140</width>
+                        <height>45</height>
+                        <font>fontsize_20</font>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <!-- Info/Help Text Area -->
+            <control type="textbox" id="1400">
+                <description>Info Text</description>
+                <left>400</left>
+                <top>480</top>
+                <width>760</width>
+                <height>60</height>
+                <font>fontsize_20</font>
+                <textcolor>99white</textcolor>
+                <align>left</align>
+                <label>$INFO[Container(1000).ListItem.Property(help)]</label>
+            </control>
+
+            <!-- Action Buttons -->
+            <control type="button" id="1500">
+                <description>OK Button</description>
+                <left>400</left>
+                <top>550</top>
+                <width>200</width>
+                <height>45</height>
+                <font>fontsize_32</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>186</label>
+                <onleft>1100</onleft>
+                <onright>1501</onright>
+                <onup>1100</onup>
+                <ondown>1100</ondown>
+                <texturefocus border="1">buttons/catbullet_fo.png</texturefocus>
+                <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+            </control>
+
+            <control type="button" id="1501">
+                <description>Cancel Button</description>
+                <left>610</left>
+                <top>550</top>
+                <width>200</width>
+                <height>45</height>
+                <font>fontsize_32</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>222</label>
+                <onleft>1500</onleft>
+                <onright>1000</onright>
+                <onup>1100</onup>
+                <ondown>1100</ondown>
+                <texturefocus border="1">buttons/catbullet_fo.png</texturefocus>
+                <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+            </control>
+        </control>
+    </controls>
+</window>
