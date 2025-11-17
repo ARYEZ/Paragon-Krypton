@@ -188,8 +188,8 @@
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
-                                <textoffsetx>53</textoffsetx>
-                                <width>515</width>
+                                <textoffsetx>10</textoffsetx>
+                                <width>400</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -198,8 +198,8 @@
                             <control type="label">
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <textoffsetx>26</textoffsetx>
-                                <width>515</width>
+                                <textoffsetx>10</textoffsetx>
+                                <width>430</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -217,7 +217,7 @@
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
-                                <textoffsetx>26</textoffsetx>
+                                <textoffsetx>10</textoffsetx>
                                 <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
@@ -276,8 +276,8 @@
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
-                                <textoffsetx>53</textoffsetx>
-                                <width>515</width>
+                                <textoffsetx>10</textoffsetx>
+                                <width>400</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -305,7 +305,7 @@
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
-                                <textoffsetx>26</textoffsetx>
+                                <textoffsetx>10</textoffsetx>
                                 <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
