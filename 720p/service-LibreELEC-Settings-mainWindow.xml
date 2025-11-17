@@ -285,9 +285,9 @@
                             </control>
                             <control type="label">
                                 <align>right</align>
-                                <textoffsetx>26</textoffsetx>
+                                <textoffsetx>10</textoffsetx>
                                 <aligny>center</aligny>
-                                <width>515</width>
+                                <width>430</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
