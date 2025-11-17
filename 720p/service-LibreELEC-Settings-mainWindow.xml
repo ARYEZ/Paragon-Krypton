@@ -4,8 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <!-- Background -->
-        <include>BackgroundItems51</include>
-
+        <include>BackgroundItems52</include>
         <!-- Main Container Group -->
         <control type="group">
             <left>73</left>
@@ -13,9 +12,9 @@
             <!-- Left Menu Panel -->
             <control type="list" id="1000">
                 <left>0</left>
-                <top>106</top>
+                <top>280</top>
                 <width>293</width>
-                <height>466</height>
+                <height>175</height>
                 <onleft>1500</onleft>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>300</scrolltime>
@@ -59,10 +58,10 @@
 
             <!-- Right Panel Container Group -->
             <control type="group">
-                <left>280</left>
-                <top>92</top>
+                <left>600</left>
+                <top>200</top>
                 <width>500</width>
-                <height>425</height>
+                <height>175</height>
 
                 <!-- System Information Panel (Control 1900) -->
                 <control type="group" id="1900">
@@ -77,7 +76,7 @@
                         <width>200</width>
                         <height>13</height>
                         <font>fontsize_20</font>
-                        <textcolor>blue</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$ADDON[service.libreelec.settings 606]</label>
@@ -88,7 +87,7 @@
                         <width>290</width>
                         <height>13</height>
                         <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Distri)] ($INFO[Window.Property(build)])</label>
@@ -99,7 +98,7 @@
                         <width>200</width>
                         <height>13</height>
                         <font>fontsize_20</font>
-                        <textcolor>blue</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$ADDON[service.libreelec.settings 607]</label>
@@ -110,7 +109,7 @@
                         <width>290</width>
                         <height>10</height>
                         <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Version)]</label>
@@ -121,7 +120,7 @@
                         <width>200</width>
                         <height>10</height>
                         <font>fontsize_20</font>
-                        <textcolor>blue</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$ADDON[service.libreelec.settings 608]</label>
@@ -132,7 +131,7 @@
                         <width>290</width>
                         <height>10</height>
                         <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
+                        <textcolor>grey</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Arch)]</label>
@@ -143,26 +142,8 @@
                         <width>450</width>
                         <height>173</height>
                         <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
+                        <textcolor>grey</textcolor>
                         <label>$ADDON[service.libreelec.settings 609]</label>
-                    </control>
-                    <control type="textbox">
-                        <left>40</left>
-                        <top>176</top>
-                        <width>450</width>
-                        <height>266</height>
-                        <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
-                        <label>$ADDON[service.libreelec.settings 610]</label>
-                    </control>
-                    <control type="textbox">
-                        <left>40</left>
-                        <top>446</top>
-                        <width>450</width>
-                        <height>60</height>
-                        <font>fontsize_20</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
                     </control>
                 </control>
 
@@ -171,7 +152,7 @@
                     <left>14</left>
                     <top>14</top>
                     <width>515</width>
-                    <height>402</height>
+                    <height>285</height>
                     <onleft>1000</onleft>
                     <onright>1500</onright>
                     <scrolltime>300</scrolltime>
@@ -182,9 +163,9 @@
                         <control type="group">
                             <visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>515</width>
-                                <height>42</height>
-                                <texture border="1">buttons/catbullet_nofo.png</texture>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
@@ -192,17 +173,17 @@
                                 <width>400</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
-                                <textcolor>white</textcolor>
+                                <textcolor>77white</textcolor>
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
                                 <align>right</align>
+                                <textoffsetx>26</textoffsetx>
                                 <aligny>center</aligny>
-                                <textoffsetx>10</textoffsetx>
-                                <width>430</width>
+                                <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
-                                <textcolor>white</textcolor>
+                                <textcolor>77white</textcolor>
                                 <info>ListItem.Property(value)</info>
                                 <visible>!String.IsEqual(ListItem.Property(Typ), bool) + !String.IsEqual(ListItem.Property(Typ), button)</visible>
                             </control>
@@ -211,9 +192,9 @@
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>515</width>
-                                <height>42</height>
-                                <texture border="1">buttons/catbullet_nofo.png</texture>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
@@ -221,7 +202,7 @@
                                 <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
-                                <textcolor>blue</textcolor>
+                                <textcolor>white</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
@@ -232,17 +213,17 @@
                             <control type="image">
                                 <left>448</left>
                                 <top>1</top>
-                                <width>66</width>
+                                <width>40</width>
                                 <height>40</height>
-                                <texture>buttons/catbullet_nofo.png</texture>
+                                <texture>buttons/radio_button_off_fo.png</texture>
                                 <visible>String.IsEqual(ListItem.Property(value), 0) | String.IsEqual(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
                             </control>
                             <control type="image">
                                 <left>448</left>
                                 <top>1</top>
-                                <width>66</width>
+                                <width>40</width>
                                 <height>40</height>
-                                <texture>buttons/catbullet_fo.png</texture>
+                                <texture>buttons/radio_button_on_fo.png</texture>
                                 <visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value), true)</visible>
                             </control>
                         </control>
@@ -250,11 +231,11 @@
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), button)</visible>
                             <control type="image">
-                                <left>480</left>
-                                <top>10</top>
-                                <width>20</width>
-                                <height>20</height>
-                                <texture>buttons/catbullet_nofo.png</texture>
+                                <left></left>
+                                <top></top>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
                             </control>
                         </control>
                     </itemlayout>
@@ -269,9 +250,9 @@
                                 <texture border="1">buttons/catbullet_fo.png</texture>
                             </control>
                             <control type="image">
-                                <width>515</width>
-                                <height>42</height>
-                                <texture border="1">buttons/catbullet_nofo.png</texture>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
                                 <visible>!Control.HasFocus(1100)</visible>
                             </control>
                             <control type="label">
@@ -280,17 +261,17 @@
                                 <width>400</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
-                                <textcolor>white</textcolor>
+                                <textcolor>black</textcolor>
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
                                 <align>right</align>
-                                <textoffsetx>10</textoffsetx>
+                                <textoffsetx>26</textoffsetx>
                                 <aligny>center</aligny>
-                                <width>430</width>
+                                <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
-                                <textcolor>white</textcolor>
+                                <textcolor>black</textcolor>
                                 <info>ListItem.Property(value)</info>
                                 <visible>!String.IsEqual(ListItem.Property(Typ), bool) + !String.IsEqual(ListItem.Property(Typ), button)</visible>
                             </control>
@@ -299,9 +280,9 @@
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>515</width>
-                                <height>42</height>
-                                <texture border="1">buttons/catbullet_nofo.png</texture>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
@@ -309,7 +290,7 @@
                                 <width>515</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
-                                <textcolor>blue</textcolor>
+                                <textcolor>white</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
@@ -317,33 +298,10 @@
                         <!-- boolean value -->
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), bool)</visible>
-                            <control type="image">
-                                <left>448</left>
-                                <top>1</top>
-                                <width>66</width>
-                                <height>40</height>
-                                <texture>buttons/catbullet_nofo.png</texture>
-                                <visible>String.IsEqual(ListItem.Property(value), 0) | String.IsEqual(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
-                            </control>
-                            <control type="image">
-                                <left>448</left>
-                                <top>1</top>
-                                <width>66</width>
-                                <height>40</height>
-                                <texture>buttons/catbullet_fo.png</texture>
-                                <visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value), true)</visible>
-                            </control>
                         </control>
                         <!-- button / execute value -->
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), button)</visible>
-                            <control type="image">
-                                <left>480</left>
-                                <top>10</top>
-                                <width>20</width>
-                                <height>20</height>
-                                <texture>buttons/catbullet_fo.png</texture>
-                            </control>
                         </control>
                     </focusedlayout>
                 </control>
@@ -353,7 +311,7 @@
                     <left>14</left>
                     <top>14</top>
                     <width>500</width>
-                    <height>401</height>
+                    <height>300</height>
                     <onleft>1000</onleft>
                     <onright>1500</onright>
                     <pagecontrol>-</pagecontrol>
@@ -361,17 +319,17 @@
                     <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1200)</visible>
                     <itemlayout height="66">
                         <control type="image">
-                            <width>500</width>
-                            <height>66</height>
-                            <texture border="1">buttons/catbullet_nofo.png</texture>
-                        </control>
+                                <width></width>
+                                <height></height>
+                                <texture border="1">buttons/MenuItemNF.png</texture>
+                            </control>
                         <!-- Connection Name -->
                         <control type="label">
                             <left>26</left>
-                            <top>6</top>
-                            <width>200</width>
+                            <top>11</top>
+                            <width>190</width>
                             <height>20</height>
-                            <font>fontsize_32</font>
+                            <font>fontsize_26</font>
                             <textcolor>white</textcolor>
                             <info>ListItem.Label</info>
                             <visible>true</visible>
@@ -379,65 +337,62 @@
                         <!-- Interface -->
                         <control type="label">
                             <left>26</left>
-                            <top>32</top>
-                            <width>200</width>
+                            <top>37</top>
+                            <width>190</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
                             <visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
                         </control>
                         <!-- Connection Address -->
                         <control type="label">
-                            <left>493</left>
-                            <top>32</top>
-                            <width>193</width>
+                            <left>350</left>
+                            <top>37</top>
+                            <width>350</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
                             <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
                         </control>
                         <!-- Method -->
                         <control type="label">
-                            <left>333</left>
-                            <top>32</top>
+                            <left>230</left>
+                            <top>37</top>
                             <width>133</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
                         </control>
                         <!-- State -->
                         <control type="label">
-                            <left>333</left>
+                            <left>230</left>
                             <top>13</top>
                             <width>133</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="66">
+                        
                         <control type="image">
                             <width>500</width>
                             <height>66</height>
-                            <texture border="1">buttons/catbullet_nofo.png</texture>
-                        </control>
-                        <control type="image">
-                            <width>500</width>
-                            <height>66</height>
-                            <texture border="1">buttons/catbullet_fo.png</texture>
+                            <texture>buttons/catbullet_fo.png</texture>
+							<aligny>center</aligny>
                             <visible>Control.HasFocus(1200)</visible>
                         </control>
                         <!-- Connection Name -->
                         <control type="label">
                             <left>26</left>
-                            <top>6</top>
-                            <width>200</width>
+                            <top>11</top>
+                            <width>190</width>
                             <height>20</height>
-                            <font>fontsize_32</font>
+                            <font>fontsize_26</font>
                             <textcolor>white</textcolor>
                             <info>ListItem.Label</info>
                             <visible>true</visible>
@@ -445,43 +400,43 @@
                         <!-- Interface -->
                         <control type="label">
                             <left>26</left>
-                            <top>32</top>
-                            <width>200</width>
+                            <top>37</top>
+                            <width>190</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>white</textcolor>
                             <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
                             <visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
                         </control>
                         <!-- Connection Address -->
                         <control type="label">
-                            <left>493</left>
-                            <top>32</top>
+                            <left>350</left>
+                            <top>37</top>
                             <width>193</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>white</textcolor>
                             <visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
                             <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
                         </control>
                         <!-- Method -->
                         <control type="label">
-                            <left>333</left>
-                            <top>32</top>
+                            <left>230</left>
+                            <top>37</top>
                             <width>133</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>white</textcolor>
                             <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
                         </control>
                         <!-- State -->
                         <control type="label">
-                            <left>333</left>
+                            <left>230</left>
                             <top>13</top>
                             <width>133</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>white</textcolor>
                             <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
                         </control>
                     </focusedlayout>
@@ -535,7 +490,7 @@
                             <width>226</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
                         </control>
                         <!-- Connected State -->
@@ -545,7 +500,7 @@
                             <width>226</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>$ADDON[service.libreelec.settings 32333][COLOR=white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
                         </control>
                     </itemlayout>
@@ -568,7 +523,7 @@
                             <width>326</width>
                             <height>20</height>
                             <font>fontsize_32</font>
-                            <textcolor>white</textcolor>
+                            <textcolor>black</textcolor>
                             <info>ListItem.Label</info>
                             <visible>true</visible>
                         </control>
@@ -579,7 +534,7 @@
                             <width>226</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>black</textcolor>
                             <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
                         </control>
                         <!-- Connected State -->
@@ -589,7 +544,7 @@
                             <width>226</width>
                             <height>13</height>
                             <font>fontsize_20</font>
-                            <textcolor>blue</textcolor>
+                            <textcolor>black</textcolor>
                             <label>$ADDON[service.libreelec.settings 32333][COLOR=white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
                         </control>
                     </focusedlayout>
@@ -598,13 +553,13 @@
 
             <!-- Info/Help Text Area -->
             <control type="textbox" id="1400">
-                <left>400</left>
-                <top>480</top>
-                <width>500</width>
-                <height>77</height>
+                <left>-25</left>
+                <top>620</top>
+                <width>1180</width>
+                <height>100</height>
                 <label>$INFO[Window.Property(InfoText)]</label>
-                <align>left</align>
-                <font>fontsize_20</font>
+                <align>center</align>
+                <font>fontsize_26</font>
                 <textcolor>white</textcolor>
             </control>
 
