@@ -19,36 +19,36 @@
                 <onleft>1500</onleft>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>300</scrolltime>
-                <itemlayout height="50" width="264">
+                <itemlayout height="45" width="285">
                     <control type="image">
-                        <left>1</left>
-                        <height>50</height>
-                        <width>264</width>
+                        <left>0</left>
+                        <height>45</height>
+                        <width>285</width>
                         <texture border="1">buttons/catbullet_nofo.png</texture>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <top>6</top>
-                        <width>160</width>
-                        <height>36</height>
+                        <left>40</left>
+                        <top>0</top>
+                        <width>245</width>
+                        <height>45</height>
                         <aligny>center</aligny>
                         <font>fontsize_32</font>
                         <textcolor>white</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="50" width="264">
+                <focusedlayout height="45" width="285">
                     <control type="image">
-                        <left>1</left>
-                        <height>50</height>
-                        <width>264</width>
+                        <left>0</left>
+                        <height>45</height>
+                        <width>285</width>
                         <texture border="1">buttons/catbullet_fo.png</texture>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <top>6</top>
-                        <width>160</width>
-                        <height>36</height>
+                        <left>40</left>
+                        <top>0</top>
+                        <width>245</width>
+                        <height>45</height>
                         <aligny>center</aligny>
                         <font>fontsize_32</font>
                         <textcolor>black</textcolor>
@@ -61,14 +61,14 @@
             <control type="group">
                 <left>280</left>
                 <top>92</top>
-                <width>837</width>
+                <width>500</width>
                 <height>425</height>
 
                 <!-- System Information Panel (Control 1900) -->
                 <control type="group" id="1900">
                     <left>0</left>
                     <top>0</top>
-                    <width>837</width>
+                    <width>500</width>
                     <height>2</height>
                     <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1900)</visible>
                     <control type="label">
@@ -85,7 +85,7 @@
                     <control type="label">
                         <left>200</left>
                         <top>33</top>
-                        <width>466</width>
+                        <width>290</width>
                         <height>13</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -107,7 +107,7 @@
                     <control type="label">
                         <left>200</left>
                         <top>60</top>
-                        <width>466</width>
+                        <width>290</width>
                         <height>10</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -129,7 +129,7 @@
                     <control type="label">
                         <left>200</left>
                         <top>86</top>
-                        <width>466</width>
+                        <width>290</width>
                         <height>10</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -140,7 +140,7 @@
                     <control type="textbox">
                         <left>40</left>
                         <top>113</top>
-                        <width>800</width>
+                        <width>450</width>
                         <height>173</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -149,7 +149,7 @@
                     <control type="textbox">
                         <left>40</left>
                         <top>176</top>
-                        <width>800</width>
+                        <width>450</width>
                         <height>266</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -158,7 +158,7 @@
                     <control type="textbox">
                         <left>40</left>
                         <top>446</top>
-                        <width>766</width>
+                        <width>450</width>
                         <height>60</height>
                         <font>fontsize_20</font>
                         <textcolor>white</textcolor>
@@ -170,7 +170,7 @@
                 <control type="list" id="1100">
                     <left>14</left>
                     <top>14</top>
-                    <width>837</width>
+                    <width>500</width>
                     <height>402</height>
                     <onleft>1000</onleft>
                     <onright>1500</onright>
@@ -182,14 +182,14 @@
                         <control type="group">
                             <visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <texture border="1">buttons/catbullet_nofo.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
                                 <textoffsetx>53</textoffsetx>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -199,7 +199,7 @@
                                 <align>right</align>
                                 <aligny>center</aligny>
                                 <textoffsetx>26</textoffsetx>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -211,14 +211,14 @@
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <texture border="1">buttons/catbullet_nofo.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
                                 <textoffsetx>26</textoffsetx>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
                                 <textcolor>blue</textcolor>
@@ -263,13 +263,13 @@
                         <control type="group">
                             <visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <visible>Control.HasFocus(1100)</visible>
                                 <texture border="1">buttons/catbullet_fo.png</texture>
                             </control>
                             <control type="image">
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <texture border="1">buttons/catbullet_nofo.png</texture>
                                 <visible>!Control.HasFocus(1100)</visible>
@@ -277,7 +277,7 @@
                             <control type="label">
                                 <aligny>center</aligny>
                                 <textoffsetx>53</textoffsetx>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -287,7 +287,7 @@
                                 <align>right</align>
                                 <textoffsetx>26</textoffsetx>
                                 <aligny>center</aligny>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_26</font>
                                 <textcolor>white</textcolor>
@@ -299,14 +299,14 @@
                         <control type="group">
                             <visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <texture border="1">buttons/catbullet_nofo.png</texture>
                             </control>
                             <control type="label">
                                 <aligny>center</aligny>
                                 <textoffsetx>26</textoffsetx>
-                                <width>837</width>
+                                <width>500</width>
                                 <height>42</height>
                                 <font>fontsize_32</font>
                                 <textcolor>blue</textcolor>
@@ -352,7 +352,7 @@
                 <control type="list" id="1200">
                     <left>14</left>
                     <top>14</top>
-                    <width>837</width>
+                    <width>500</width>
                     <height>401</height>
                     <onleft>1000</onleft>
                     <onright>1500</onright>
@@ -361,7 +361,7 @@
                     <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1200)</visible>
                     <itemlayout height="66">
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_nofo.png</texture>
                         </control>
@@ -421,12 +421,12 @@
                     </itemlayout>
                     <focusedlayout height="66">
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_nofo.png</texture>
                         </control>
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_fo.png</texture>
                             <visible>Control.HasFocus(1200)</visible>
@@ -491,7 +491,7 @@
                 <control type="label" id="1301">
                     <align>center</align>
                     <aligny>center</aligny>
-                    <width>837</width>
+                    <width>500</width>
                     <height>401</height>
                     <font>fontsize_26</font>
                     <textcolor>white</textcolor>
@@ -504,7 +504,7 @@
                 <control type="list" id="1300">
                     <left>14</left>
                     <top>14</top>
-                    <width>837</width>
+                    <width>500</width>
                     <height>409</height>
                     <onleft>1000</onleft>
                     <onright>1500</onright>
@@ -513,7 +513,7 @@
                     <visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1300)</visible>
                     <itemlayout height="66">
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_nofo.png</texture>
                         </control>
@@ -551,12 +551,12 @@
                     </itemlayout>
                     <focusedlayout height="66">
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_nofo.png</texture>
                         </control>
                         <control type="image">
-                            <width>837</width>
+                            <width>500</width>
                             <height>66</height>
                             <texture border="1">buttons/catbullet_fo.png</texture>
                             <visible>Control.HasFocus(1300)</visible>
@@ -598,9 +598,9 @@
 
             <!-- Info/Help Text Area -->
             <control type="textbox" id="1400">
-                <left>310</left>
-                <top>521</top>
-                <width>766</width>
+                <left>400</left>
+                <top>480</top>
+                <width>500</width>
                 <height>77</height>
                 <label>$INFO[Window.Property(InfoText)]</label>
                 <align>left</align>
@@ -610,10 +610,10 @@
 
             <!-- Action Buttons -->
             <control type="button" id="1501">
-                <left>933</left>
-                <top>540</top>
+                <left>610</left>
+                <top>550</top>
                 <width>200</width>
-                <height>50</height>
+                <height>45</height>
                 <visible>true</visible>
                 <texturefocus border="1">buttons/catbullet_fo.png</texturefocus>
                 <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
@@ -629,10 +629,10 @@
                 <visible>!String.IsEmpty(Control.GetLabel(1501))</visible>
             </control>
             <control type="button" id="1500">
-                <left>733</left>
-                <top>540</top>
+                <left>400</left>
+                <top>550</top>
                 <width>200</width>
-                <height>50</height>
+                <height>45</height>
                 <visible>true</visible>
                 <texturefocus border="1">buttons/catbullet_fo.png</texturefocus>
                 <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
