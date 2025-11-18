@@ -2,7 +2,7 @@
 <window id="502">
     <defaultcontrol always="true">50</defaultcontrol>
     <backgroundcolor>bgcolor</backgroundcolor>
-    <views>50,660,51,52,56,562,560,57,59</views>
+    <views>50</views>
     <controls>
         <include>BackgroundItems</include>
         <include>MusicViews</include>
@@ -35,28 +35,6 @@
                 <left>190</left>
                 <top>270</top>
                 <height>250</height>
-                <control type="button" id="2">
-                    <description>View as</description>
-                    <include>TopLeftMenusButton</include>
-                </control>
-                <control type="togglebutton" id="294">
-                    <description>Change Thumbs Size (Thumbnails View)</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31098]</label>
-                    <altlabel>$LOCALIZE[31099]</altlabel>
-                    <onclick>Skin.ToggleSetting(ShowSmallMusicThumbs)</onclick>
-                    <selected>Skin.HasSetting(ShowSmallMusicThumbs)</selected>
-                    <visible>[Control.IsVisible(560) + [SubString(Container.FolderPath,plugin://plugin,left) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs) | Container.Content(Genres) | Container.Content(MusicVideos)] + !stringcompare(Container.FolderPath,addons://sources/audio)]</visible>
-                </control>
-                <control type="togglebutton" id="295">
-                    <description>Change Thumbs Size (Thumbnails View)</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31098]</label>
-                    <altlabel>$LOCALIZE[31099]</altlabel>
-                    <onclick>Skin.ToggleSetting(ShowSmallMusicAddonsThumbs)</onclick>
-                    <selected>Skin.HasSetting(ShowSmallMusicAddonsThumbs)</selected>
-                    <visible>[Control.IsVisible(560) + stringcompare(Container.FolderPath,addons://sources/audio)]</visible>
-                </control>
                 <control type="button" id="3">
                     <description>Sort by</description>
                     <include>TopLeftMenusButton</include>
