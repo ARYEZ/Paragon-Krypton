@@ -11,13 +11,13 @@
                 <control type="image">
                     <width>386</width>
                     <height>386</height>
-                    <texture background="true" diffuse="views/wall/square_diffuse.png">thumbs/thumb_back.png</texture>
+                    <texture background="true">thumbs/thumb_back.png</texture>
                 </control>
                 <control type="image">
                     <width>386</width>
                     <height>386</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                    <texture diffuse="views/wall/square_diffuse.png" fallback="windows/pvr/channel_icon_big.png">$INFO[ListItem.Icon]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <texture fallback="windows/pvr/channel_icon_big.png">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <width>386</width>

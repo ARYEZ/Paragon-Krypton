@@ -19,7 +19,7 @@
                 <top>152</top>
                 <width>515</width>
                 <height>555</height>
-                <texture background="true" diffuse="osd/cd_diffuse.png">osd/cd3.png</texture>
+                <texture background="true">osd/cd3.png</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
                 <visible/>
@@ -29,7 +29,7 @@
                 <top>172</top>
                 <width>505</width>
                 <height>515</height>
-                <texture background="true" diffuse="osd/cd_diffuse.png">osd/cd2.png</texture>
+                <texture background="true">osd/cd2.png</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
                 <visible/>
@@ -39,7 +39,7 @@
                 <top>202</top>
                 <width>455</width>
                 <height>455</height>
-                <texture background="true" diffuse="osd/cd_diffuse.png" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+                <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
                 <visible/>

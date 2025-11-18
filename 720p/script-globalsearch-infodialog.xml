@@ -25,8 +25,8 @@
                 <control type="image">
                     <width>308</width>
                     <height>453</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                    <texture background="true" fallback="thumbs/fallback_poster_big.png" diffuse="views/wall/poster_diffuse.png">$INFO[Container(100).ListItem.Icon]</texture>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <texture background="true" fallback="thumbs/fallback_poster_big.png">$INFO[Container(100).ListItem.Icon]</texture>
                     <visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
                 </control>
                 <control type="image">
@@ -44,8 +44,8 @@
                 <control type="image">
                     <width>386</width>
                     <height>386</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                    <texture background="true" fallback="thumbs/fallback_square.png" diffuse="views/wall/square_diffuse.png">$INFO[Container(100).ListItem.Icon]</texture>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <texture background="true" fallback="thumbs/fallback_square.png">$INFO[Container(100).ListItem.Icon]</texture>
                     <visible>Control.IsVisible(160) | Control.IsVisible(170) | Control.IsVisible(180)</visible>
                 </control>
                 <control type="image">

@@ -69,7 +69,7 @@
                         <width>110</width>
                         <height>110</height>
                         <aspectratio align="center" aligny="center">stretch</aspectratio>
-                        <texture background="true" colordiffuse="99white" fallback="dialogs/profiles/DefaultUser.png" diffuse="dialogs/profiles/profile_diffuse.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" colordiffuse="99white" fallback="dialogs/profiles/DefaultUser.png">$INFO[ListItem.Icon]</texture>
                         <bordersize>10</bordersize>
                     </control>
                     <control type="image">
@@ -89,7 +89,7 @@
                         <width>110</width>
                         <height>110</height>
                         <aspectratio align="center" aligny="center">stretch</aspectratio>
-                        <texture background="true" fallback="dialogs/profiles/DefaultUser.png" diffuse="dialogs/profiles/profile_diffuse.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="dialogs/profiles/DefaultUser.png">$INFO[ListItem.Icon]</texture>
                         <bordersize>10</bordersize>
                     </control>
                     <control type="image">

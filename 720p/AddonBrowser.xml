@@ -30,6 +30,7 @@
                 <shadowcolor>99000000</shadowcolor>
                 <label>Addon options menu</label>
             </control>
+            <include>BackgroundItems4</include>
             <control type="grouplist" id="9111">
                 <left>140</left>
                 <top>269</top>
@@ -47,15 +48,6 @@
                     <onclick>Skin.ToggleSetting(ShowSmallAddonsThumbs)</onclick>
                     <selected>Skin.HasSetting(ShowSmallAddonsThumbs)</selected>
                     <visible>Control.IsVisible(560)</visible>
-                </control>
-                <control type="togglebutton" id="282">
-                    <description>Disable Poster Glow</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31100]: $LOCALIZE[31011]</label>
-                    <altlabel>$LOCALIZE[31100]: $LOCALIZE[31012]</altlabel>
-                    <onclick>Skin.ToggleSetting(DisableAddonsListView_PosterGlow)</onclick>
-                    <selected>Skin.HasSetting(DisableAddonsListView_PosterGlow)</selected>
-                    <visible>Control.IsVisible(50) + [Window.IsVisible(AddonBrowser.xml) + Container.HasFiles]</visible>
                 </control>
                 <control type="button" id="3">
                     <description>Sort by</description>

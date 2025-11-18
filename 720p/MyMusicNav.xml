@@ -57,24 +57,6 @@
                     <selected>Skin.HasSetting(ShowSmallMusicAddonsThumbs)</selected>
                     <visible>[Control.IsVisible(560) + stringcompare(Container.FolderPath,addons://sources/audio)]</visible>
                 </control>
-                <control type="togglebutton" id="296">
-                    <description>Disable Thumb Glow</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31100]: $LOCALIZE[31011]</label>
-                    <altlabel>$LOCALIZE[31100]: $LOCALIZE[31012]</altlabel>
-                    <onclick>Skin.ToggleSetting(Disable3DWallMusicView_ThumbGlow)</onclick>
-                    <selected>Skin.HasSetting(Disable3DWallMusicView_ThumbGlow)</selected>
-                    <visible>Control.IsVisible(59) + [Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs)]</visible>
-                </control>
-                <control type="togglebutton" id="297">
-                    <description>Disable Thumb Glow</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31100]: $LOCALIZE[31011]</label>
-                    <altlabel>$LOCALIZE[31100]: $LOCALIZE[31012]</altlabel>
-                    <onclick>Skin.ToggleSetting(DisableMusicListView_ThumbGlow)</onclick>
-                    <selected>Skin.HasSetting(DisableMusicListView_ThumbGlow)</selected>
-                    <visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs) | Container.Content(MusicVideos) | stringcompare(Container.FolderPath,addons://sources/audio)]</visible>
-                </control>
                 <control type="button" id="3">
                     <description>Sort by</description>
                     <include>TopLeftMenusButton</include>

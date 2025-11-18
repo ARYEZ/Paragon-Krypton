@@ -50,16 +50,16 @@
         <control type="image" id="1">
             <width>165</width>
             <height>240</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerArtPoster]</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">$VAR[PlayerArtPoster]</texture>
             <fadetime>IconCrossfadeTime</fadetime>
         </control>
         <control type="image" id="1">
             <description>paused indicator</description>
             <width>165</width>
             <height>240</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/paused-overlay.png</texture>
             <visible>Player.Paused</visible>
             <animation type="conditional" condition="Player.Paused" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>
@@ -70,8 +70,8 @@
             <description>ff indicator</description>
             <width>165</width>
             <height>240</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/ff-overlay.png</texture>
             <visible>Player.Forwarding</visible>
             <animation type="conditional" condition="Player.Forwarding" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>
@@ -82,8 +82,8 @@
             <description>rw indicator</description>
             <width>165</width>
             <height>240</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/rw-overlay.png</texture>
             <visible>Player.Rewinding</visible>
             <animation type="conditional" condition="Player.Rewinding" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>
@@ -101,8 +101,8 @@
         <control type="image" id="1">
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-            <texture background="true" diffuse="osd/cd_diffuse.png" fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
             <visible>Player.HasAudio + !Player.IsInternetStream</visible>
             <include>CDImageAnim</include>
         </control>
@@ -110,21 +110,21 @@
             <width>165</width>
             <height>165</height>
             <aspectratio align="center" aligny="center">stretch</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png">thumbs/thumb_back.png</texture>
+            <texture background="true">thumbs/thumb_back.png</texture>
         </control>
         <control type="image" id="1">
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
             <fadetime>IconCrossfadeTime</fadetime>
             <visible>Player.HasAudio</visible>
         </control>
         <control type="image" id="1">
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png" fallback="DefaultLiveTV.png">$INFO[Player.Art(thumb)]</texture>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture background="true" fallback="DefaultLiveTV.png">$INFO[Player.Art(thumb)]</texture>
             <fadetime>IconCrossfadeTime</fadetime>
             <visible>VideoPlayer.Content(LiveTV)</visible>
         </control>
@@ -132,8 +132,8 @@
             <description>paused indicator</description>
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png">osd/paused-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/paused-overlay.png</texture>
             <visible>Player.Paused</visible>
             <animation type="conditional" condition="Player.Paused" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>
@@ -144,8 +144,8 @@
             <description>ff indicator</description>
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png">osd/ff-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/ff-overlay.png</texture>
             <visible>Player.Forwarding</visible>
             <animation type="conditional" condition="Player.Forwarding" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>
@@ -156,8 +156,8 @@
             <description>rw indicator</description>
             <width>165</width>
             <height>165</height>
-            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-            <texture background="true" diffuse="thumbs/square_diffuse_small.png">osd/rw-overlay.png</texture>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+            <texture background="true">osd/rw-overlay.png</texture>
             <visible>Player.Rewinding</visible>
             <animation type="conditional" condition="Player.Rewinding" reversible="false">
                 <effect type="fade" start="0" end="80" time="350"/>

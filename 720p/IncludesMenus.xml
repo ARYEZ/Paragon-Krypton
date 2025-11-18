@@ -696,7 +696,7 @@
                         <width>58</width>
                         <height>58</height>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <texture background="true" diffuse="dialogs/profiles/profile_diffuse.png" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="58.5" width="450">
@@ -786,7 +786,7 @@
                         <width>58</width>
                         <height>58</height>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <texture background="true" diffuse="dialogs/profiles/profile_diffuse.png" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
                     </control>
                 </focusedlayout>
             </control>

@@ -24,8 +24,8 @@
                     <posy>132</posy>
                     <width>298</width>
                     <height>431</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                    <texture background="true" fallback="thumbs/fallback_poster_big.png" diffuse="thumbs/poster_diffuse_big.png">$VAR[DialogsInfoPoster]</texture>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <texture background="true" fallback="thumbs/fallback_poster_big.png">$VAR[DialogsInfoPoster]</texture>
                 </control>
             </control>
             <control type="group">
@@ -575,15 +575,15 @@
                             <width>206</width>
                             <height>119</height>
                             <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <texture background="true" border="1" diffuse="thumbs/square_diffuse_small.png">thumbs/thumb_back.png</texture>
+                            <texture background="true" border="1">thumbs/thumb_back.png</texture>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>0</top>
                             <width>206</width>
                             <height>119</height>
-                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <texture background="true" border="1" fallback="thumbs/fallback_episode_tp.png" diffuse="thumbs/landscape_diffuse.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" border="1" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Icon]</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout width="216" height="131">
@@ -593,15 +593,15 @@
                             <width>206</width>
                             <height>119</height>
                             <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <texture background="true" border="1" diffuse="thumbs/square_diffuse_small.png">thumbs/thumb_back.png</texture>
+                            <texture background="true" border="1">thumbs/thumb_back.png</texture>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>0</top>
                             <width>206</width>
                             <height>119</height>
-                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <texture background="true" border="1" fallback="thumbs/fallback_episode_tp.png" diffuse="thumbs/landscape_diffuse.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" border="1" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="image">
                             <left>10</left>

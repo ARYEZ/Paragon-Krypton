@@ -178,15 +178,6 @@
         </control>
     </include>
     <include name="ListView_PosterAndFanart">
-        <control type="image">
-            <left>383</left>
-            <top>-9</top>
-            <width>1123</width>
-            <height>594</height>
-            <aspectratio align="center" aligny="center">stretch</aspectratio>
-            <texture background="true" colordiffuse="$VAR[Textures.GlobalColor]">views/list/shine.png</texture>
-            <visible>!Skin.Hassetting(DisableVideoListView_PosterGlow)</visible>
-        </control>
         <!-- Poster Art -->
         <control type="image">
             <left>606</left>
@@ -338,18 +329,6 @@
         </control>
     </include>
     <include name="ListView_ThumbAndFanart">
-        <control type="image">
-            <left>392</left>
-            <top>15</top>
-            <width>1108</width>
-            <height>525</height>
-            <aspectratio align="center" aligny="center">stretch</aspectratio>
-            <texture background="true" colordiffuse="$VAR[Textures.GlobalColor]">views/list/shine.png</texture>
-            <visible>![Skin.Hassetting(DisableAddonsListView_PosterGlow) + Window.IsVisible(AddonBrowser.xml) + Container.HasFiles]</visible>
-            <visible>![Skin.Hassetting(DisableVideoListView_PosterGlow) + String.IsEqual(Container.FolderPath,addons://sources/video)]</visible>
-            <visible>![Skin.Hassetting(DisableMusicListView_ThumbGlow) + [Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs) | String.IsEqual(Container.FolderPath,addons://sources/audio)]]</visible>
-            <visible>![Skin.Hassetting(DisablePicturesListView_PosterGlow) + Window.IsVisible(MyPics.xml) + Container.HasFiles]</visible>
-        </control>
         <!-- Thumb -->
         <control type="image">
             <left>610</left>
@@ -1440,16 +1419,6 @@
         <value condition="Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
         <value condition="Container.Content(Episodes) + !String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</value>
         <value condition="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Label2]</value>
-    </variable>
-    <variable name="WallViewsGlows">
-        <value condition="Control.IsVisible(53) + Skin.Hassetting(Disable3DWallView_PosterGlow)">views/wall/poster_shadow.png</value>
-        <value condition="Control.IsVisible(54) + Skin.Hassetting(DisableWallView_PosterGlow)">views/wall/poster_shadow.png</value>
-        <value condition="Control.IsVisible(58) + Skin.Hassetting(DisableListWallView_PosterGlow)">views/wall/poster_shadow.png</value>
-        <value condition="Control.IsVisible(59) + Skin.Hassetting(Disable3DWallMusicView_ThumbGlow)">views/wall/square_shadow.png</value>
-        <value condition="Control.IsVisible(64) + Skin.Hassetting(DisablePostersView2_PosterGlow)">views/posters/bg_bottom_shadow.png</value>
-        <value condition="Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(58)">views/wall/poster_blue_shadow.png</value>
-        <value condition="Control.IsVisible(59)">views/wall/square_blue_shadow.png</value>
-        <value condition="Control.IsVisible(64)">views/posters/bg_bottom_shadow_glow.png</value>
     </variable>
     <variable name="ViewsDef3DFlags">
         <value condition="ListItem.IsStereoscopic">flags/def/3d.png</value>

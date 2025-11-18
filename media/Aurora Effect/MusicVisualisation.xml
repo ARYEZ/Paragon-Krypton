@@ -139,8 +139,8 @@
                 <posy>-37</posy>
                 <width>316</width>
                 <height>310</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <texture>thumb_back.png</texture>
                 <colordiffuse>blue</colordiffuse>
             </control>
             <control type="multiimage">
@@ -162,16 +162,16 @@
                 <posy>-33</posy>
                 <width>300</width>
                 <height>288</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <texture>thumb_back.png</texture>
             </control>
             <control type="image">
                 <posx>3</posx>
                 <posy>-15</posy>
                 <width>255</width>
                 <height>250</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+                <aspectratio align="center" aligny="center">scale</aspectratio>
+                <texture fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
                 <fadetime>800</fadetime>
             </control>
             <control type="image">
@@ -197,8 +197,8 @@
             <posy>-475</posy>
             <width>1205</width>
             <height>555</height>
-            <texture diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
-            <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+            <texture>osd/paused-overlay.png</texture>
+            <aspectratio align="center" aligny="center">stretch</aspectratio>
             <visible>Player.Paused</visible>
             <include>VisibleFadeEffect</include>
             <animation type="conditional" condition="Player.Paused" reversible="true">
@@ -211,8 +211,8 @@
             <posy>-1</posy>
             <width>162</width>
             <height>162</height>
-            <texture diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
-            <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+            <texture>osd/ff-overlay.png</texture>
+            <aspectratio align="center" aligny="center">stretch</aspectratio>
             <visible>Player.Forwarding</visible>
             <include>VisibleFadeEffect</include>
             <animation type="conditional" condition="Player.Forwarding" reversible="true">
@@ -225,8 +225,8 @@
             <posy>-1</posy>
             <width>162</width>
             <height>162</height>
-            <texture diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
-            <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+            <texture>osd/rw-overlay.png</texture>
+            <aspectratio align="center" aligny="center">stretch</aspectratio>
             <visible>Player.Rewinding</visible>
             <include>VisibleFadeEffect</include>
             <animation type="conditional" condition="Player.Rewinding" reversible="true">

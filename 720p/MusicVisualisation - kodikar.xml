@@ -150,7 +150,7 @@
                     <top>-345</top>
                     <width>405</width>
                     <height>405</height>
-                    <texture background="true" diffuse="osd/cd_diffuse.png">osd/cd2.png</texture>
+                    <texture background="true">osd/cd2.png</texture>
                     <aspectratio>KEEP</aspectratio>
                     <include>CDImageAnim</include>
                 </control>
@@ -159,7 +159,7 @@
                     <top>-320</top>
                     <width>355</width>
                     <height>355</height>
-                    <texture background="true" diffuse="osd/cd_diffuse.png" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+                    <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>CDImageAnim</include>
                     <visible>!Player.IsInternetStream</visible>
@@ -169,8 +169,8 @@
                     <posy>-267</posy>
                     <width>483</width>
                     <height>483</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                    <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                    <aspectratio align="center" aligny="center">stretch</aspectratio>
+                    <texture>thumb_back.png</texture>
                 </control>
                 <control type="multiimage">
                     <randomize>false</randomize>
@@ -191,8 +191,8 @@
                     <posy>-263</posy>
                     <width>476</width>
                     <height>476</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                    <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                    <aspectratio align="center" aligny="center">stretch</aspectratio>
+                    <texture>thumb_back.png</texture>
                 </control>
                 <control type="image">
                     <posx>772</posx>
@@ -215,8 +215,8 @@
                     <posy>-248</posy>
                     <width>414</width>
                     <height>414</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                    <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <texture fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
                     <fadetime>800</fadetime>
                 </control>
             </control>

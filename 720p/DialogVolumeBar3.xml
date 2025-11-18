@@ -65,8 +65,8 @@
                 <posy>176</posy>
                 <width>361</width>
                 <height>359</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <texture>thumb_back.png</texture>
             </control>
             <control type="image">
                 <posx>770</posx>

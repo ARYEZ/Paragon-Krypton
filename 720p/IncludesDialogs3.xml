@@ -286,8 +286,8 @@
                 <posy>178</posy>
                 <width>360</width>
                 <height>363</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-                <texture diffuse="poster_diffuse.png">thumb_back.png</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <texture>thumb_back.png</texture>
                 <colordiffuse>blue</colordiffuse>
             </control>
             <control type="image">
