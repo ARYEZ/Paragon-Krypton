@@ -3,12 +3,12 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <views>50</views>
     <onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <onload condition="IsEmpty(Skin.String(ListViewWideThumbMovies))">Skin.SetString(ListViewWideThumbMovies,2)</onload>
-    <onload condition="IsEmpty(Skin.String(GalleryViewWideThumbMovies))">Skin.SetString(GalleryViewWideThumbMovies,2)</onload>
-    <onload condition="IsEmpty(Skin.String(TileViewWideThumbMovies))">Skin.SetString(TileViewWideThumbMovies,2)</onload>
-    <onload condition="IsEmpty(Skin.String(ListViewWideThumbTVShows))">Skin.SetString(ListViewWideThumbTVShows,2)</onload>
-    <onload condition="IsEmpty(Skin.String(GalleryViewWideThumbTVShows))">Skin.SetString(GalleryViewWideThumbTVShows,2)</onload>
-    <onload condition="IsEmpty(Skin.String(TileViewWideThumbTVShows))">Skin.SetString(TileViewWideThumbTVShows,2)</onload>
+    <onload>Skin.SetString(ListViewWideThumbMovies,2)</onload>
+    <onload>Skin.SetString(GalleryViewWideThumbMovies,2)</onload>
+    <onload>Skin.SetString(TileViewWideThumbMovies,2)</onload>
+    <onload>Skin.SetString(ListViewWideThumbTVShows,2)</onload>
+    <onload>Skin.SetString(GalleryViewWideThumbTVShows,2)</onload>
+    <onload>Skin.SetString(TileViewWideThumbTVShows,2)</onload>
     <onload condition="IsEmpty(Skin.String(ParagonViewThumbs))">Skin.SetString(ParagonViewThumbs,1)</onload>
     <controls>
         <include>BackgroundItems51</include>
