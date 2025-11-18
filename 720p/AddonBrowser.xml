@@ -35,20 +35,6 @@
                 <left>140</left>
                 <top>269</top>
                 <height>185</height>
-                <control type="button" id="2">
-                    <description>View as</description>
-                    <label>-</label>
-                    <include>TopLeftMenusButton</include>
-                </control>
-                <control type="togglebutton" id="294">
-                    <description>Change Thumbs Size (Thumbnails View)</description>
-                    <include>TopLeftMenusButton</include>
-                    <label>$LOCALIZE[31098]</label>
-                    <altlabel>$LOCALIZE[31099]</altlabel>
-                    <onclick>Skin.ToggleSetting(ShowSmallAddonsThumbs)</onclick>
-                    <selected>Skin.HasSetting(ShowSmallAddonsThumbs)</selected>
-                    <visible>Control.IsVisible(560)</visible>
-                </control>
                 <control type="button" id="3">
                     <description>Sort by</description>
                     <label>103</label>
