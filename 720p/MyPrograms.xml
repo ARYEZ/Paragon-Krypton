@@ -71,7 +71,6 @@
                 <align>left</align>
                 <itemgap>15</itemgap>
                 <orientation>horizontal</orientation>
-                <include>LogoBig</include>
                 <include>OpenCloseSlideAnimationTwo</include>
             </control>
         </control>
