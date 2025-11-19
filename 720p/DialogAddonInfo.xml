@@ -408,6 +408,8 @@
         <control type="togglebutton" id="7">
           <description>Enable/Disable</description>
           <include>TopMenuButton</include>
+          <alttexturefocus>buttons/catbullet_fo.png</alttexturefocus>
+          <alttexturenofocus>buttons/catbullet_nofo.png</alttexturenofocus>
           <label>24021</label>
           <altlabel>24022</altlabel>
         </control>
