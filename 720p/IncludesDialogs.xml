@@ -188,7 +188,7 @@
     <texturefocus border="6,8,6,8">dialogs/keyboard/focus.png</texturefocus>
     <align>center</align>
     <aligny>center</aligny>
-    <font>FontSize_22</font>
+    <font>font14</font>
     <textoffsetx>10</textoffsetx>
     <textoffsety>5</textoffsety>
     <textcolor>white</textcolor>
