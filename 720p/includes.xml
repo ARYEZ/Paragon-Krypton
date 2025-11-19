@@ -651,6 +651,15 @@
       <texture>SETTINGS BG.png</texture>
     </control>
   </include>
+  <include name="BackgroundItems52">
+    <control type="image">
+      <top>0</top>
+      <left>0</left>
+      <height/>
+      <width/>
+      <texture>LIBREELEC SETTINGS BG.png</texture>
+    </control>
+  </include>
   <include name="BackgroundItemsPVR">
     <include>BackgroundContent</include>
     <include>BackgroundVignette</include>
