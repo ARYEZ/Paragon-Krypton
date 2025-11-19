@@ -4,8 +4,8 @@
   <include file="IncludesAnimations.xml"/>
   <include file="IncludesBackgrounds.xml"/>
   <include file="IncludesHome.xml"/>
-  <include file="IncludesViews.xml"/>
   <include file="ViewsAddons.xml"/>
+  <include file="IncludesViews.xml"/>
   <include file="IncludesWalls.xml"/>
   <include file="IncludesFlags.xml"/>
   <include file="IncludesMenus.xml"/>

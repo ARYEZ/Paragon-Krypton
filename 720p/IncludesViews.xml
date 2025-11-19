@@ -469,7 +469,7 @@
         <width>256</width>
         <height>256</height>
         <aspectratio align="center" aligny="center">scale</aspectratio>
-        <texture background="true" fallback="</texture>
+        <texture background="true"></texture>
         <bordersize>10</bordersize>
         <visible>String.IsEqual(Container.FolderPath,videodb://movies/genres/)</visible>
       </control>
@@ -477,7 +477,7 @@
         <width>256</width>
         <height>256</height>
         <aspectratio align="center" aligny="center">scale</aspectratio>
-        <texture background="true" fallback="</texture>
+        <texture background="true"></texture>
         <bordersize>10</bordersize>
         <visible>String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)</visible>
       </control>
@@ -485,7 +485,7 @@
         <width>256</width>
         <height>256</height>
         <aspectratio align="center" aligny="center">scale</aspectratio>
-        <texture background="true" fallback="</texture>
+        <texture background="true"></texture>
         <bordersize>10</bordersize>
         <visible>String.IsEqual(Container.FolderPath,musicdb://genres/) | String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)</visible>
       </control>
@@ -611,7 +611,7 @@
       <width>$PARAM[width]</width>
       <height>$PARAM[height]</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="</texture>
+      <texture background="true"></texture>
       <bordersize>ThumbsBordersize7pix</bordersize>
       <visible>String.IsEqual(Container.FolderPath,videodb://movies/genres/) + !ListItem.IsParentFolder</visible>
     </control>
@@ -621,7 +621,7 @@
       <width>$PARAM[width]</width>
       <height>$PARAM[height]</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="</texture>
+      <texture background="true"></texture>
       <bordersize>ThumbsBordersize7pix</bordersize>
       <visible>String.IsEqual(Container.FolderPath,videodb://tvshows/genres/) + !ListItem.IsParentFolder</visible>
     </control>
@@ -631,7 +631,7 @@
       <width>$PARAM[width]</width>
       <height>$PARAM[height]</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="</texture>
+      <texture background="true"></texture>
       <bordersize>ThumbsBordersize7pix</bordersize>
       <visible>[String.IsEqual(Container.FolderPath,musicdb://genres/)  | String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)] + !ListItem.IsParentFolder</visible>
     </control>
