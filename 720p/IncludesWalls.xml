@@ -4563,15 +4563,15 @@
     </control>
   </include>
   <variable name="ContentType_RandomMoviesWall">
-    <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomMoviesWall.xsp</value>
+    <value condition="!Window.IsVisible(3050)"></value>
   </variable>
   <variable name="ContentType_RandomTVShowsWall">
-    <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomTVShowsWall.xsp</value>
+    <value condition="!Window.IsVisible(3050)"></value>
   </variable>
   <variable name="ContentType_RandomAlbumsWall">
-    <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomAlbumsWall.xsp</value>
+    <value condition="!Window.IsVisible(3050)"></value>
   </variable>
   <variable name="ContentType_RandomArtistsWall">
-    <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomArtistsWall.xsp</value>
+    <value condition="!Window.IsVisible(3050)"></value>
   </variable>
 </includes>

@@ -9,19 +9,19 @@
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(InterfaceSettings)</onclick>
       <!-- <onclick>ActivateWindow(1129)</onclick> -->
-      <icon>special://skin/extras/icons/Interface.png</icon>
+      <icon></icon>
     </item>
     <item id="2">
       <label>$LOCALIZE[14211]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(MediaSettings)</onclick>
-      <icon>special://skin/extras/icons/Media.png</icon>
+      <icon></icon>
     </item>
     <item id="3">
       <label>$LOCALIZE[14200]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(PlayerSettings)</onclick>
-      <icon>special://skin/extras/icons/Player.png</icon>
+      <icon></icon>
     </item>
     <item id="4">
       <label>$LOCALIZE[31000]</label>
@@ -33,13 +33,13 @@
       <label>$LOCALIZE[14036]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(ServiceSettings)</onclick>
-      <icon>special://skin/extras/icons/Services.png</icon>
+      <icon></icon>
     </item>
     <item id="6">
       <label>$LOCALIZE[13000]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(SystemSettings)</onclick>
-      <icon>special://skin/extras/icons/System.png</icon>
+      <icon></icon>
     </item>
     <item id="7">
       <label>$LOCALIZE[24001]</label>
@@ -57,13 +57,13 @@
       <label>$LOCALIZE[130]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(SystemInfo)</onclick>
-      <icon>special://skin/extras/icons/SystemInfo.png</icon>
+      <icon></icon>
     </item>
     <item id="10">
       <label>$LOCALIZE[166]</label>
       <onclick condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onclick>
       <onclick>ActivateWindow(SkinSettings)</onclick>
-      <icon>special://skin/extras/icons/Skin.png</icon>
+      <icon></icon>
     </item>
   </include>
   <!-- ==================== -->
@@ -149,42 +149,42 @@
     </item>
     <item id="11">
       <label>$LOCALIZE[31370]</label>
-      <icon>special://skin/extras/icons/UpdateVideoLibrary.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>UpdateLibrary(video)</onclick>
       <visible>!Skin.HasSetting(QuickNavUpdateVideoLibraryButton)</visible>
     </item>
     <item id="12">
       <label>$LOCALIZE[31372]</label>
-      <icon>special://skin/extras/icons/CleanVideoLibrary.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>CleanLibrary(Video)</onclick>
       <visible>!Skin.HasSetting(QuickNavCleanVideoLibraryButton)</visible>
     </item>
     <item id="13">
       <label>$LOCALIZE[31371]</label>
-      <icon>special://skin/extras/icons/UpdateMusicLibrary.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>UpdateLibrary(music)</onclick>
       <visible>!Skin.HasSetting(QuickNavUpdateMusicLibraryButton)</visible>
     </item>
     <item id="14">
       <label>$LOCALIZE[31373]</label>
-      <icon>special://skin/extras/icons/CleanMusicLibrary.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>CleanLibrary(Music)</onclick>
       <visible>!Skin.HasSetting(QuickNavCleanMusicLibraryButton)</visible>
     </item>
     <item id="15">
       <label>$LOCALIZE[31380]</label>
-      <icon>special://skin/extras/icons/UpdateIMDb.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=IMDBUpdate,header=$LOCALIZE[24069]...)</onclick>
       <visible>[System.HasAddon(script.imdbupdate) + System.HasAddon(script.skin.helper.service)] + !Skin.HasSetting(QuickNavUpdateIMDbRatingsButton)</visible>
     </item>
     <item id="16">
       <label>$LOCALIZE[589]</label>
-      <icon>special://skin/extras/icons/PartyMode.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>ActivateWindow(Music,Songs,return)</onclick>
       <onclick>PlayerControl(PartyMode)</onclick>
@@ -194,14 +194,14 @@
     </item>
     <item id="17">
       <label>$LOCALIZE[1036]</label>
-      <icon>special://skin/extras/icons/Favourites.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>ActivateWindow(Favourites)</onclick>
       <visible>!Skin.HasSetting(QuickNavFavouritesButton)</visible>
     </item>
     <item id="18">
       <label>$LOCALIZE[31016]</label>
-      <icon>special://skin/extras/icons/FileManager.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>ActivateWindow(FileManager)</onclick>
       <visible>!Skin.HasSetting(QuickNavFileManagerButton)</visible>
@@ -215,21 +215,21 @@
     </item>
     <item id="20">
       <label>$LOCALIZE[5]</label>
-      <icon>special://skin/extras/icons/Settings.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>ActivateWindow(Settings)</onclick>
       <visible>!Skin.HasSetting(QuickNavSettingsButton)</visible>
     </item>
     <item id="21">
       <label>$LOCALIZE[20077]</label>
-      <icon>special://skin/extras/icons/Skin.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>ActivateWindow(SkinSettings)</onclick>
       <visible>!Skin.HasSetting(QuickNavSkinSettingsButton)</visible>
     </item>
     <item id="22">
       <label>$LOCALIZE[13005]</label>
-      <icon>special://skin/extras/icons/Shutdown.png</icon>
+      <icon></icon>
       <onclick>Dialog.Close(PlayerControls)</onclick>
       <onclick>Powerdown()</onclick>
       <visible>System.CanPowerDown</visible>

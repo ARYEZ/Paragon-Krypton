@@ -5,7 +5,7 @@
       <property name="id">$NUMBER[1]</property>
       <label>Settings</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/Settings.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">settings</property>
       <property name="defaultID">settings</property>
@@ -60,7 +60,7 @@
       <property name="id">$NUMBER[4]</property>
       <label>$LOCALIZE[12600]</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/Weather.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">weather</property>
       <property name="defaultID">weather</property>
@@ -117,7 +117,7 @@
       <property name="id">$NUMBER[7]</property>
       <label>$LOCALIZE[10007]</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/SystemInfo.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">10007</property>
       <property name="defaultID">10007</property>
@@ -157,7 +157,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[20077]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Skin.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">20077</property>
       <property name="defaultID">20077</property>
@@ -173,7 +173,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14206]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Interface.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14206</property>
       <property name="defaultID">14206</property>
@@ -189,7 +189,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14200]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Player.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14200</property>
       <property name="defaultID">14200</property>
@@ -205,7 +205,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14211]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Media.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14211</property>
       <property name="defaultID">14211</property>
@@ -269,7 +269,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[13000]</label>
       <label2/>
-      <icon>special://skin/extras/icons/System.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">13000</property>
       <property name="defaultID">13000</property>
@@ -285,7 +285,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[130]</label>
       <label2/>
-      <icon>special://skin/extras/icons/SystemInfo.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">130</property>
       <property name="defaultID">130</property>
@@ -317,7 +317,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[31016]</label>
       <label2/>
-      <icon>special://skin/extras/icons/FileManager.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">31016</property>
       <property name="defaultID">31016</property>
@@ -434,7 +434,7 @@
       <property name="mainmenuid">5</property>
       <label>$LOCALIZE[14022]</label>
       <label2/>
-      <icon>special://skin/extras/icons/MusicLibrary.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14022</property>
       <property name="defaultID">14022</property>
@@ -652,7 +652,7 @@
       <property name="mainmenuid">6</property>
       <label>$LOCALIZE[14022]</label>
       <label2/>
-      <icon>special://skin/extras/icons/VideoLibrary.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14022</property>
       <property name="defaultID">14022</property>
@@ -734,7 +734,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19069]</label>
       <label2/>
-      <icon>special://skin/extras/icons/EPG.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19069</property>
       <property name="defaultID">19069</property>
@@ -751,7 +751,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19163]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Recordings.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19163</property>
       <property name="defaultID">19163</property>
@@ -768,7 +768,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19040]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Timers.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19040</property>
       <property name="defaultID">19040</property>
@@ -802,7 +802,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[137]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Search.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">137</property>
       <property name="defaultID">137</property>
@@ -820,7 +820,7 @@
       <property name="id">$NUMBER[1]</property>
       <label>Settings</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/Settings.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">settings</property>
       <property name="defaultID">settings</property>
@@ -840,7 +840,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[20077]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Skin.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">20077</property>
       <property name="defaultID">20077</property>
@@ -857,7 +857,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14206]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Interface.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14206</property>
       <property name="defaultID">14206</property>
@@ -874,7 +874,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14200]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Player.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14200</property>
       <property name="defaultID">14200</property>
@@ -891,7 +891,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[14211]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Media.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14211</property>
       <property name="defaultID">14211</property>
@@ -959,7 +959,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[13000]</label>
       <label2/>
-      <icon>special://skin/extras/icons/System.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">13000</property>
       <property name="defaultID">13000</property>
@@ -976,7 +976,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[130]</label>
       <label2/>
-      <icon>special://skin/extras/icons/SystemInfo.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">130</property>
       <property name="defaultID">130</property>
@@ -1010,7 +1010,7 @@
       <property name="mainmenuid">1</property>
       <label>$LOCALIZE[31016]</label>
       <label2/>
-      <icon>special://skin/extras/icons/FileManager.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">31016</property>
       <property name="defaultID">31016</property>
@@ -1064,7 +1064,7 @@
       <property name="id">$NUMBER[4]</property>
       <label>$LOCALIZE[12600]</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/Weather.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">weather</property>
       <property name="defaultID">weather</property>
@@ -1284,7 +1284,7 @@
       <property name="mainmenuid">5</property>
       <label>$LOCALIZE[14022]</label>
       <label2/>
-      <icon>special://skin/extras/icons/MusicLibrary.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14022</property>
       <property name="defaultID">14022</property>
@@ -1536,7 +1536,7 @@
       <property name="mainmenuid">6</property>
       <label>$LOCALIZE[14022]</label>
       <label2/>
-      <icon>special://skin/extras/icons/VideoLibrary.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">14022</property>
       <property name="defaultID">14022</property>
@@ -1586,7 +1586,7 @@
       <property name="id">$NUMBER[7]</property>
       <label>$LOCALIZE[10007]</label>
       <label2>Common menu item</label2>
-      <icon>special://skin/extras/icons/SystemInfo.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">10007</property>
       <property name="defaultID">10007</property>
@@ -1661,7 +1661,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19069]</label>
       <label2/>
-      <icon>special://skin/extras/icons/EPG.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19069</property>
       <property name="defaultID">19069</property>
@@ -1679,7 +1679,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19163]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Recordings.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19163</property>
       <property name="defaultID">19163</property>
@@ -1697,7 +1697,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[19040]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Timers.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">19040</property>
       <property name="defaultID">19040</property>
@@ -1733,7 +1733,7 @@
       <property name="mainmenuid">8</property>
       <label>$LOCALIZE[137]</label>
       <label2/>
-      <icon>special://skin/extras/icons/Search.png</icon>
+      <icon></icon>
       <thumb/>
       <property name="labelID">137</property>
       <property name="defaultID">137</property>
@@ -1760,7 +1760,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[20077]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Skin.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">20077</property>
           <property name="defaultID">20077</property>
@@ -1775,7 +1775,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[14206]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Interface.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">14206</property>
           <property name="defaultID">14206</property>
@@ -1790,7 +1790,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[14200]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Player.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">14200</property>
           <property name="defaultID">14200</property>
@@ -1805,7 +1805,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[14211]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Media.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">14211</property>
           <property name="defaultID">14211</property>
@@ -1865,7 +1865,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[13000]</label>
           <label2/>
-          <icon>special://skin/extras/icons/System.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">13000</property>
           <property name="defaultID">13000</property>
@@ -1880,7 +1880,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[130]</label>
           <label2/>
-          <icon>special://skin/extras/icons/SystemInfo.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">130</property>
           <property name="defaultID">130</property>
@@ -1910,7 +1910,7 @@
           <property name="mainmenuid">1</property>
           <label>$LOCALIZE[31016]</label>
           <label2/>
-          <icon>special://skin/extras/icons/FileManager.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">31016</property>
           <property name="defaultID">31016</property>
@@ -2090,7 +2090,7 @@
           <property name="mainmenuid">5</property>
           <label>$LOCALIZE[14022]</label>
           <label2/>
-          <icon>special://skin/extras/icons/MusicLibrary.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">14022</property>
           <property name="defaultID">14022</property>
@@ -2301,7 +2301,7 @@
           <property name="mainmenuid">6</property>
           <label>$LOCALIZE[14022]</label>
           <label2/>
-          <icon>special://skin/extras/icons/VideoLibrary.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">14022</property>
           <property name="defaultID">14022</property>
@@ -2384,7 +2384,7 @@
           <property name="mainmenuid">8</property>
           <label>$LOCALIZE[19069]</label>
           <label2/>
-          <icon>special://skin/extras/icons/EPG.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">19069</property>
           <property name="defaultID">19069</property>
@@ -2400,7 +2400,7 @@
           <property name="mainmenuid">8</property>
           <label>$LOCALIZE[19163]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Recordings.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">19163</property>
           <property name="defaultID">19163</property>
@@ -2416,7 +2416,7 @@
           <property name="mainmenuid">8</property>
           <label>$LOCALIZE[19040]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Timers.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">19040</property>
           <property name="defaultID">19040</property>
@@ -2448,7 +2448,7 @@
           <property name="mainmenuid">8</property>
           <label>$LOCALIZE[137]</label>
           <label2/>
-          <icon>special://skin/extras/icons/Search.png</icon>
+          <icon></icon>
           <thumb/>
           <property name="labelID">137</property>
           <property name="defaultID">137</property>
