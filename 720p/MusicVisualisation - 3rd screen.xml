@@ -5,11 +5,8 @@
     <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
     <controls>
         <control type="image">
-            <left/>
-            <top/>
             <width>1280</width>
             <height>720</height>
-            <aspectratio/>
             <texture>Aurora Effect/Settings/9.png</texture>
         </control>
         <control type="group">
@@ -22,7 +19,6 @@
                 <texture background="true">osd/cd3.png</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
-                <visible/>
             </control>
             <control type="image">
                 <left>534</left>
@@ -32,7 +28,6 @@
                 <texture background="true">osd/cd2.png</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
-                <visible/>
             </control>
             <control type="image">
                 <left>554</left>
@@ -42,7 +37,6 @@
                 <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <include>CDImageAnim</include>
-                <visible/>
             </control>
         </control>
         <control type="image">
@@ -75,73 +69,7 @@
             <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
         </control>
         <control type="image">
-            <posx/>
-            <posy/>
-            <width/>
-            <height/>
             <texture>MUSIC VIZ 3RD SCREEN BG.png</texture>
-        </control>
-        <control type="group">
-            <posx>99999624</posx>
-            <posy>315</posy>
-            <control type="label">
-                <description>Title label</description>
-                <posx>2</posx>
-                <posy>23</posy>
-                <height>30</height>
-                <width>1000</width>
-                <label>$INFO[MusicPlayer.Title]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>FontSize_50</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            </control>
-            <control type="label">
-                <description>Title label</description>
-                <posx/>
-                <posy>20</posy>
-                <height>30</height>
-                <width>1000</width>
-                <label>$INFO[MusicPlayer.Title]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>FontSize_50</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            </control>
-            <control type="label">
-                <description>Artist Label</description>
-                <posx>322</posx>
-                <posy>23</posy>
-                <height>30</height>
-                <width>500</width>
-                <label>$INFO[MusicPlayer.Artist]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>FontSize_50</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>55000000</shadowcolor>
-                <scroll>true</scroll>
-                <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            </control>
-            <control type="label">
-                <description>Artist Label</description>
-                <posx>320</posx>
-                <posy>20</posy>
-                <height>30</height>
-                <width>500</width>
-                <label>$INFO[MusicPlayer.Artist]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>FontSize_50</font>
-                <textcolor>99white</textcolor>
-                <shadowcolor>55000000</shadowcolor>
-                <scroll>true</scroll>
-                <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            </control>
         </control>
         <!-- Audio Channels -->
         <control type="group" id="1">
@@ -166,7 +94,6 @@
         <!-- Video Resolution -->
         <control type="image">
             <left>-30</left>
-            <top/>
             <width>1280</width>
             <height>720</height>
             <aspectratio>keep</aspectratio>

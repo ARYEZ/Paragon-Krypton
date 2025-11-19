@@ -9,20 +9,12 @@
         <!-- NORMAL MUSIC VISUALIZATION BACKGROUND (All channels EXCEPT 99) -->
         <control type="image">
             <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <posx/>
-            <posy/>
-            <width/>
-            <height/>
             <texture>MUSIC VIZ BG.png</texture>
         </control>
         
         <!-- CHANNEL 99 CLEAN BACKGROUND (Only on channel 99) -->
         <control type="image">
             <visible>String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <posx/>
-            <posy/>
-            <width/>
-            <height/>
             <texture>LOADING BG.png</texture>
         </control>
         

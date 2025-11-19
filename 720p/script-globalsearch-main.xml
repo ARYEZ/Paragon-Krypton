@@ -417,16 +417,6 @@
                     <label>$VAR[GlobalSearch_ContainerNumItems]</label>
                 </control>
             </control>
-            <control type="button" id="198">
-                <!-- Hide this Control and use the list to pass the label -->
-                <left>2000</left>
-                <top>2000</top>
-            </control>
-            <control type="label" id="199">
-                <!-- Hide this Control and use the list to pass the label -->
-                <left>2000</left>
-                <top>2000</top>
-            </control>
             <control type="label" id="190">
                 <!-- Hide this Control and use the list to pass the label -->
                 <visible>false</visible>

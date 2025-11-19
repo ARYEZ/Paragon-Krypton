@@ -20,48 +20,6 @@
                 <animation effect="fade" time="600">Visible</animation>
                 <animation effect="fade" time="600">Hidden</animation>
                 <control type="label">
-                    <description>Now Playing</description>
-                    <left>0</left>
-                    <top>900</top>
-                    <width>1350</width>
-                    <height>25</height>
-                    <label>$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]</label>
-                    <scroll>true</scroll>
-                    <font>FontNP_230</font>
-                    <pauseatend>0</pauseatend>
-                    <textcolor>77ffffff</textcolor>
-                    <angle>45</angle>
-                    <align>left</align>
-                </control>
-                <control type="label">
-                    <description>Now Playing</description>
-                    <left>200</left>
-                    <top>900</top>
-                    <width>1350</width>
-                    <label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
-                    <scroll>true</scroll>
-                    <pauseatend>0</pauseatend>
-                    <font>FontNP_110</font>
-                    <textcolor>44grey</textcolor>
-                    <angle>45</angle>
-                    <align>left</align>
-                    <scrollspeed>100</scrollspeed>
-                </control>
-                <control type="label">
-                    <description>Now Playing</description>
-                    <left>320</left>
-                    <top>900</top>
-                    <width>1350</width>
-                    <label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-                    <scroll>true</scroll>
-                    <pauseatend>0</pauseatend>
-                    <font>FontSize_48</font>
-                    <textcolor>99grey</textcolor>
-                    <angle>45</angle>
-                    <align>left</align>
-                    <scrollspeed>80</scrollspeed>
-                </control>
-                <control type="label">
                     <description>Player Times</description>
                     <left>70</left>
                     <top>0</top>
@@ -131,47 +89,6 @@
                 <visible> Integer.IsGreater(System.Time(ss),20) + !Integer.IsGreater(System.Time(ss),41)</visible>
                 <animation effect="fade" time="600">Visible</animation>
                 <animation effect="fade" time="600">Hidden</animation>
-                <control type="label">
-                    <description>Now Playing</description>
-                    <left>400</left>
-                    <top>900</top>
-                    <width>1050</width>
-                    <height>25</height>
-                    <label>$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]$INFO[Player.Title,  ,]</label>
-                    <scroll>true</scroll>
-                    <font>FontNP_230</font>
-                    <pauseatend>0</pauseatend>
-                    <angle>90</angle>
-                    <textcolor>77ffffff</textcolor>
-                </control>
-                <control type="label">
-                    <description>Now Playing</description>
-                    <left>610</left>
-                    <top>900</top>
-                    <width>1350</width>
-                    <label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
-                    <scroll>true</scroll>
-                    <pauseatend>0</pauseatend>
-                    <font>FontNP_110</font>
-                    <textcolor>44grey</textcolor>
-                    <align>left</align>
-                    <angle>90</angle>
-                    <scrollspeed>100</scrollspeed>
-                </control>
-                <control type="label">
-                    <description>Now Playing</description>
-                    <left>580</left>
-                    <top>900</top>
-                    <width>1350</width>
-                    <label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-                    <scroll>true</scroll>
-                    <pauseatend>0</pauseatend>
-                    <font>FontSize_48</font>
-                    <textcolor>99grey</textcolor>
-                    <align>left</align>
-                    <angle>90</angle>
-                    <scrollspeed>80</scrollspeed>
-                </control>
                 <control type="label">
                     <description>Player Times</description>
                     <left>-40</left>

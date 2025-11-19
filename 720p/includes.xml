@@ -774,55 +774,6 @@
         <midtexture>-</midtexture>
     </include>
     <include name="SettingsCategoryContentInfo">
-        <control type="group">
-            <left>99999945</left>
-            <top>25</top>
-            <include>SettingsSlideAnimations</include>
-            <include>ShutdownMenuAnimation</include>
-            <include>InfoDialogs_ContentInfoAnimation</include>
-            <include>VisibleHiddenSlideAnimation</include>
-            <visible>!ControlGroup(9000).HasFocus</visible>
-            <!-- Content Info -->
-            <control type="grouplist">
-                <left>0</left>
-                <top>0</top>
-                <height>70</height>
-                <width>1000</width>
-                <align>left</align>
-                <itemgap>15</itemgap>
-                <orientation>vertical</orientation>
-                <include>Logo</include>
-                <control type="label">
-                    <include>TopBigLabel</include>
-                    <label>$LOCALIZE[5]</label>
-                </control>
-                <control type="label">
-                    <include>TopSmallLabel</include>
-                    <label>$VAR[SettingsCategoryLabels]</label>
-                    <visible>Window.IsActive(Settings)</visible>
-                </control>
-                <control type="label">
-                    <include>TopSmallLabel</include>
-                    <label>$VAR[CustomColorsContentInfo]</label>
-                    <visible>Window.IsActive(SkinSettings)</visible>
-                </control>
-                <control type="label">
-                    <include>TopSmallLabel</include>
-                    <label>$INFO[Control.GetLabel(20)]</label>
-                    <visible>Window.IsActive(SettingsCategory.xml)</visible>
-                </control>
-                <!-- *Disabled*
-	    <control type="label">
-			  <include>TopSmallLabel</include>
-				<label>$VAR[SettingsCategoryLabels]$INFO[Control.GetLabel(20), - ]</label>
-			</control>
-	    <control type="label">
-			  <include>TopSmallLabel</include>
-				<label>$INFO[Control.GetLabel(20),($LOCALIZE[31185] ,)]</label>
-			</control>
--->
-            </control>
-        </control>
         <control type="group" id="9000">
             <left>30</left>
             <top>3</top>

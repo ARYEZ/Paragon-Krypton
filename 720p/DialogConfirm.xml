@@ -107,7 +107,6 @@
                 <aligny>center</aligny>
                 <scroll>true</scroll>
                 <scrollspeed>20</scrollspeed>
-                <label/>
             </control>
             <control type="label" id="3">
                 <description>Busy Line 2</description>
@@ -122,7 +121,6 @@
                 <aligny>center</aligny>
                 <scroll>true</scroll>
                 <scrollspeed>20</scrollspeed>
-                <label/>
             </control>
             <control type="label" id="1">
                 <description>fake heading label</description>
@@ -150,7 +148,6 @@
             <control type="image">
                 <height>720</height>
                 <width>1280</width>
-                <texture/>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
@@ -165,11 +162,8 @@
                 <scrollspeed>20</scrollspeed>
                 <label>-</label>
             </control>
-            <left/>
-            <top/>
             <include>CommonDialogsAnimation</include>
             <visible>!Window.IsActive(VirtualKeyboard) + !Window.IsActive(NumericInput) + !Window.IsActive(SelectDialog)</visible>
-            <include/>
             <control type="grouplist" id="10000">
                 <left>-120</left>
                 <top>628</top>

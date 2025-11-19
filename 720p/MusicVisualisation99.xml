@@ -6,10 +6,6 @@
     <controls>
         <include>BackgroundItems7</include>
         <control type="image">
-            <posx/>
-            <posy/>
-            <width/>
-            <height/>
             <texture>LOADING BG.png</texture>
         </control>
         

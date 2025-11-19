@@ -8,17 +8,6 @@
             <visible>Control.IsVisible(50)</visible>
             <include>CommonViews_VerticalAnimation</include>
             <include>BackgroundItems21</include>
-            <control type="image">
-                <posx>777690</posx>
-                <posy>197</posy>
-                <width>529</width>
-                <height>304</height>
-                <fadetime>100</fadetime>
-                <aspectratio align="left" aligny="center">scale</aspectratio>
-                <texture fallback="Shutdown.png">$INFO[ListItem.Icon]</texture>
-                <bordertexture border="5">other_textures/ButtonFo.png</bordertexture>
-                <bordersize/>
-            </control>
             <control type="group">
                 <control type="image">
                     <left>671</left>
@@ -57,7 +46,6 @@
                 <itemlayout height="45" width="710">
                     <control type="image">
                         <left>-25</left>
-                        <top/>
                         <width>630</width>
                         <height>50</height>
                         <texture>buttons/MenuItemNF.png</texture>
@@ -171,7 +159,6 @@
                             <height>26</height>
                             <font>FontSize_30</font>
                             <textcolor>black</textcolor>
-                            <shadowcolor/>
                             <align>left</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Year]</label>
@@ -207,7 +194,6 @@
                             <height>25</height>
                             <font>FontSize_32</font>
                             <textcolor>black</textcolor>
-                            <shadowcolor/>
                             <align>left</align>
                             <aligny>center</aligny>
                             <scroll>true</scroll>
@@ -229,7 +215,6 @@
                             <height>25</height>
                             <font>FontSize_30</font>
                             <textcolor>black</textcolor>
-                            <shadowcolor/>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
