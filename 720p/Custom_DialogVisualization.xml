@@ -1,282 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1112">
-    <defaultcontrol always="true">100</defaultcontrol>
-    <controls>
-        <control type="button" id="100">
-            <include>HiddenItem</include>
-            <onfocus>SetFocus(1000)</onfocus>
-            <animation effect="fade" start="0" end="100" time="0" delay="50">Focus</animation>
+  <defaultcontrol always="true">100</defaultcontrol>
+  <controls>
+    <control type="button" id="100">
+      <include>HiddenItem</include>
+      <onfocus>SetFocus(1000)</onfocus>
+      <animation effect="fade" start="0" end="100" time="0" delay="50">Focus</animation>
+    </control>
+    <control type="image">
+      <texture>SKINDEFAULT.jpg</texture>
+      <colordiffuse/>
+    </control>
+    <include>BackgroundItems</include>
+    <control type="image">
+      <posx>37</posx>
+      <posy>257</posy>
+      <width>620</width>
+      <height>2</height>
+      <texture>pstvButtonFocus.png</texture>
+      <colordiffuse/>
+    </control>
+    <control type="multiimage">
+      <randomize>false</randomize>
+      <timeperimage>12000</timeperimage>
+      <fadetime>4000</fadetime>
+      <pauseatend>0</pauseatend>
+      <loop>true</loop>
+      <posx>678</posx>
+      <posy>190</posy>
+      <width>569</width>
+      <height>337</height>
+      <imagepath background="true">Aurora Effect/Thumbs</imagepath>
+      <animation effect="fade" start="0" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
+      <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+    </control>
+    <control type="image">
+      <left>664</left>
+      <top>183</top>
+      <width>597</width>
+      <height>351</height>
+      <aspectratio align="center" aligny="center">stretch</aspectratio>
+      <texture background="true">thumb_back.png</texture>
+    </control>
+    <control type="image">
+      <left>704</left>
+      <top>165</top>
+      <width>500</width>
+      <height>360</height>
+      <texture>Settings.png</texture>
+    </control>
+    <control type="multiimage">
+      <randomize>false</randomize>
+      <timeperimage>12000</timeperimage>
+      <fadetime>4000</fadetime>
+      <pauseatend>0</pauseatend>
+      <loop>true</loop>
+      <left>686</left>
+      <top>196</top>
+      <width>539</width>
+      <height>301</height>
+      <imagepath background="true">Aurora Effect/Settings</imagepath>
+      <animation effect="fade" start="0" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
+      <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+    </control>
+    <control type="image">
+      <left>678</left>
+      <top>190</top>
+      <width>550</width>
+      <height>322</height>
+      <aspectratio align="center" aligny="center">stretch</aspectratio>
+      <texture background="true">video_overlay.png</texture>
+      <bordersize>4</bordersize>
+    </control>
+    <control type="image">
+      <left>645</left>
+      <top>64</top>
+      <height>587</height>
+      <width>625</width>
+      <texture>views/gallery/top_bottom_shadows.png</texture>
+    </control>
+    <control type="image">
+      <left>472</left>
+      <top>169</top>
+      <height>369</height>
+      <width>985</width>
+      <texture>views/gallery/side_shadows.png</texture>
+    </control>
+    <control type="label">
+      <description>header label</description>
+      <left>45</left>
+      <top>200</top>
+      <width>595</width>
+      <height>40</height>
+      <font>FontSize_70</font>
+      <align>center</align>
+      <aligny>center</aligny>
+      <textcolor>white</textcolor>
+      <shadowcolor>99000000</shadowcolor>
+      <include>DialogsHeaderLabel</include>
+      <label>$LOCALIZE[31306]</label>
+    </control>
+    <control type="group">
+      <visible>!Window.IsActive(SelectDialog) + !Window.IsActive(AddonSettings) + !Window.IsActive(VisualisationPresetlist) + !Window.IsActive(FileBrowser) + !Window.IsActive(OSDAudioDSPSettings)</visible>
+      <include>CommonDialogsAnimation</include>
+      <visible>Player.HasAudio</visible>
+      <control type="grouplist" id="1000">
+        <posx>104</posx>
+        <posy>289</posy>
+        <width>553</width>
+        <height>222</height>
+        <itemgap>4</itemgap>
+        <onleft>Close</onleft>
+        <onright>Close</onright>
+        <onup>1000</onup>
+        <ondown>1000</ondown>
+        <scrolltime>250</scrolltime>
+        <control type="button" id="983">
+          <description>Audio DSP Settings</description>
+          <width>553</width>
+          <label>$LOCALIZE[15047]</label>
+          <include>DialogsRadioButton</include>
+          <onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
+          <visible>System.GetBool(audiooutput.dspaddonsenabled)</visible>
         </control>
-        <control type="image">
-            <texture>SKINDEFAULT.jpg</texture>
-            <colordiffuse/>
+        <control type="radiobutton" id="991">
+          <description>Enable/Disable Visualisation</description>
+          <label>$LOCALIZE[31307]</label>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <onclick>Skin.ToggleSetting(Vis-Visualization)</onclick>
+          <selected>!Skin.HasSetting(Vis-Visualization)</selected>
+          <enable>Visualisation.Enabled</enable>
         </control>
-        <include>BackgroundItems</include>
-        <control type="image">
-            <posx>37</posx>
-            <posy>257</posy>
-            <width>620</width>
-            <height>2</height>
-            <texture>pstvButtonFocus.png</texture>
-            <colordiffuse/>
+        <control type="button" id="992">
+          <description>Visualization Type</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31308]</label>
+          <onclick>SendClick(120,500)</onclick>
+          <visible>!Skin.HasSetting(Vis-Visualization)</visible>
         </control>
-        <control type="multiimage">
-            <randomize>false</randomize>
-            <timeperimage>12000</timeperimage>
-            <fadetime>4000</fadetime>
-            <pauseatend>0</pauseatend>
-            <loop>true</loop>
-            <posx>678</posx>
-            <posy>190</posy>
-            <width>569</width>
-            <height>337</height>
-            <imagepath background="true">Aurora Effect/Thumbs</imagepath>
-            <animation effect="fade" start="0" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
-            <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+        <control type="button" id="993">
+          <description>Visualization Presets</description>
+          <label>$LOCALIZE[31309]</label>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <onclick>ActivateWindow(visualisationpresetlist)</onclick>
+          <visible>!Skin.HasSetting(Vis-Visualization)</visible>
+          <enable>Visualisation.Enabled + Visualisation.HasPresets</enable>
         </control>
-        <control type="image">
-            <left>664</left>
-            <top>183</top>
-            <width>597</width>
-            <height>351</height>
-            <aspectratio align="center" aligny="center">stretch</aspectratio>
-            <texture background="true">thumb_back.png</texture>
+        <control type="button" id="994">
+          <description>Visualization Settings</description>
+          <label>$LOCALIZE[31310]</label>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+          <visible>!Skin.HasSetting(Vis-Visualization)</visible>
+          <enable>Visualisation.Enabled</enable>
         </control>
-        <control type="image">
-            <left>704</left>
-            <top>165</top>
-            <width>500</width>
-            <height>360</height>
-            <texture>Settings.png</texture>
+        <control type="radiobutton" id="995">
+          <description>Enable/Disable Artist Fanart</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[24022] $LOCALIZE[20445]</label>
+          <selected>Skin.HasSetting(Vis-Fanart)</selected>
+          <onclick>Skin.Reset(Vis-ArtistSlideshow)</onclick>
+          <onclick>Skin.Reset(Vis-MusicSlideshow)</onclick>
+          <onclick>Skin.ToggleSetting(Vis-Fanart)</onclick>
         </control>
-        <control type="multiimage">
-            <randomize>false</randomize>
-            <timeperimage>12000</timeperimage>
-            <fadetime>4000</fadetime>
-            <pauseatend>0</pauseatend>
-            <loop>true</loop>
-            <left>686</left>
-            <top>196</top>
-            <width>539</width>
-            <height>301</height>
-            <imagepath background="true">Aurora Effect/Settings</imagepath>
-            <animation effect="fade" start="0" end="70" time="250" delay="0" tween="sine" easing="out">WindowOpen</animation>
-            <animation effect="fade" start="70" end="0" time="250" delay="20" tween="sine" easing="out">WindowClose</animation>
+        <control type="radiobutton" id="996">
+          <description>Enable/Disable ArtistSlideshow</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31312]</label>
+          <selected>Skin.HasSetting(Vis-ArtistSlideshow)</selected>
+          <onclick>Skin.Reset(Vis-Fanart)</onclick>
+          <onclick>Skin.Reset(Vis-MusicSlideshow)</onclick>
+          <onclick>Skin.ToggleSetting(Vis-ArtistSlideshow)</onclick>
+          <onclick condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onclick>
+          <enable>System.HasAddon(script.artistslideshow)</enable>
         </control>
-        <control type="image">
-            <left>678</left>
-            <top>190</top>
-            <width>550</width>
-            <height>322</height>
-            <aspectratio align="center" aligny="center">stretch</aspectratio>
-            <texture background="true">video_overlay.png</texture>
-            <bordersize>4</bordersize>
+        <control type="radiobutton" id="997">
+          <description>Enable/Disable Music Fanart Slideshow</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31311]</label>
+          <selected>Skin.HasSetting(Vis-MusicSlideshow)</selected>
+          <onclick>Skin.Reset(Vis-Fanart)</onclick>
+          <onclick>Skin.Reset(Vis-ArtistSlideshow)</onclick>
+          <onclick>Skin.ToggleSetting(Vis-MusicSlideshow)</onclick>
+          <enable>System.HasAddon(script.skin.helper.service)</enable>
         </control>
-        <control type="image">
-            <left>645</left>
-            <top>64</top>
-            <height>587</height>
-            <width>625</width>
-            <texture>views/gallery/top_bottom_shadows.png</texture>
+        <control type="radiobutton" id="998">
+          <description>Enable/Disable Animation</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31313]</label>
+          <selected>Skin.HasSetting(Vis-Animation)</selected>
+          <onclick>Skin.ToggleSetting(Vis-Animation)</onclick>
+          <onclick>ReplaceWindow(visualisation)</onclick>
         </control>
-        <control type="image">
-            <left>472</left>
-            <top>169</top>
-            <height>369</height>
-            <width>985</width>
-            <texture>views/gallery/side_shadows.png</texture>
+        <control type="radiobutton" id="981">
+          <description>Enable/Disable Diffuse Colors</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31314]</label>
+          <selected>Skin.HasSetting(HideOSDDiffuseColors)</selected>
+          <onclick>Skin.ToggleSetting(HideOSDDiffuseColors)</onclick>
         </control>
-        <control type="label">
-            <description>header label</description>
-            <left>45</left>
-            <top>200</top>
-            <width>595</width>
-            <height>40</height>
-            <font>FontSize_70</font>
-            <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>99000000</shadowcolor>
-            <include>DialogsHeaderLabel</include>
-            <label>$LOCALIZE[31306]</label>
+        <control type="radiobutton" id="982">
+          <description>Enable/Disable Scrolling Titles</description>
+          <font>fontsize_32</font>
+          <height>52</height>
+          <width>484</width>
+          <textoffsetx>7</textoffsetx>
+          <left>292</left>
+          <focusedcolor>black</focusedcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>MenuItemNF.png</texturenofocus>
+          <label>$LOCALIZE[31315]</label>
+          <selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
+          <onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
         </control>
-        <control type="group">
-            <visible>!Window.IsActive(SelectDialog) + !Window.IsActive(AddonSettings) + !Window.IsActive(VisualisationPresetlist) + !Window.IsActive(FileBrowser) + !Window.IsActive(OSDAudioDSPSettings)</visible>
-            <include>CommonDialogsAnimation</include>
-            <visible>Player.HasAudio</visible>
-            <control type="grouplist" id="1000">
-                <posx>104</posx>
-                <posy>289</posy>
-                <width>553</width>
-                <height>222</height>
-                <itemgap>4</itemgap>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <onup>1000</onup>
-                <ondown>1000</ondown>
-                <scrolltime>250</scrolltime>
-                <control type="button" id="983">
-                    <description>Audio DSP Settings</description>
-                    <width>553</width>
-                    <label>$LOCALIZE[15047]</label>
-                    <include>DialogsRadioButton</include>
-                    <onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
-                    <visible>System.GetBool(audiooutput.dspaddonsenabled)</visible>
-                </control>
-                <control type="radiobutton" id="991">
-                    <description>Enable/Disable Visualisation</description>
-                    <label>$LOCALIZE[31307]</label>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <onclick>Skin.ToggleSetting(Vis-Visualization)</onclick>
-                    <selected>!Skin.HasSetting(Vis-Visualization)</selected>
-                    <enable>Visualisation.Enabled</enable>
-                </control>
-                <control type="button" id="992">
-                    <description>Visualization Type</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31308]</label>
-                    <onclick>SendClick(120,500)</onclick>
-                    <visible>!Skin.HasSetting(Vis-Visualization)</visible>
-                </control>
-                <control type="button" id="993">
-                    <description>Visualization Presets</description>
-                    <label>$LOCALIZE[31309]</label>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <onclick>ActivateWindow(visualisationpresetlist)</onclick>
-                    <visible>!Skin.HasSetting(Vis-Visualization)</visible>
-                    <enable>Visualisation.Enabled + Visualisation.HasPresets</enable>
-                </control>
-                <control type="button" id="994">
-                    <description>Visualization Settings</description>
-                    <label>$LOCALIZE[31310]</label>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-                    <visible>!Skin.HasSetting(Vis-Visualization)</visible>
-                    <enable>Visualisation.Enabled</enable>
-                </control>
-                <control type="radiobutton" id="995">
-                    <description>Enable/Disable Artist Fanart</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[24022] $LOCALIZE[20445]</label>
-                    <selected>Skin.HasSetting(Vis-Fanart)</selected>
-                    <onclick>Skin.Reset(Vis-ArtistSlideshow)</onclick>
-                    <onclick>Skin.Reset(Vis-MusicSlideshow)</onclick>
-                    <onclick>Skin.ToggleSetting(Vis-Fanart)</onclick>
-                </control>
-                <control type="radiobutton" id="996">
-                    <description>Enable/Disable ArtistSlideshow</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31312]</label>
-                    <selected>Skin.HasSetting(Vis-ArtistSlideshow)</selected>
-                    <onclick>Skin.Reset(Vis-Fanart)</onclick>
-                    <onclick>Skin.Reset(Vis-MusicSlideshow)</onclick>
-                    <onclick>Skin.ToggleSetting(Vis-ArtistSlideshow)</onclick>
-                    <onclick condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onclick>
-                    <enable>System.HasAddon(script.artistslideshow)</enable>
-                </control>
-                <control type="radiobutton" id="997">
-                    <description>Enable/Disable Music Fanart Slideshow</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31311]</label>
-                    <selected>Skin.HasSetting(Vis-MusicSlideshow)</selected>
-                    <onclick>Skin.Reset(Vis-Fanart)</onclick>
-                    <onclick>Skin.Reset(Vis-ArtistSlideshow)</onclick>
-                    <onclick>Skin.ToggleSetting(Vis-MusicSlideshow)</onclick>
-                    <enable>System.HasAddon(script.skin.helper.service)</enable>
-                </control>
-                <control type="radiobutton" id="998">
-                    <description>Enable/Disable Animation</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31313]</label>
-                    <selected>Skin.HasSetting(Vis-Animation)</selected>
-                    <onclick>Skin.ToggleSetting(Vis-Animation)</onclick>
-                    <onclick>ReplaceWindow(visualisation)</onclick>
-                </control>
-                <control type="radiobutton" id="981">
-                    <description>Enable/Disable Diffuse Colors</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31314]</label>
-                    <selected>Skin.HasSetting(HideOSDDiffuseColors)</selected>
-                    <onclick>Skin.ToggleSetting(HideOSDDiffuseColors)</onclick>
-                </control>
-                <control type="radiobutton" id="982">
-                    <description>Enable/Disable Scrolling Titles</description>
-                    <font>fontsize_32</font>
-                    <height>52</height>
-                    <width>484</width>
-                    <textoffsetx>7</textoffsetx>
-                    <left>292</left>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>MenuItemNF.png</texturenofocus>
-                    <label>$LOCALIZE[31315]</label>
-                    <selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
-                    <onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
-                </control>
-            </control>
-        </control>
-    </controls>
+      </control>
+    </control>
+  </controls>
 </window>

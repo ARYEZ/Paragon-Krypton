@@ -1,85 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
-    <defaultcontrol>-</defaultcontrol>
-    <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
-    <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
-    <controls>
-        <include>BackgroundItems7</include>
-        
-        <!-- NORMAL MUSIC VISUALIZATION BACKGROUND (All channels EXCEPT 99) -->
-        <control type="image">
-            <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <texture>MUSIC VIZ BG.png</texture>
-        </control>
-        
-        <!-- CHANNEL 99 CLEAN BACKGROUND (Only on channel 99) -->
-        <control type="image">
-            <visible>String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <texture>LOADING BG.png</texture>
-        </control>
-        
-        <!-- TIME REMAINING DISPLAY - Shadow (Only visible on normal channels, NOT channel 99) -->
-        <control type="label">
-            <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <top>440</top>
-            <left>-31</left>
-            <width>460</width>
-            <height>120</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>FontSize_115</font>
-            <label>$INFO[MusicPlayer.TimeRemaining(m:ss)]</label>
-            <textcolor>black</textcolor>
-            <shadowcolor>55000000</shadowcolor>
-        </control>
-        
-        <!-- TIME REMAINING DISPLAY - Main (Only visible on normal channels, NOT channel 99) -->
-        <control type="label">
-            <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <top>437</top>
-            <left>-27</left>
-            <width>460</width>
-            <height>120</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>FontSize_115</font>
-            <label>$INFO[MusicPlayer.TimeRemaining(m:ss)]</label>
-            <textcolor>white</textcolor>
-            <shadowcolor>55000000</shadowcolor>
-        </control>
-        
-        <!-- TRACK INFO GROUP (Title and Artist - Only visible on normal channels, NOT channel 99) -->
-        <control type="group">
-            <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
-            <posx>394</posx>
-            <posy>460</posy>
-            <control type="label">
-                <description>Title label</description>
-                <posx>-1</posx>
-                <posy>25</posy>
-                <height>30</height>
-                <width>1000</width>
-                <label>$INFO[MusicPlayer.Title]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>FontSize_90</font>
-                <scroll>true</scroll>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="label">
-                <description>Album Label</description>
-                <posx>1</posx>
-                <posy>85</posy>
-                <height>30</height>
-                <width>1000</width>
-                <label>$INFO[MusicPlayer.Artist]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>FontSize_60</font>
-                <textcolor>99white</textcolor>
-                <shadowcolor>55000000</shadowcolor>
-            </control>
-        </control>
-    </controls>
+  <defaultcontrol>-</defaultcontrol>
+  <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
+  <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
+  <controls>
+    <include>BackgroundItems7</include>
+    <!-- NORMAL MUSIC VISUALIZATION BACKGROUND (All channels EXCEPT 99) -->
+    <control type="image">
+      <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
+      <texture>MUSIC VIZ BG.png</texture>
+    </control>
+    <!-- CHANNEL 99 CLEAN BACKGROUND (Only on channel 99) -->
+    <control type="image">
+      <visible>String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
+      <texture>LOADING BG.png</texture>
+    </control>
+    <!-- TIME REMAINING DISPLAY - Shadow (Only visible on normal channels, NOT channel 99) -->
+    <control type="label">
+      <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
+      <top>440</top>
+      <left>-31</left>
+      <width>460</width>
+      <height>120</height>
+      <align>center</align>
+      <aligny>center</aligny>
+      <font>FontSize_115</font>
+      <label>$INFO[MusicPlayer.TimeRemaining(m:ss)]</label>
+      <textcolor>black</textcolor>
+      <shadowcolor>55000000</shadowcolor>
+    </control>
+    <!-- TIME REMAINING DISPLAY - Main (Only visible on normal channels, NOT channel 99) -->
+    <control type="label">
+      <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
+      <top>437</top>
+      <left>-27</left>
+      <width>460</width>
+      <height>120</height>
+      <align>center</align>
+      <aligny>center</aligny>
+      <font>FontSize_115</font>
+      <label>$INFO[MusicPlayer.TimeRemaining(m:ss)]</label>
+      <textcolor>white</textcolor>
+      <shadowcolor>55000000</shadowcolor>
+    </control>
+    <!-- TRACK INFO GROUP (Title and Artist - Only visible on normal channels, NOT channel 99) -->
+    <control type="group">
+      <visible>!String.IsEqual(Window(Home).Property(PTV.Channel99),true)</visible>
+      <posx>394</posx>
+      <posy>460</posy>
+      <control type="label">
+        <description>Title label</description>
+        <posx>-1</posx>
+        <posy>25</posy>
+        <height>30</height>
+        <width>1000</width>
+        <label>$INFO[MusicPlayer.Title]</label>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>FontSize_90</font>
+        <scroll>true</scroll>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+      </control>
+      <control type="label">
+        <description>Album Label</description>
+        <posx>1</posx>
+        <posy>85</posy>
+        <height>30</height>
+        <width>1000</width>
+        <label>$INFO[MusicPlayer.Artist]</label>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>FontSize_60</font>
+        <textcolor>99white</textcolor>
+        <shadowcolor>55000000</shadowcolor>
+      </control>
+    </control>
+  </controls>
 </window>

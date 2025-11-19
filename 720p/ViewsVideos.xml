@@ -1,230 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <!-- ======================== -->
-    <!-- ==== List View "50" ==== -->
-    <!-- ======================== -->
-    <include name="ListView_Videos">
-        <control type="group">
-            <visible>Control.IsVisible(50)</visible>
-            <include>CommonViews_VerticalAnimation</include>
-            <include>BackgroundItems21</include>
-            <control type="group">
-                <control type="image">
-                    <left>671</left>
-                    <top>198</top>
-                    <width>551</width>
-                    <height>310</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <texture fallback="Paragon Landscape.jpg">$VAR[VarArtFanart]</texture>
-                    <visible>![[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)] + ![[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)]</visible>
-                    <visible>![Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
-                </control>
-                <control type="image">
-                    <left>687</left>
-                    <top>199</top>
-                    <width>537</width>
-                    <height>302</height>
-                    <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture fallback="Paragon Landscape.jpg">$INFO[ListItem.Icon]</texture>
-                    <visible>[Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
-                </control>
-            </control>
-            <!-- ==== Main List ==== -->
-            <control type="list" id="50">
-                <left>30</left>
-                <top>202</top>
-                <width>1190</width>
-                <height>260</height>
-                <onleft>9111</onleft>
-                <onright>60</onright>
-                <onup>50</onup>
-                <ondown>50</ondown>
-                <viewtype label="535">List</viewtype>
-                <pagecontrol>60</pagecontrol>
-                <scrolltime tween="cubic" easing="out">300</scrolltime>
-                <include>ListViewVars</include>
-                <itemlayout height="45" width="710">
-                    <control type="image">
-                        <left>-25</left>
-                        <width>630</width>
-                        <height>50</height>
-                        <texture>buttons/MenuItemNF.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>100</width>
-                        <height>45</height>
-                        <font>FontSize_30</font>
-                        <textcolor>77white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label fallback="20xx">$INFO[ListItem.Year]</label>
-                        <visible>!ListItem.IsParentFolder</visible>
-                    </control>
-                    <control type="label">
-                        <left>95</left>
-                        <top>0</top>
-                        <width>435</width>
-                        <height>43</height>
-                        <font>FontSize_30</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <left>280</left>
-                        <top>0</top>
-                        <width>300</width>
-                        <height>45</height>
-                        <font>FontSize_30</font>
-                        <textcolor>99white</textcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
-                        <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
-                        <visible>!Stringcompare(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>530</left>
-                        <top>11</top>
-                        <width>53</width>
-                        <height>22</height>
-                        <colordiffuse>55ffffff</colordiffuse>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
-                        <visible>!stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                    </control>
-                    <control type="image">
-                        <left>530</left>
-                        <top>11</top>
-                        <width>53</width>
-                        <height>22</height>
-                        <colordiffuse>55ffffff</colordiffuse>
-                        <aspectratio align="center" aligny="center">stretch</aspectratio>
-                        <texture>flags/empty.png</texture>
-                        <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                    </control>
-                    <control type="label">
-                        <left>532</left>
-                        <top>0</top>
-                        <width>50</width>
-                        <height>43</height>
-                        <font>FontSize_16B</font>
-                        <textcolor>white</textcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
-                        <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                    </control>
-                    <control type="image">
-                        <left>550</left>
-                        <top>4</top>
-                        <width>53</width>
-                        <height>42</height>
-                        <colordiffuse>white</colordiffuse>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[ViewsDef3DFlags]</texture>
-                        <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
-                    </control>
-                    <control type="image">
-                        <left>543</left>
-                        <top>10</top>
-                        <width>39</width>
-                        <height>24</height>
-                        <colordiffuse>white</colordiffuse>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture background="true">flags/sets/sets.png</texture>
-                        <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="45" width="710">
-                    <control type="group">
-                        <include>ListFocusAnimation</include>
-                        <control type="image">
-                            <left>5</left>
-                            <top>0</top>
-                            <width>605</width>
-                            <height>45</height>
-                            <texture background="true">buttons/focus.png</texture>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <label>$VAR[MusicLabel]</label>
-                        </control>
-                        <control type="label">
-                            <left>15</left>
-                            <top>10</top>
-                            <width>65</width>
-                            <height>26</height>
-                            <font>FontSize_30</font>
-                            <textcolor>black</textcolor>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Year]</label>
-                            <visible>!ListItem.IsParentFolder</visible>
-                        </control>
-                        <control type="image">
-                            <left>543</left>
-                            <top>10</top>
-                            <width>39</width>
-                            <height>24</height>
-                            <colordiffuse>ffcccccc</colordiffuse>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <texture background="true">flags/sets/sets.png</texture>
-                            <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
-                        </control>
-                        <control type="label">
-                            <left>280</left>
-                            <top>0</top>
-                            <width>300</width>
-                            <height>45</height>
-                            <font>FontSize_30</font>
-                            <textcolor>black</textcolor>
-                            <align>right</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label2]</label>
-                            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
-                            <visible>!Stringcompare(ListItem.Label,..)</visible>
-                        </control>
-                        <control type="label">
-                            <left>95</left>
-                            <top>10</top>
-                            <width>435</width>
-                            <height>25</height>
-                            <font>FontSize_32</font>
-                            <textcolor>black</textcolor>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <scroll>true</scroll>
-                            <label>$VAR[ListItemLabel]</label>
-                        </control>
-                        <control type="image">
-                            <left>550</left>
-                            <top>4</top>
-                            <width>53</width>
-                            <height>42</height>
-                            <colordiffuse>black</colordiffuse>
-                            <texture>$VAR[ViewsDef3DFlags]</texture>
-                            <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
-                        </control>
-                        <control type="label">
-                            <left>532</left>
-                            <top>10</top>
-                            <width>50</width>
-                            <height>25</height>
-                            <font>FontSize_30</font>
-                            <textcolor>black</textcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
-                            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                        </control>
-                    </control>
-                </focusedlayout>
-            </control>
-            <include>ListView_Scrollbar</include>
-            <include>ListView_Arrows</include>
+  <!-- ======================== -->
+  <!-- ==== List View "50" ==== -->
+  <!-- ======================== -->
+  <include name="ListView_Videos">
+    <control type="group">
+      <visible>Control.IsVisible(50)</visible>
+      <include>CommonViews_VerticalAnimation</include>
+      <include>BackgroundItems21</include>
+      <control type="group">
+        <control type="image">
+          <left>671</left>
+          <top>198</top>
+          <width>551</width>
+          <height>310</height>
+          <aspectratio align="center" aligny="center">keep</aspectratio>
+          <texture fallback="Paragon Landscape.jpg">$VAR[VarArtFanart]</texture>
+          <visible>![[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)] + ![[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)]</visible>
+          <visible>![Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
         </control>
-    </include>
+        <control type="image">
+          <left>687</left>
+          <top>199</top>
+          <width>537</width>
+          <height>302</height>
+          <aspectratio align="center" aligny="center">scale</aspectratio>
+          <texture fallback="Paragon Landscape.jpg">$INFO[ListItem.Icon]</texture>
+          <visible>[Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
+        </control>
+      </control>
+      <!-- ==== Main List ==== -->
+      <control type="list" id="50">
+        <left>30</left>
+        <top>202</top>
+        <width>1190</width>
+        <height>260</height>
+        <onleft>9111</onleft>
+        <onright>60</onright>
+        <onup>50</onup>
+        <ondown>50</ondown>
+        <viewtype label="535">List</viewtype>
+        <pagecontrol>60</pagecontrol>
+        <scrolltime tween="cubic" easing="out">300</scrolltime>
+        <include>ListViewVars</include>
+        <itemlayout height="45" width="710">
+          <control type="image">
+            <left>-25</left>
+            <width>630</width>
+            <height>50</height>
+            <texture>buttons/MenuItemNF.png</texture>
+          </control>
+          <control type="label">
+            <left>15</left>
+            <top>0</top>
+            <width>100</width>
+            <height>45</height>
+            <font>FontSize_30</font>
+            <textcolor>77white</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label fallback="20xx">$INFO[ListItem.Year]</label>
+            <visible>!ListItem.IsParentFolder</visible>
+          </control>
+          <control type="label">
+            <left>95</left>
+            <top>0</top>
+            <width>435</width>
+            <height>43</height>
+            <font>FontSize_30</font>
+            <textcolor>white</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label">
+            <left>280</left>
+            <top>0</top>
+            <width>300</width>
+            <height>45</height>
+            <font>FontSize_30</font>
+            <textcolor>99white</textcolor>
+            <align>right</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label2]</label>
+            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
+            <visible>!Stringcompare(ListItem.Label,..)</visible>
+          </control>
+          <control type="image">
+            <left>530</left>
+            <top>11</top>
+            <width>53</width>
+            <height>22</height>
+            <colordiffuse>55ffffff</colordiffuse>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+            <visible>!stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+          </control>
+          <control type="image">
+            <left>530</left>
+            <top>11</top>
+            <width>53</width>
+            <height>22</height>
+            <colordiffuse>55ffffff</colordiffuse>
+            <aspectratio align="center" aligny="center">stretch</aspectratio>
+            <texture>flags/empty.png</texture>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+          </control>
+          <control type="label">
+            <left>532</left>
+            <top>0</top>
+            <width>50</width>
+            <height>43</height>
+            <font>FontSize_16B</font>
+            <textcolor>white</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+          </control>
+          <control type="image">
+            <left>550</left>
+            <top>4</top>
+            <width>53</width>
+            <height>42</height>
+            <colordiffuse>white</colordiffuse>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture>$VAR[ViewsDef3DFlags]</texture>
+            <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+          </control>
+          <control type="image">
+            <left>543</left>
+            <top>10</top>
+            <width>39</width>
+            <height>24</height>
+            <colordiffuse>white</colordiffuse>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture background="true">flags/sets/sets.png</texture>
+            <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
+          </control>
+        </itemlayout>
+        <focusedlayout height="45" width="710">
+          <control type="group">
+            <include>ListFocusAnimation</include>
+            <control type="image">
+              <left>5</left>
+              <top>0</top>
+              <width>605</width>
+              <height>45</height>
+              <texture background="true">buttons/focus.png</texture>
+              <align>left</align>
+              <aligny>center</aligny>
+              <label>$VAR[MusicLabel]</label>
+            </control>
+            <control type="label">
+              <left>15</left>
+              <top>10</top>
+              <width>65</width>
+              <height>26</height>
+              <font>FontSize_30</font>
+              <textcolor>black</textcolor>
+              <align>left</align>
+              <aligny>center</aligny>
+              <label>$INFO[ListItem.Year]</label>
+              <visible>!ListItem.IsParentFolder</visible>
+            </control>
+            <control type="image">
+              <left>543</left>
+              <top>10</top>
+              <width>39</width>
+              <height>24</height>
+              <colordiffuse>ffcccccc</colordiffuse>
+              <aspectratio align="center" aligny="center">keep</aspectratio>
+              <texture background="true">flags/sets/sets.png</texture>
+              <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
+            </control>
+            <control type="label">
+              <left>280</left>
+              <top>0</top>
+              <width>300</width>
+              <height>45</height>
+              <font>FontSize_30</font>
+              <textcolor>black</textcolor>
+              <align>right</align>
+              <aligny>center</aligny>
+              <label>$INFO[ListItem.Label2]</label>
+              <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
+              <visible>!Stringcompare(ListItem.Label,..)</visible>
+            </control>
+            <control type="label">
+              <left>95</left>
+              <top>10</top>
+              <width>435</width>
+              <height>25</height>
+              <font>FontSize_32</font>
+              <textcolor>black</textcolor>
+              <align>left</align>
+              <aligny>center</aligny>
+              <scroll>true</scroll>
+              <label>$VAR[ListItemLabel]</label>
+            </control>
+            <control type="image">
+              <left>550</left>
+              <top>4</top>
+              <width>53</width>
+              <height>42</height>
+              <colordiffuse>black</colordiffuse>
+              <texture>$VAR[ViewsDef3DFlags]</texture>
+              <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+            </control>
+            <control type="label">
+              <left>532</left>
+              <top>10</top>
+              <width>50</width>
+              <height>25</height>
+              <font>FontSize_30</font>
+              <textcolor>black</textcolor>
+              <align>center</align>
+              <aligny>center</aligny>
+              <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
+              <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+            </control>
+          </control>
+        </focusedlayout>
+      </control>
+      <include>ListView_Scrollbar</include>
+      <include>ListView_Arrows</include>
+    </control>
+  </include>
 </includes>

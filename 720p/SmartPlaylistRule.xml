@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="137">
-    <defaultcontrol always="true">10010</defaultcontrol>
-    <controls>
-        <control type="group">
-            <visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(selectdialog) + !Window.IsActive(Filebrowser)</visible>
-            <include>CommonDialogsAnimation</include>
-            <include>BackgroundItems51</include>
-            <control type="label">
-                <description>header label</description>
-                <left>92</left>
-                <top>208</top>
-                <width>620</width>
-                <textcolor>white</textcolor>
-                <font>FontSize_70</font>
-                <label>Smart Playlist Rule</label>
-            </control>
-            <control type="group" id="10010">
-                <left>35</left>
-                <control type="label">
-                    <description>Rule match label</description>
-                    <left>70</left>
-                    <top>270</top>
-                    <width>620</width>
-                    <height>30</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>FontSize_34</font>
-                    <textcolor>white</textcolor>
-                    <label>choose from the following categories</label>
-                </control>
-                <control type="group" id="10020">
-                    <!-- *Disabled*
+  <defaultcontrol always="true">10010</defaultcontrol>
+  <controls>
+    <control type="group">
+      <visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(selectdialog) + !Window.IsActive(Filebrowser)</visible>
+      <include>CommonDialogsAnimation</include>
+      <include>BackgroundItems51</include>
+      <control type="label">
+        <description>header label</description>
+        <left>92</left>
+        <top>208</top>
+        <width>620</width>
+        <textcolor>white</textcolor>
+        <font>FontSize_70</font>
+        <label>Smart Playlist Rule</label>
+      </control>
+      <control type="group" id="10010">
+        <left>35</left>
+        <control type="label">
+          <description>Rule match label</description>
+          <left>70</left>
+          <top>270</top>
+          <width>620</width>
+          <height>30</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <font>FontSize_34</font>
+          <textcolor>white</textcolor>
+          <label>choose from the following categories</label>
+        </control>
+        <control type="group" id="10020">
+          <!-- *Disabled*
   		<control type="label">
   			<description>Rule Field label</description>
   			<left>335</left>
@@ -45,112 +45,112 @@
   			<label>$INFO[Control.GetLabel(15)]</label>
   		</control>
 -->
-                    <control type="button" id="15">
-                        <description>Rule Field</description>
-                        <left>130</left>
-                        <top>305</top>
-                        <width>210</width>
-                        <height>45</height>
-                        <onright>10030</onright>
-                        <onleft>10030</onleft>
-                        <onup>10030</onup>
-                        <ondown>16</ondown>
-                        <include>DialogsButton</include>
-                    </control>
-                    <control type="button" id="16">
-                        <description>Rule operator</description>
-                        <left>130</left>
-                        <top>360</top>
-                        <width>210</width>
-                        <height>45</height>
-                        <onright>10000</onright>
-                        <onleft>15</onleft>
-                        <onup>15</onup>
-                        <ondown>17</ondown>
-                        <include>DialogsButton</include>
-                    </control>
-                </control>
-                <control type="group" id="10030">
-                    <control type="edit" id="17">
-                        <description>Value Button</description>
-                        <left>130</left>
-                        <top>410</top>
-                        <width>460</width>
-                        <height>45</height>
-                        <onleft>20</onleft>
-                        <onright>20</onright>
-                        <onup>10020</onup>
-                        <ondown>20</ondown>
-                        <include>DialogsButton3</include>
-                    </control>
-                    <control type="button" id="20">
-                        <description>Browse Button</description>
-                        <left>680</left>
-                        <top>240</top>
-                        <width>460</width>
-                        <height>165</height>
-                        <label>$LOCALIZE[1024]</label>
-                        <onleft>17</onleft>
-                        <onright>10000</onright>
-                        <onup>17</onup>
-                        <ondown>18</ondown>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <include>DialogsButton2</include>
-                    </control>
-                    <control type="label">
-                        <description>Browse label</description>
-                        <left>685</left>
-                        <top>237</top>
-                        <width>460</width>
-                        <height>165</height>
-                        <label>browse</label>
-                        <font>FontSize_160</font>
-                        <textcolor>white</textcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                    </control>
-                </control>
-            </control>
-            <!-- Control Buttons -->
-            <control type="button" id="19">
-                <description>Cancel</description>
-                <left>288</left>
-                <top>630</top>
-                <font>FontSize_40</font>
-                <textcolor>44white</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>pstvButtonFocus.png</texturefocus>
-                <width>170</width>
-                <height>55</height>
-                <textoffsetx>10</textoffsetx>
-                <onleft>18</onleft>
-                <onright>18</onright>
-                <onup>20</onup>
-                <ondown>15</ondown>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$LOCALIZE[222]</label>
-            </control>
-            <control type="button" id="18">
-                <description>Save</description>
-                <left>130</left>
-                <top>630</top>
-                <font>FontSize_40</font>
-                <textcolor>44white</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>pstvButtonFocus.png</texturefocus>
-                <width>120</width>
-                <height>55</height>
-                <textoffsetx>40</textoffsetx>
-                <onleft>19</onleft>
-                <onright>19</onright>
-                <onup>20</onup>
-                <ondown>15</ondown>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$LOCALIZE[190]</label>
-            </control>
+          <control type="button" id="15">
+            <description>Rule Field</description>
+            <left>130</left>
+            <top>305</top>
+            <width>210</width>
+            <height>45</height>
+            <onright>10030</onright>
+            <onleft>10030</onleft>
+            <onup>10030</onup>
+            <ondown>16</ondown>
+            <include>DialogsButton</include>
+          </control>
+          <control type="button" id="16">
+            <description>Rule operator</description>
+            <left>130</left>
+            <top>360</top>
+            <width>210</width>
+            <height>45</height>
+            <onright>10000</onright>
+            <onleft>15</onleft>
+            <onup>15</onup>
+            <ondown>17</ondown>
+            <include>DialogsButton</include>
+          </control>
         </control>
-    </controls>
+        <control type="group" id="10030">
+          <control type="edit" id="17">
+            <description>Value Button</description>
+            <left>130</left>
+            <top>410</top>
+            <width>460</width>
+            <height>45</height>
+            <onleft>20</onleft>
+            <onright>20</onright>
+            <onup>10020</onup>
+            <ondown>20</ondown>
+            <include>DialogsButton3</include>
+          </control>
+          <control type="button" id="20">
+            <description>Browse Button</description>
+            <left>680</left>
+            <top>240</top>
+            <width>460</width>
+            <height>165</height>
+            <label>$LOCALIZE[1024]</label>
+            <onleft>17</onleft>
+            <onright>10000</onright>
+            <onup>17</onup>
+            <ondown>18</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <include>DialogsButton2</include>
+          </control>
+          <control type="label">
+            <description>Browse label</description>
+            <left>685</left>
+            <top>237</top>
+            <width>460</width>
+            <height>165</height>
+            <label>browse</label>
+            <font>FontSize_160</font>
+            <textcolor>white</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+          </control>
+        </control>
+      </control>
+      <!-- Control Buttons -->
+      <control type="button" id="19">
+        <description>Cancel</description>
+        <left>288</left>
+        <top>630</top>
+        <font>FontSize_40</font>
+        <textcolor>44white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <texturefocus>pstvButtonFocus.png</texturefocus>
+        <width>170</width>
+        <height>55</height>
+        <textoffsetx>10</textoffsetx>
+        <onleft>18</onleft>
+        <onright>18</onright>
+        <onup>20</onup>
+        <ondown>15</ondown>
+        <align>center</align>
+        <aligny>center</aligny>
+        <label>$LOCALIZE[222]</label>
+      </control>
+      <control type="button" id="18">
+        <description>Save</description>
+        <left>130</left>
+        <top>630</top>
+        <font>FontSize_40</font>
+        <textcolor>44white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <texturefocus>pstvButtonFocus.png</texturefocus>
+        <width>120</width>
+        <height>55</height>
+        <textoffsetx>40</textoffsetx>
+        <onleft>19</onleft>
+        <onright>19</onright>
+        <onup>20</onup>
+        <ondown>15</ondown>
+        <align>left</align>
+        <aligny>center</aligny>
+        <label>$LOCALIZE[190]</label>
+      </control>
+    </control>
+  </controls>
 </window>

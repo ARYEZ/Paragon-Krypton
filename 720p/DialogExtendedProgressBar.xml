@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="151">
-    <defaultcontrol>-</defaultcontrol>
-    <onload condition="Library.IsScanningVideo + !Skin.HasSetting(AutoUpdateArt.Enabled)">SetProperty(AutoUpdateArt,1)</onload>
-    <onunload condition="!IsEmpty(Window.Property(AutoUpdateArt)) + !Skin.HasSetting(AutoUpdateArt.Enabled)">RunScript(script.artwork.downloader,mode=custom,silent=true,landscape,clearlogo,clearart,banner,discart)</onunload>
-    <onunload condition="!IsEmpty(Window.Property(AutoUpdateArt)) + !Skin.HasSetting(AutoUpdateArt.Enabled)">ClearProperty(AutoUpdateArt)</onunload>
-    <controls>
+  <defaultcontrol>-</defaultcontrol>
+  <onload condition="Library.IsScanningVideo + !Skin.HasSetting(AutoUpdateArt.Enabled)">SetProperty(AutoUpdateArt,1)</onload>
+  <onunload condition="!IsEmpty(Window.Property(AutoUpdateArt)) + !Skin.HasSetting(AutoUpdateArt.Enabled)">RunScript(script.artwork.downloader,mode=custom,silent=true,landscape,clearlogo,clearart,banner,discart)</onunload>
+  <onunload condition="!IsEmpty(Window.Property(AutoUpdateArt)) + !Skin.HasSetting(AutoUpdateArt.Enabled)">ClearProperty(AutoUpdateArt)</onunload>
+  <controls>
+    <control type="group">
+      <visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup) + !Window.IsVisible(LoginScreen) + !Window.IsVisible(script.pseudotv.TVOverlay.xml)</visible>
+      <control type="grouplist">
+        <left>55</left>
+        <top>615</top>
+        <height/>
+        <width>1190</width>
+        <align>right</align>
+        <aligny>center</aligny>
+        <itemgap>5</itemgap>
+        <orientation>horizontal</orientation>
         <control type="group">
-            <visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup) + !Window.IsVisible(LoginScreen) + !Window.IsVisible(script.pseudotv.TVOverlay.xml)</visible>
-            <control type="grouplist">
-                <left>55</left>
-                <top>615</top>
-                <height/>
-                <width>1190</width>
-                <align>right</align>
-                <aligny>center</aligny>
-                <itemgap>5</itemgap>
-                <orientation>horizontal</orientation>
-                <control type="group">
-                    <width>840</width>
-                    <control type="label" id="30">
-                        <top>-30</top>
-                        <description>Header Label</description>
-                        <height/>
-                        <width>840</width>
-                        <font>FontSize_40</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>77000000</shadowcolor>
-                        <align>right</align>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label" id="31">
-                        <description>Title Label</description>
-                        <top>40</top>
-                        <height/>
-                        <width>840</width>
-                        <font>FontSize_26</font>
-                        <textcolor>99white</textcolor>
-                        <shadowcolor>77000000</shadowcolor>
-                        <align>right</align>
-                        <scroll>false</scroll>
-                    </control>
-                </control>
-                <control type="label" id="1">
-                    <height/>
-                    <width>auto</width>
-                    <font>FontSize_110</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>77000000</shadowcolor>
-                    <scroll>false</scroll>
-                    <label>$INFO[Control.GetLabel(32),,%]</label>
-                </control>
-            </control>
-            <control type="progress" id="32">
-                <description>progress control</description>
-                <include>HiddenItem</include>
-                <visible>false</visible>
-            </control>
+          <width>840</width>
+          <control type="label" id="30">
+            <top>-30</top>
+            <description>Header Label</description>
+            <height/>
+            <width>840</width>
+            <font>FontSize_40</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>77000000</shadowcolor>
+            <align>right</align>
+            <scroll>false</scroll>
+          </control>
+          <control type="label" id="31">
+            <description>Title Label</description>
+            <top>40</top>
+            <height/>
+            <width>840</width>
+            <font>FontSize_26</font>
+            <textcolor>99white</textcolor>
+            <shadowcolor>77000000</shadowcolor>
+            <align>right</align>
+            <scroll>false</scroll>
+          </control>
         </control>
-    </controls>
+        <control type="label" id="1">
+          <height/>
+          <width>auto</width>
+          <font>FontSize_110</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>77000000</shadowcolor>
+          <scroll>false</scroll>
+          <label>$INFO[Control.GetLabel(32),,%]</label>
+        </control>
+      </control>
+      <control type="progress" id="32">
+        <description>progress control</description>
+        <include>HiddenItem</include>
+        <visible>false</visible>
+      </control>
+    </control>
+  </controls>
 </window>

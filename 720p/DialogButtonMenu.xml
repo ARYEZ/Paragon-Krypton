@@ -1,261 +1,261 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu" id="111">
-    <defaultcontrol>9000</defaultcontrol>
-    <onload condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onload>
-    <include>OnLoadDialogsClose</include>
-    <controls>
-        <include>BackgroundItems30</include>
-        <control type="group">
-            <left>60</left>
-            <top>196</top>
-            <include>TopOptionsSlideAnimations</include>
-            <control type="grouplist" id="9000">
-                <left>70</left>
-                <top>75</top>
-                <width>610</width>
-                <height max="245">auto</height>
-                <itemgap>-3</itemgap>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
-                <control type="button" id="17">
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>Dialog.Close(all,true)</onclick>
-                    <onclick>Action(reloadkeymaps)</onclick>
-                    <onclick>XBMC.ReloadSkin()</onclick>
-                    <label>$LOCALIZE[20183]</label>
-                </control>
-                <control type="button" id="3">
-                    <description>System Info button</description>
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>ActivateWindow(SystemInfo)</onclick>
-                    <label>$LOCALIZE[130]</label>
-                    <visible>System.Loggedon</visible>
-                </control>
-                <control type="button" id="1">
-                    <description>Reboot button</description>
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>XBMC.Reset()</onclick>
-                    <visible>System.CanReboot</visible>
-                    <label>$LOCALIZE[13013]</label>
-                </control>
-                <control type="button" id="5">
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>XBMC.Powerdown()</onclick>
-                    <visible>System.CanPowerDown</visible>
-                    <label>$LOCALIZE[13016]</label>
-                </control>
-                <control type="button" id="11">
-                    <description>Logoff button</description>
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>dialog.close(all,true)</onclick>
-                    <onclick>System.LogOff</onclick>
-                    <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-                    <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
-                    <visible>System.Loggedon</visible>
-                </control>
-                <control type="togglebutton" id="12">
-                    <description>Master mode button</description>
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <usealttexture>!System.IsMaster</usealttexture>
-                    <onclick>xbmc.mastermode</onclick>
-                    <label>$LOCALIZE[20046]</label>
-                    <altlabel>$LOCALIZE[20045]</altlabel>
-                    <visible>System.HasLocks</visible>
-                </control>
-                <control type="button" id="14">
-                    <description>Eject button</description>
-                    <width>315</width>
-                    <height>50</height>
-                    <font>FontSize_40</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>33white</disabledcolor>
-                    <texturefocus>buttons/catbullet_fo.png</texturefocus>
-                    <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textwidth>250</textwidth>
-                    <textoffsetx>42</textoffsetx>
-                    <onclick>EjectTray</onclick>
-                    <label>$LOCALIZE[13391]</label>
-                    <visible>System.HasMediaDVD</visible>
-                    <visible>System.Loggedon</visible>
-                </control>
-            </control>
+  <defaultcontrol>9000</defaultcontrol>
+  <onload condition="Window.IsActive(playercontrols)">Dialog.Close(playercontrols)</onload>
+  <include>OnLoadDialogsClose</include>
+  <controls>
+    <include>BackgroundItems30</include>
+    <control type="group">
+      <left>60</left>
+      <top>196</top>
+      <include>TopOptionsSlideAnimations</include>
+      <control type="grouplist" id="9000">
+        <left>70</left>
+        <top>75</top>
+        <width>610</width>
+        <height max="245">auto</height>
+        <itemgap>-3</itemgap>
+        <onleft>Close</onleft>
+        <onright>Close</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <control type="button" id="17">
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>Dialog.Close(all,true)</onclick>
+          <onclick>Action(reloadkeymaps)</onclick>
+          <onclick>XBMC.ReloadSkin()</onclick>
+          <label>$LOCALIZE[20183]</label>
         </control>
-        <control type="grouplist">
-            <left>78</left>
-            <top>192</top>
-            <width>1000</width>
-            <align>left</align>
-            <itemgap>20</itemgap>
-            <orientation>horizontal</orientation>
-            <control type="label">
-                <font>FontSize_80</font>
-                <height>50</height>
-                <textcolor>white</textcolor>
-                <shadowcolor>99000000</shadowcolor>
-                <label>KODI SHUTDOWN MENU</label>
-            </control>
+        <control type="button" id="3">
+          <description>System Info button</description>
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>ActivateWindow(SystemInfo)</onclick>
+          <label>$LOCALIZE[130]</label>
+          <visible>System.Loggedon</visible>
         </control>
-        <!-- ================= -->
-        <!-- Small System Info -->
-        <!-- ================= -->
-        <control type="group">
-            <left>25</left>
-            <top>-235</top>
-            <animation type="WindowOpen" reversible="false">
-                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"/>
-                <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out"/>
-            </animation>
-            <animation type="WindowClose" reversible="false">
-                <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out"/>
-                <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out"/>
-            </animation>
-            <animation type="Visible" reversible="false">
-                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"/>
-                <effect type="slide" start="0,90" end="0,0" time="350" tween="cubic" easing="out"/>
-            </animation>
-            <animation type="Hidden" reversible="false">
-                <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out"/>
-                <effect type="slide" start="0,0" end="0,90" time="350" tween="sine" easing="out"/>
-            </animation>
-            <control type="grouplist">
-                <left>605r</left>
-                <top>-10</top>
-                <height>750</height>
-                <width>545</width>
-                <itemgap/>
-                <align>right</align>
-                <aligny>bottom</aligny>
-                <control type="image" id="1">
-                    <width>295</width>
-                    <height>50</height>
-                    <texture>buttons/MenuItemNF2.png</texture>
-                </control>
-                <control type="label" id="1">
-                    <height>50</height>
-                    <font>FontSize_60</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>99000000</shadowcolor>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <scroll>false</scroll>
-                    <label>$LOCALIZE[13000]</label>
-                </control>
-                <control type="label" id="1">
-                    <top>10</top>
-                    <height>139</height>
-                    <font>FontSize_30</font>
-                    <textcolor>77white</textcolor>
-                    <shadowcolor>99000000</shadowcolor>
-                    <align>right</align>
-                    <aligny>top</aligny>
-                    <scroll>true</scroll>
-                    <wrapmultiline>true</wrapmultiline>
-                    <label>$INFO[System.CPUUsage, $LOCALIZE[13271] ]</label>
-                </control>
-                <control type="label" id="1">
-                    <height>30</height>
-                    <top>50</top>
-                    <font>FontSize_36</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>99000000</shadowcolor>
-                    <align>right</align>
-                    <texture>buttons/MenuItemNF2.png</texture>
-                    <scroll>false</scroll>
-                    <label>$INFO[System.Memory(used.percent), $LOCALIZE[31027] ]</label>
-                </control>
-                <control type="label" id="1">
-                    <height>30</height>
-                    <font>FontSize_36</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>99000000</shadowcolor>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <scroll>false</scroll>
-                    <label>$INFO[Network.LinkState]$INFO[Network.IPAddress, (,)]</label>
-                </control>
-                <control type="label" id="1">
-                    <height>30</height>
-                    <top>20</top>
-                    <font>FontSize_36</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>99000000</shadowcolor>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <scroll>false</scroll>
-                    <label>$INFO[System.ScreenResolution]</label>
-                </control>
-            </control>
+        <control type="button" id="1">
+          <description>Reboot button</description>
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>XBMC.Reset()</onclick>
+          <visible>System.CanReboot</visible>
+          <label>$LOCALIZE[13013]</label>
         </control>
-    </controls>
+        <control type="button" id="5">
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>XBMC.Powerdown()</onclick>
+          <visible>System.CanPowerDown</visible>
+          <label>$LOCALIZE[13016]</label>
+        </control>
+        <control type="button" id="11">
+          <description>Logoff button</description>
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>dialog.close(all,true)</onclick>
+          <onclick>System.LogOff</onclick>
+          <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
+          <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+          <visible>System.Loggedon</visible>
+        </control>
+        <control type="togglebutton" id="12">
+          <description>Master mode button</description>
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <usealttexture>!System.IsMaster</usealttexture>
+          <onclick>xbmc.mastermode</onclick>
+          <label>$LOCALIZE[20046]</label>
+          <altlabel>$LOCALIZE[20045]</altlabel>
+          <visible>System.HasLocks</visible>
+        </control>
+        <control type="button" id="14">
+          <description>Eject button</description>
+          <width>315</width>
+          <height>50</height>
+          <font>FontSize_40</font>
+          <textcolor>white</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>33white</disabledcolor>
+          <texturefocus>buttons/catbullet_fo.png</texturefocus>
+          <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
+          <align>left</align>
+          <aligny>center</aligny>
+          <textwidth>250</textwidth>
+          <textoffsetx>42</textoffsetx>
+          <onclick>EjectTray</onclick>
+          <label>$LOCALIZE[13391]</label>
+          <visible>System.HasMediaDVD</visible>
+          <visible>System.Loggedon</visible>
+        </control>
+      </control>
+    </control>
+    <control type="grouplist">
+      <left>78</left>
+      <top>192</top>
+      <width>1000</width>
+      <align>left</align>
+      <itemgap>20</itemgap>
+      <orientation>horizontal</orientation>
+      <control type="label">
+        <font>FontSize_80</font>
+        <height>50</height>
+        <textcolor>white</textcolor>
+        <shadowcolor>99000000</shadowcolor>
+        <label>KODI SHUTDOWN MENU</label>
+      </control>
+    </control>
+    <!-- ================= -->
+    <!-- Small System Info -->
+    <!-- ================= -->
+    <control type="group">
+      <left>25</left>
+      <top>-235</top>
+      <animation type="WindowOpen" reversible="false">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"/>
+        <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out"/>
+      </animation>
+      <animation type="WindowClose" reversible="false">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out"/>
+        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out"/>
+      </animation>
+      <animation type="Visible" reversible="false">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"/>
+        <effect type="slide" start="0,90" end="0,0" time="350" tween="cubic" easing="out"/>
+      </animation>
+      <animation type="Hidden" reversible="false">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out"/>
+        <effect type="slide" start="0,0" end="0,90" time="350" tween="sine" easing="out"/>
+      </animation>
+      <control type="grouplist">
+        <left>605r</left>
+        <top>-10</top>
+        <height>750</height>
+        <width>545</width>
+        <itemgap/>
+        <align>right</align>
+        <aligny>bottom</aligny>
+        <control type="image" id="1">
+          <width>295</width>
+          <height>50</height>
+          <texture>buttons/MenuItemNF2.png</texture>
+        </control>
+        <control type="label" id="1">
+          <height>50</height>
+          <font>FontSize_60</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>99000000</shadowcolor>
+          <align>right</align>
+          <aligny>center</aligny>
+          <scroll>false</scroll>
+          <label>$LOCALIZE[13000]</label>
+        </control>
+        <control type="label" id="1">
+          <top>10</top>
+          <height>139</height>
+          <font>FontSize_30</font>
+          <textcolor>77white</textcolor>
+          <shadowcolor>99000000</shadowcolor>
+          <align>right</align>
+          <aligny>top</aligny>
+          <scroll>true</scroll>
+          <wrapmultiline>true</wrapmultiline>
+          <label>$INFO[System.CPUUsage, $LOCALIZE[13271] ]</label>
+        </control>
+        <control type="label" id="1">
+          <height>30</height>
+          <top>50</top>
+          <font>FontSize_36</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>99000000</shadowcolor>
+          <align>right</align>
+          <texture>buttons/MenuItemNF2.png</texture>
+          <scroll>false</scroll>
+          <label>$INFO[System.Memory(used.percent), $LOCALIZE[31027] ]</label>
+        </control>
+        <control type="label" id="1">
+          <height>30</height>
+          <font>FontSize_36</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>99000000</shadowcolor>
+          <align>right</align>
+          <aligny>center</aligny>
+          <scroll>false</scroll>
+          <label>$INFO[Network.LinkState]$INFO[Network.IPAddress, (,)]</label>
+        </control>
+        <control type="label" id="1">
+          <height>30</height>
+          <top>20</top>
+          <font>FontSize_36</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>99000000</shadowcolor>
+          <align>right</align>
+          <aligny>center</aligny>
+          <scroll>false</scroll>
+          <label>$INFO[System.ScreenResolution]</label>
+        </control>
+      </control>
+    </control>
+  </controls>
 </window>

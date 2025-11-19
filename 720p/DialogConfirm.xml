@@ -1,222 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">11</defaultcontrol>
-    <coordinates>
+  <defaultcontrol always="true">11</defaultcontrol>
+  <coordinates>
 	</coordinates>
-    <include>dialogeffect</include>
-    <depth>DepthDialog+</depth>
-    <controls>
-        <include content="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="650"/>
-            <param name="DialogBackgroundHeight" value="260"/>
-            <param name="DialogHeaderWidth" value="570"/>
-            <param name="DialogHeaderLabel" value=""/>
-            <param name="DialogHeaderId" value="1"/>
-            <param name="CloseButtonLeft" value="560"/>
-            <param name="CloseButtonNav" value="9000"/>
-        </include>
-        <include>BackgroundItems11</include>
-        <control type="label" id="1">
-            <description>header label</description>
-            <left>20</left>
-            <top>205</top>
-            <width>625</width>
-            <font>FontSize_70</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <align>center</align>
-            <aligny>center</aligny>
-            <scroll>true</scroll>
-            <scrollspeed>20</scrollspeed>
-            <label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
+  <include>dialogeffect</include>
+  <depth>DepthDialog+</depth>
+  <controls>
+    <include content="DialogBackgroundCommons">
+      <param name="DialogBackgroundWidth" value="650"/>
+      <param name="DialogBackgroundHeight" value="260"/>
+      <param name="DialogHeaderWidth" value="570"/>
+      <param name="DialogHeaderLabel" value=""/>
+      <param name="DialogHeaderId" value="1"/>
+      <param name="CloseButtonLeft" value="560"/>
+      <param name="CloseButtonNav" value="9000"/>
+    </include>
+    <include>BackgroundItems11</include>
+    <control type="label" id="1">
+      <description>header label</description>
+      <left>20</left>
+      <top>205</top>
+      <width>625</width>
+      <font>FontSize_70</font>
+      <textcolor>white</textcolor>
+      <shadowcolor>black</shadowcolor>
+      <align>center</align>
+      <aligny>center</aligny>
+      <scroll>true</scroll>
+      <scrollspeed>20</scrollspeed>
+      <label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
+    </control>
+    <control type="group">
+      <left>800</left>
+      <top>208</top>
+      <control type="image">
+        <description>Busy animation</description>
+        <left>0</left>
+        <top>0</top>
+        <width>300</width>
+        <height>300</height>
+        <texture>dialogs/busy/static_busy.png</texture>
+        <aspectratio>keep</aspectratio>
+      </control>
+      <control type="image">
+        <description>Busy animation</description>
+        <left>0</left>
+        <top>0</top>
+        <width>300</width>
+        <height>300</height>
+        <texture>dialogs/busy/animation_1.png</texture>
+        <aspectratio>keep</aspectratio>
+        <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+      </control>
+      <control type="image">
+        <description>Busy animation</description>
+        <left>0</left>
+        <top>0</top>
+        <width>300</width>
+        <height>300</height>
+        <texture>dialogs/busy/animation_2.png</texture>
+        <aspectratio>keep</aspectratio>
+        <animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+      </control>
+      <control type="label">
+        <description>Busy label</description>
+        <left>-53</left>
+        <top>123</top>
+        <width>400</width>
+        <height>40</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <label>$INFO[System.Progressbar,,%]</label>
+        <font>FontSize_200</font>
+        <textcolor>black</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <visible>IntegerGreaterThan(System.Progressbar,0)</visible>
+      </control>
+      <control type="label">
+        <description>Busy label</description>
+        <left>-50</left>
+        <top>120</top>
+        <width>400</width>
+        <height>40</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <label>$INFO[System.Progressbar,,%]</label>
+        <font>FontSize_200</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <visible>IntegerGreaterThan(System.Progressbar,0)</visible>
+      </control>
+    </control>
+    <control type="group">
+      <left>-5</left>
+      <top>350</top>
+      <control type="label" id="2">
+        <description>Busy Line 1</description>
+        <left>-20</left>
+        <top>0</top>
+        <width>715</width>
+        <height>20</height>
+        <font>FontSize_46</font>
+        <textcolor>99white</textcolor>
+        <shadowcolor>99000000</shadowcolor>
+        <align>center</align>
+        <aligny>center</aligny>
+        <scroll>true</scroll>
+        <scrollspeed>20</scrollspeed>
+      </control>
+      <control type="label" id="3">
+        <description>Busy Line 2</description>
+        <left>10</left>
+        <top>-75</top>
+        <width>685</width>
+        <height>20</height>
+        <font>FontSize_65</font>
+        <textcolor>99white</textcolor>
+        <shadowcolor>99000000</shadowcolor>
+        <align>center</align>
+        <aligny>center</aligny>
+        <scroll>true</scroll>
+        <scrollspeed>20</scrollspeed>
+      </control>
+      <control type="label" id="1">
+        <description>fake heading label</description>
+        <left>0</left>
+        <top>0</top>
+        <width>0</width>
+        <height>0</height>
+        <font>-</font>
+        <visible>false</visible>
+      </control>
+      <control type="textbox" id="9">
+        <description>text</description>
+        <left>20</left>
+        <top>-80</top>
+        <width>615</width>
+        <height>200</height>
+        <align>center</align>
+        <label>-</label>
+        <font>fontsize_46</font>
+        <textcolor>99white</textcolor>
+        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+      </control>
+    </control>
+    <control type="group">
+      <control type="image">
+        <height>720</height>
+        <width>1280</width>
+      </control>
+      <control type="label" id="1">
+        <description>header label</description>
+        <posx>420</posx>
+        <posy>270</posy>
+        <width>437</width>
+        <font>FontSize_46</font>
+        <textcolor>white</textcolor>
+        <align>center</align>
+        <aligny>center</aligny>
+        <scroll>true</scroll>
+        <scrollspeed>20</scrollspeed>
+        <label>-</label>
+      </control>
+      <include>CommonDialogsAnimation</include>
+      <visible>!Window.IsActive(VirtualKeyboard) + !Window.IsActive(NumericInput) + !Window.IsActive(SelectDialog)</visible>
+      <control type="grouplist" id="10000">
+        <left>-120</left>
+        <top>628</top>
+        <width>850</width>
+        <height>90</height>
+        <itemgap>20</itemgap>
+        <align>center</align>
+        <orientation>horizontal</orientation>
+        <control type="button" id="11">
+          <description>Yes button</description>
+          <posx>462</posx>
+          <posy>423</posy>
+          <width>160</width>
+          <height>55</height>
+          <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
+          <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
+          <align>center</align>
+          <aligny>center</aligny>
+          <font>FontSize_40</font>
+          <textcolor>99grey</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>44white</disabledcolor>
+          <shadowcolor>55000000</shadowcolor>
+          <textoffsety>4</textoffsety>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <onup>11</onup>
+          <ondown>11</ondown>
+          <label>$LOCALIZE[107]</label>
         </control>
-        <control type="group">
-            <left>800</left>
-            <top>208</top>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/static_busy.png</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/animation_1.png</texture>
-                <aspectratio>keep</aspectratio>
-                <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-            </control>
-            <control type="image">
-                <description>Busy animation</description>
-                <left>0</left>
-                <top>0</top>
-                <width>300</width>
-                <height>300</height>
-                <texture>dialogs/busy/animation_2.png</texture>
-                <aspectratio>keep</aspectratio>
-                <animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-            </control>
-            <control type="label">
-                <description>Busy label</description>
-                <left>-53</left>
-                <top>123</top>
-                <width>400</width>
-                <height>40</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[System.Progressbar,,%]</label>
-                <font>FontSize_200</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>IntegerGreaterThan(System.Progressbar,0)</visible>
-            </control>
-            <control type="label">
-                <description>Busy label</description>
-                <left>-50</left>
-                <top>120</top>
-                <width>400</width>
-                <height>40</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[System.Progressbar,,%]</label>
-                <font>FontSize_200</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>IntegerGreaterThan(System.Progressbar,0)</visible>
-            </control>
+        <control type="button" id="10">
+          <description>No button</description>
+          <posx>645</posx>
+          <posy>423</posy>
+          <width>160</width>
+          <height>55</height>
+          <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
+          <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
+          <align>center</align>
+          <aligny>center</aligny>
+          <font>FontSize_40</font>
+          <textcolor>99grey</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>44white</disabledcolor>
+          <shadowcolor>55000000</shadowcolor>
+          <textoffsety>4</textoffsety>
+          <onleft>11</onleft>
+          <onright>11</onright>
+          <onup>10</onup>
+          <ondown>10</ondown>
+          <label>$LOCALIZE[106]</label>
         </control>
-        <control type="group">
-            <left>-5</left>
-            <top>350</top>
-            <control type="label" id="2">
-                <description>Busy Line 1</description>
-                <left>-20</left>
-                <top>0</top>
-                <width>715</width>
-                <height>20</height>
-                <font>FontSize_46</font>
-                <textcolor>99white</textcolor>
-                <shadowcolor>99000000</shadowcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <scroll>true</scroll>
-                <scrollspeed>20</scrollspeed>
-            </control>
-            <control type="label" id="3">
-                <description>Busy Line 2</description>
-                <left>10</left>
-                <top>-75</top>
-                <width>685</width>
-                <height>20</height>
-                <font>FontSize_65</font>
-                <textcolor>99white</textcolor>
-                <shadowcolor>99000000</shadowcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <scroll>true</scroll>
-                <scrollspeed>20</scrollspeed>
-            </control>
-            <control type="label" id="1">
-                <description>fake heading label</description>
-                <left>0</left>
-                <top>0</top>
-                <width>0</width>
-                <height>0</height>
-                <font>-</font>
-                <visible>false</visible>
-            </control>
-            <control type="textbox" id="9">
-                <description>text</description>
-                <left>20</left>
-                <top>-80</top>
-                <width>615</width>
-                <height>200</height>
-                <align>center</align>
-                <label>-</label>
-                <font>fontsize_46</font>
-                <textcolor>99white</textcolor>
-                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-            </control>
-        </control>
-        <control type="group">
-            <control type="image">
-                <height>720</height>
-                <width>1280</width>
-            </control>
-            <control type="label" id="1">
-                <description>header label</description>
-                <posx>420</posx>
-                <posy>270</posy>
-                <width>437</width>
-                <font>FontSize_46</font>
-                <textcolor>white</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <scroll>true</scroll>
-                <scrollspeed>20</scrollspeed>
-                <label>-</label>
-            </control>
-            <include>CommonDialogsAnimation</include>
-            <visible>!Window.IsActive(VirtualKeyboard) + !Window.IsActive(NumericInput) + !Window.IsActive(SelectDialog)</visible>
-            <control type="grouplist" id="10000">
-                <left>-120</left>
-                <top>628</top>
-                <width>850</width>
-                <height>90</height>
-                <itemgap>20</itemgap>
-                <align>center</align>
-                <orientation>horizontal</orientation>
-                <control type="button" id="11">
-                    <description>Yes button</description>
-                    <posx>462</posx>
-                    <posy>423</posy>
-                    <width>160</width>
-                    <height>55</height>
-                    <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
-                    <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>FontSize_40</font>
-                    <textcolor>99grey</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>44white</disabledcolor>
-                    <shadowcolor>55000000</shadowcolor>
-                    <textoffsety>4</textoffsety>
-                    <onleft>10</onleft>
-                    <onright>10</onright>
-                    <onup>11</onup>
-                    <ondown>11</ondown>
-                    <label>$LOCALIZE[107]</label>
-                </control>
-                <control type="button" id="10">
-                    <description>No button</description>
-                    <posx>645</posx>
-                    <posy>423</posy>
-                    <width>160</width>
-                    <height>55</height>
-                    <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
-                    <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>FontSize_40</font>
-                    <textcolor>99grey</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>44white</disabledcolor>
-                    <shadowcolor>55000000</shadowcolor>
-                    <textoffsety>4</textoffsety>
-                    <onleft>11</onleft>
-                    <onright>11</onright>
-                    <onup>10</onup>
-                    <ondown>10</ondown>
-                    <label>$LOCALIZE[106]</label>
-                </control>
-            </control>
-        </control>
-    </controls>
+      </control>
+    </control>
+  </controls>
 </window>

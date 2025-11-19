@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <controls>
-        <control type="group">
-            <left>45</left>
-            <top>645</top>
-            <visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(Startup)</visible>
-            <include>NotificationsAnimations</include>
-            <control type="image">
-                <left>-45</left>
-                <top>-645</top>
-                <width>1280</width>
-                <height>720</height>
-                <texture>NOTIFICATIONS BG.png</texture>
-            </control>
-            <control type="label" id="401">
-                <description>Heading</description>
-                <top>-155</top>
-                <posx>350</posx>
-                <width>890</width>
-                <font>fontsize_104</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <scroll>true</scroll>
-            </control>
-            <control type="label" id="402">
-                <description>Message</description>
-                <top>-95</top>
-                <posx>350</posx>
-                <width>890</width>
-                <font>fontsize_50</font>
-                <textcolor>99white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <scroll>true</scroll>
-            </control>
-            <control type="group">
-                <include>TopRightSlideAnimations</include>
-                <control type="image">
-                    <left>-46</left>
-                    <top>-305</top>
-                    <width>1235</width>
-                    <height>75</height>
-                    <texture/>
-                </control>
-            </control>
-            <control type="group">
-                <left/>
-                <top>-216</top>
-                <control type="image" id="400">
-                    <description>little pic</description>
-                    <posx>-8</posx>
-                    <posy>11</posy>
-                    <width>320</width>
-                    <height>180</height>
-                    <aspectratio/>
-                    <texture>landscape.png</texture>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                </control>
-            </control>
-            <!--
+  <controls>
+    <control type="group">
+      <left>45</left>
+      <top>645</top>
+      <visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(Startup)</visible>
+      <include>NotificationsAnimations</include>
+      <control type="image">
+        <left>-45</left>
+        <top>-645</top>
+        <width>1280</width>
+        <height>720</height>
+        <texture>NOTIFICATIONS BG.png</texture>
+      </control>
+      <control type="label" id="401">
+        <description>Heading</description>
+        <top>-155</top>
+        <posx>350</posx>
+        <width>890</width>
+        <font>fontsize_104</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <scroll>true</scroll>
+      </control>
+      <control type="label" id="402">
+        <description>Message</description>
+        <top>-95</top>
+        <posx>350</posx>
+        <width>890</width>
+        <font>fontsize_50</font>
+        <textcolor>99white</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <scroll>true</scroll>
+      </control>
+      <control type="group">
+        <include>TopRightSlideAnimations</include>
+        <control type="image">
+          <left>-46</left>
+          <top>-305</top>
+          <width>1235</width>
+          <height>75</height>
+          <texture/>
+        </control>
+      </control>
+      <control type="group">
+        <left/>
+        <top>-216</top>
+        <control type="image" id="400">
+          <description>little pic</description>
+          <posx>-8</posx>
+          <posy>11</posy>
+          <width>320</width>
+          <height>180</height>
+          <aspectratio/>
+          <texture>landscape.png</texture>
+          <align>right</align>
+          <aligny>center</aligny>
+        </control>
+      </control>
+      <!--
 	<control type="group">
 		<left>1140</left>
 	  	<top>-2</top>
@@ -80,6 +80,6 @@
 	</control>
 	</control>
 -->
-        </control>
-    </controls>
+    </control>
+  </controls>
 </window>

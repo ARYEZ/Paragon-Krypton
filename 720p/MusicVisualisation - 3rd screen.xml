@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
-    <defaultcontrol>-</defaultcontrol>
-    <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
-    <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
-    <controls>
-        <control type="image">
-            <width>1280</width>
-            <height>720</height>
-            <texture>Aurora Effect/Settings/9.png</texture>
-        </control>
-        <control type="group">
-            <left>-52</left>
-            <control type="image">
-                <left>526</left>
-                <top>152</top>
-                <width>515</width>
-                <height>555</height>
-                <texture background="true">osd/cd3.png</texture>
-                <aspectratio>keep</aspectratio>
-                <include>CDImageAnim</include>
-            </control>
-            <control type="image">
-                <left>534</left>
-                <top>172</top>
-                <width>505</width>
-                <height>515</height>
-                <texture background="true">osd/cd2.png</texture>
-                <aspectratio>keep</aspectratio>
-                <include>CDImageAnim</include>
-            </control>
-            <control type="image">
-                <left>554</left>
-                <top>202</top>
-                <width>455</width>
-                <height>455</height>
-                <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
-                <aspectratio>keep</aspectratio>
-                <include>CDImageAnim</include>
-            </control>
-        </control>
-        <control type="image">
-            <left>-102</left>
-            <top>201</top>
-            <width>590</width>
-            <height>332</height>
-            <aspectratio>keep</aspectratio>
-            <description>Genre Artwork</description>
-            <texture fallback="Podcasts.png">$INFO[MusicPlayer.Genre,flags/genre/music/,.png]</texture>
-            <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            <visible>!Player.HasVideo</visible>
-        </control>
-        <control type="image">
-            <left>729</left>
-            <top>-18</top>
-            <width>517</width>
-            <height>775</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[Player.Art(thumb)]</texture>
-            <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-        </control>
-        <control type="image">
-            <left>454</left>
-            <top>-18</top>
-            <width>517</width>
-            <height>775</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[Player.Art(xxxthumb)]</texture>
-            <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-        </control>
-        <control type="image">
-            <texture>MUSIC VIZ 3RD SCREEN BG.png</texture>
-        </control>
-        <!-- Audio Channels -->
-        <control type="group" id="1">
-            <left>360</left>
-            <top>226</top>
-            <height>50</height>
-            <width>110</width>
-        </control>
-        <!-- Audio Codec -->
-        <control type="group" id="1">
-            <height>50</height>
-            <width>110</width>
-            <left>360</left>
-            <top>335</top>
-            <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
-            <control type="image" id="1">
-                <description>Audio Codec Flag</description>
-                <texture fallback="flags/audio/mp3.png">$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
-                <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
-            </control>
-        </control>
-        <!-- Video Resolution -->
-        <control type="image">
-            <left>-30</left>
-            <width>1280</width>
-            <height>720</height>
-            <aspectratio>keep</aspectratio>
-            <description>Genre Artwork</description>
-            <texture fallback="65.png">$INFO[MusicPlayer.Genre,flags/stations/music/,.png]</texture>
-            <visible>!Player.HasVideo</visible>
-        </control>
-    </controls>
+  <defaultcontrol>-</defaultcontrol>
+  <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
+  <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
+  <controls>
+    <control type="image">
+      <width>1280</width>
+      <height>720</height>
+      <texture>Aurora Effect/Settings/9.png</texture>
+    </control>
+    <control type="group">
+      <left>-52</left>
+      <control type="image">
+        <left>526</left>
+        <top>152</top>
+        <width>515</width>
+        <height>555</height>
+        <texture background="true">osd/cd3.png</texture>
+        <aspectratio>keep</aspectratio>
+        <include>CDImageAnim</include>
+      </control>
+      <control type="image">
+        <left>534</left>
+        <top>172</top>
+        <width>505</width>
+        <height>515</height>
+        <texture background="true">osd/cd2.png</texture>
+        <aspectratio>keep</aspectratio>
+        <include>CDImageAnim</include>
+      </control>
+      <control type="image">
+        <left>554</left>
+        <top>202</top>
+        <width>455</width>
+        <height>455</height>
+        <texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+        <aspectratio>keep</aspectratio>
+        <include>CDImageAnim</include>
+      </control>
+    </control>
+    <control type="image">
+      <left>-102</left>
+      <top>201</top>
+      <width>590</width>
+      <height>332</height>
+      <aspectratio>keep</aspectratio>
+      <description>Genre Artwork</description>
+      <texture fallback="Podcasts.png">$INFO[MusicPlayer.Genre,flags/genre/music/,.png]</texture>
+      <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
+      <visible>!Player.HasVideo</visible>
+    </control>
+    <control type="image">
+      <left>729</left>
+      <top>-18</top>
+      <width>517</width>
+      <height>775</height>
+      <aspectratio>keep</aspectratio>
+      <texture>$INFO[Player.Art(thumb)]</texture>
+      <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
+    </control>
+    <control type="image">
+      <left>454</left>
+      <top>-18</top>
+      <width>517</width>
+      <height>775</height>
+      <aspectratio>keep</aspectratio>
+      <texture>$INFO[Player.Art(xxxthumb)]</texture>
+      <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
+    </control>
+    <control type="image">
+      <texture>MUSIC VIZ 3RD SCREEN BG.png</texture>
+    </control>
+    <!-- Audio Channels -->
+    <control type="group" id="1">
+      <left>360</left>
+      <top>226</top>
+      <height>50</height>
+      <width>110</width>
+    </control>
+    <!-- Audio Codec -->
+    <control type="group" id="1">
+      <height>50</height>
+      <width>110</width>
+      <left>360</left>
+      <top>335</top>
+      <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
+      <control type="image" id="1">
+        <description>Audio Codec Flag</description>
+        <texture fallback="flags/audio/mp3.png">$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
+        <animation effect="rotate" start="0" end="90" center="auto" time="0" tween="Quadratic" condition="true">Conditional</animation>
+      </control>
+    </control>
+    <!-- Video Resolution -->
+    <control type="image">
+      <left>-30</left>
+      <width>1280</width>
+      <height>720</height>
+      <aspectratio>keep</aspectratio>
+      <description>Genre Artwork</description>
+      <texture fallback="65.png">$INFO[MusicPlayer.Genre,flags/stations/music/,.png]</texture>
+      <visible>!Player.HasVideo</visible>
+    </control>
+  </controls>
 </window>

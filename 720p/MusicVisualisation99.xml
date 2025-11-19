@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
-    <defaultcontrol>-</defaultcontrol>
-    <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
-    <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
-    <controls>
-        <include>BackgroundItems7</include>
-        <control type="image">
-            <texture>LOADING BG.png</texture>
-        </control>
-        
-
-    </controls>
+  <defaultcontrol>-</defaultcontrol>
+  <onload condition="IsEmpty(Skin.String(FullScreenMusicStyle))">Skin.SetString(FullScreenMusicStyle,1)</onload>
+  <onload condition="Window.IsActive(PlayerControls)">Dialog.Close(PlayerControls)</onload>
+  <controls>
+    <include>BackgroundItems7</include>
+    <control type="image">
+      <texture>LOADING BG.png</texture>
+    </control>
+  </controls>
 </window>

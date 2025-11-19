@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <!-- ======================== -->
-    <!-- ==== List View "50" ==== -->
-    <!-- ======================== -->
-    <include name="ListView_Pictures">
-        <include>BackgroundItems23</include>
-        <control type="group">
-            <visible>Control.IsVisible(50)</visible>
-            <include>CommonViews_VerticalAnimation</include>
-            <!-- ==== Thumb/Info for Pictures ==== -->
-            <control type="group">
-                <visible>Container.HasFiles + !IsEmpty(ListItem.FileName)</visible>
-                <visible>!Container.Content(addons)</visible>
-                <control type="image">
-                    <left>673</left>
-                    <top>196</top>
-                    <width>560</width>
-                    <height>315</height>
-                    <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.FileNameAndPath]</texture>
-                </control>
-                <control type="image">
+  <!-- ======================== -->
+  <!-- ==== List View "50" ==== -->
+  <!-- ======================== -->
+  <include name="ListView_Pictures">
+    <include>BackgroundItems23</include>
+    <control type="group">
+      <visible>Control.IsVisible(50)</visible>
+      <include>CommonViews_VerticalAnimation</include>
+      <!-- ==== Thumb/Info for Pictures ==== -->
+      <control type="group">
+        <visible>Container.HasFiles + !IsEmpty(ListItem.FileName)</visible>
+        <visible>!Container.Content(addons)</visible>
+        <control type="image">
+          <left>673</left>
+          <top>196</top>
+          <width>560</width>
+          <height>315</height>
+          <aspectratio align="center" aligny="center">scale</aspectratio>
+          <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.FileNameAndPath]</texture>
+        </control>
+        <control type="image">
 	</control>
-                <!-- *Disabled*
+        <!-- *Disabled*
 		<control type="label">
 				<left>725</left>
 				<top>490</top>
@@ -34,109 +34,109 @@
 			  	<align>left</align>
 		</control>
 		-->
+      </control>
+      <!-- ==== Thumb/Fanart/Info ==== -->
+      <control type="group">
+        <visible>Container.Content(Addons) + !IsEmpty(ListItem.AddonName)</visible>
+        <include>ListView_ThumbAndFanart</include>
+      </control>
+      <!-- ==== Thumb ==== -->
+      <control type="group">
+        <visible>!ListItem.IsParentFolder</visible>
+        <visible>Container.Content(Addons) + IsEmpty(ListItem.AddonName)</visible>
+        <include>ListView_Thumb</include>
+      </control>
+      <!-- ==== List ==== -->
+      <control type="group">
+        <control type="list" id="50">
+          <left>30</left>
+          <top>202</top>
+          <width>1190</width>
+          <height>260</height>
+          <include>ListViewVars</include>
+          <itemlayout height="45" width="710" condition="!Container.Content(addons)">
+            <control type="image">
+              <left>-25</left>
+              <top>0</top>
+              <width>630</width>
+              <height>50</height>
+              <texture>MenuItemNF.png</texture>
             </control>
-            <!-- ==== Thumb/Fanart/Info ==== -->
+            <control type="label">
+              <left>15</left>
+              <top>0</top>
+              <width>585</width>
+              <height>45</height>
+              <font>FontSize_30</font>
+              <textcolor>white</textcolor>
+              <selectedcolor>77white</selectedcolor>
+              <align>left</align>
+              <aligny>center</aligny>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+          </itemlayout>
+          <focusedlayout height="45" width="710" condition="!Container.Content(addons)">
             <control type="group">
-                <visible>Container.Content(Addons) + !IsEmpty(ListItem.AddonName)</visible>
-                <include>ListView_ThumbAndFanart</include>
+              <include>ListFocusAnimation</include>
+              <control type="image">
+                <left>5</left>
+                <top>0</top>
+                <width>612</width>
+                <height>45</height>
+                <texture background="true">buttons/focus.png</texture>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$VAR[MusicLabel]</label>
+              </control>
+              <control type="label">
+                <left>20</left>
+                <top>10</top>
+                <width>595</width>
+                <height>25</height>
+                <font>FontSize_30</font>
+                <textcolor>black</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <scroll>true</scroll>
+                <label>$INFO[ListItem.Label]</label>
+              </control>
             </control>
-            <!-- ==== Thumb ==== -->
+          </focusedlayout>
+          <itemlayout height="45" width="710" condition="Container.Content(Addons)">
+            <control type="label">
+              <left>95</left>
+              <top>0</top>
+              <width>455</width>
+              <height>45</height>
+              <font>FontSize_22</font>
+              <textcolor>viewsinfo</textcolor>
+              <selectedcolor>white</selectedcolor>
+              <align>left</align>
+              <aligny>center</aligny>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+          </itemlayout>
+          <focusedlayout height="45" width="710" condition="Container.Content(Addons)">
             <control type="group">
-                <visible>!ListItem.IsParentFolder</visible>
-                <visible>Container.Content(Addons) + IsEmpty(ListItem.AddonName)</visible>
-                <include>ListView_Thumb</include>
+              <include>ListFocusAnimation</include>
+              <control type="label">
+                <left>95</left>
+                <top>10</top>
+                <width>455</width>
+                <height>25</height>
+                <font>FontSize_22</font>
+                <textcolor>white</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <scroll>true</scroll>
+                <label>$INFO[ListItem.Label]</label>
+              </control>
             </control>
-            <!-- ==== List ==== -->
-            <control type="group">
-                <control type="list" id="50">
-                    <left>30</left>
-                    <top>202</top>
-                    <width>1190</width>
-                    <height>260</height>
-                    <include>ListViewVars</include>
-                    <itemlayout height="45" width="710" condition="!Container.Content(addons)">
-                        <control type="image">
-                            <left>-25</left>
-                            <top>0</top>
-                            <width>630</width>
-                            <height>50</height>
-                            <texture>MenuItemNF.png</texture>
-                        </control>
-                        <control type="label">
-                            <left>15</left>
-                            <top>0</top>
-                            <width>585</width>
-                            <height>45</height>
-                            <font>FontSize_30</font>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>77white</selectedcolor>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout height="45" width="710" condition="!Container.Content(addons)">
-                        <control type="group">
-                            <include>ListFocusAnimation</include>
-                            <control type="image">
-                                <left>5</left>
-                                <top>0</top>
-                                <width>612</width>
-                                <height>45</height>
-                                <texture background="true">buttons/focus.png</texture>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <label>$VAR[MusicLabel]</label>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>10</top>
-                                <width>595</width>
-                                <height>25</height>
-                                <font>FontSize_30</font>
-                                <textcolor>black</textcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>true</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                    <itemlayout height="45" width="710" condition="Container.Content(Addons)">
-                        <control type="label">
-                            <left>95</left>
-                            <top>0</top>
-                            <width>455</width>
-                            <height>45</height>
-                            <font>FontSize_22</font>
-                            <textcolor>viewsinfo</textcolor>
-                            <selectedcolor>white</selectedcolor>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout height="45" width="710" condition="Container.Content(Addons)">
-                        <control type="group">
-                            <include>ListFocusAnimation</include>
-                            <control type="label">
-                                <left>95</left>
-                                <top>10</top>
-                                <width>455</width>
-                                <height>25</height>
-                                <font>FontSize_22</font>
-                                <textcolor>white</textcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>true</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                </control>
-                <include>ListView_Scrollbar</include>
-                <include>ListView_Arrows</include>
-            </control>
+          </focusedlayout>
         </control>
-    </include>
+        <include>ListView_Scrollbar</include>
+        <include>ListView_Arrows</include>
+      </control>
+    </control>
+  </include>
 </includes>

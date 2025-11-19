@@ -1,185 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="126">
-    <defaultcontrol always="true">450</defaultcontrol>
-    <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1,home)</onload>
-    <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1)</onload>
-    <onunload>ClearProperty(ShowDialog,home)</onunload>
-    <controls>
-        <include>BackgroundItems46</include>
-        <control type="group">
-            <include>CommonDialogsAnimation</include>
-            <visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(locksettings) + ![Window.IsActive(networksetup) + IsEmpty(Window.Property(ShowDialog))]</visible>
-            <control type="image">
-                <description>Large Icon Image</description>
-                <left>660</left>
-                <top>196</top>
-                <width>576</width>
-                <height>314</height>
-                <aspectratio>keep</aspectratio>
-                <texture fallback="Paragon Landscape v4.png">$INFO[VideoPlayer.Genre,flags/genre/television/,.png]</texture>
-                <visible>[VideoPlayer.Content(Episodes)]</visible>
-            </control>
-            <control type="image">
-                <left>660</left>
-                <top>196</top>
-                <width>576</width>
-                <height>314</height>
-                <aspectratio>keep</aspectratio>
-                <texture fallback="Paragon Landscape v4.png">$INFO[VideoPlayer.Genre,flags/genre/movies/,.png]</texture>
-                <visible>![VideoPlayer.Content(Episodes)]</visible>
-            </control>
-            <!-- List -->
-            <control type="list" id="450">
-                <left>28</left>
-                <top>202</top>
-                <width>617</width>
-                <height>260</height>
-                <!-- Changed from 145 to 510 (10 items × 51px) -->
-                <onup>450</onup>
-                <onleft>10000</onleft>
-                <onright>60</onright>
-                <ondown>10000</ondown>
-                <scrolltime tween="quadratic" easing="out">250</scrolltime>
-                <pagecontrol>60</pagecontrol>
-                <itemlayout height="51" width="447">
-                    <control type="label">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>427</width>
-                        <height>47</height>
-                        <info>ListItem.Label</info>
-                        <font>FontSize_26</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>77white</textcolor>
-                        <shadowcolor>99000000</shadowcolor>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>625</width>
-                        <height>41</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="51" width="447">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>620</width>
-                        <height>47</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <texture>buttons/focus.png</texture>
-                        <visible>Control.HasFocus(450)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>620</width>
-                        <height>47</height>
-                        <texture background="true" border="1">buttons/focus.png</texture>
-                        <visible>!Control.HasFocus(450)</visible>
-                    </control>
-                    <control type="label">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>427</width>
-                        <height>47</height>
-                        <info>ListItem.Label</info>
-                        <font>FontSize_26</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>black</textcolor>
-                        <scroll>true</scroll>
-                        <scrollspeed>20</scrollspeed>
-                        <visible>Control.HasFocus(450)</visible>
-                    </control>
-                    <control type="label">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>427</width>
-                        <height>47</height>
-                        <info>ListItem.Label</info>
-                        <font>FontSize_26</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>black</textcolor>
-                        <shadowcolor>99000000</shadowcolor>
-                        <scroll>true</scroll>
-                        <scrollspeed>20</scrollspeed>
-                        <visible>!Control.HasFocus(450)</visible>
-                    </control>
-                </focusedlayout>
-            </control>
-            <!-- Scrollbar -->
-            <control type="scrollbar" id="60">
-                <left>1255</left>
-                <top>202</top>
-                <width>25</width>
-                <height>260</height>
-                <!-- Changed from 145 to match list height -->
-                <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
-                <texturesliderbar border="0,14,0,14"/>
-                <texturesliderbarfocus border="0,14,0,14"/>
-                <textureslidernib/>
-                <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
-                <onleft>450</onleft>
-                <onright>10000</onright>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
-                <visible>Control.IsVisible(450)</visible>
-                <pagesize>10</pagesize>
-            </control>
-            <!-- Control Buttons -->
-            <control type="grouplist" id="10000">
-                <left>168</left>
-                <top>648</top>
-                <height>168</height>
-                <onup>450</onup>
-                <onleft>450</onleft>
-                <onright>450</onright>
-                <orientation>horizontal</orientation>
-                <align>left</align>
-                <defaultcontrol always="true">413</defaultcontrol>
-                <control type="button" id="413">
-                    <description>Save</description>
-                    <left>308</left>
-                    <font>FontSize_40</font>
-                    <width>160</width>
-                    <height>55</height>
-                    <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
-                    <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>FontSize_40</font>
-                    <textcolor>99grey</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>44white</disabledcolor>
-                    <shadowcolor>55000000</shadowcolor>
-                    <textoffsety>4</textoffsety>
-                    <label>$LOCALIZE[190]</label>
-                </control>
-                <control type="button" id="414">
-                    <description>Cancel</description>
-                    <left>308</left>
-                    <font>FontSize_40</font>
-                    <width>160</width>
-                    <height>55</height>
-                    <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
-                    <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>FontSize_40</font>
-                    <textcolor>99grey</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <disabledcolor>44white</disabledcolor>
-                    <shadowcolor>55000000</shadowcolor>
-                    <textoffsety>4</textoffsety>
-                    <label>$LOCALIZE[222]</label>
-                </control>
-            </control>
+  <defaultcontrol always="true">450</defaultcontrol>
+  <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1,home)</onload>
+  <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1)</onload>
+  <onunload>ClearProperty(ShowDialog,home)</onunload>
+  <controls>
+    <include>BackgroundItems46</include>
+    <control type="group">
+      <include>CommonDialogsAnimation</include>
+      <visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(locksettings) + ![Window.IsActive(networksetup) + IsEmpty(Window.Property(ShowDialog))]</visible>
+      <control type="image">
+        <description>Large Icon Image</description>
+        <left>660</left>
+        <top>196</top>
+        <width>576</width>
+        <height>314</height>
+        <aspectratio>keep</aspectratio>
+        <texture fallback="Paragon Landscape v4.png">$INFO[VideoPlayer.Genre,flags/genre/television/,.png]</texture>
+        <visible>[VideoPlayer.Content(Episodes)]</visible>
+      </control>
+      <control type="image">
+        <left>660</left>
+        <top>196</top>
+        <width>576</width>
+        <height>314</height>
+        <aspectratio>keep</aspectratio>
+        <texture fallback="Paragon Landscape v4.png">$INFO[VideoPlayer.Genre,flags/genre/movies/,.png]</texture>
+        <visible>![VideoPlayer.Content(Episodes)]</visible>
+      </control>
+      <!-- List -->
+      <control type="list" id="450">
+        <left>28</left>
+        <top>202</top>
+        <width>617</width>
+        <height>260</height>
+        <!-- Changed from 145 to 510 (10 items × 51px) -->
+        <onup>450</onup>
+        <onleft>10000</onleft>
+        <onright>60</onright>
+        <ondown>10000</ondown>
+        <scrolltime tween="quadratic" easing="out">250</scrolltime>
+        <pagecontrol>60</pagecontrol>
+        <itemlayout height="51" width="447">
+          <control type="label">
+            <left>10</left>
+            <top>0</top>
+            <width>427</width>
+            <height>47</height>
+            <info>ListItem.Label</info>
+            <font>FontSize_26</font>
+            <align>left</align>
+            <aligny>center</aligny>
+            <textcolor>77white</textcolor>
+            <shadowcolor>99000000</shadowcolor>
+            <scroll>false</scroll>
+          </control>
+          <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>625</width>
+            <height>41</height>
+            <texture border="0,2,0,2">MenuItemNF.png</texture>
+          </control>
+        </itemlayout>
+        <focusedlayout height="51" width="447">
+          <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>620</width>
+            <height>47</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <texture>buttons/focus.png</texture>
+            <visible>Control.HasFocus(450)</visible>
+          </control>
+          <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>620</width>
+            <height>47</height>
+            <texture background="true" border="1">buttons/focus.png</texture>
+            <visible>!Control.HasFocus(450)</visible>
+          </control>
+          <control type="label">
+            <left>10</left>
+            <top>0</top>
+            <width>427</width>
+            <height>47</height>
+            <info>ListItem.Label</info>
+            <font>FontSize_26</font>
+            <align>left</align>
+            <aligny>center</aligny>
+            <textcolor>black</textcolor>
+            <scroll>true</scroll>
+            <scrollspeed>20</scrollspeed>
+            <visible>Control.HasFocus(450)</visible>
+          </control>
+          <control type="label">
+            <left>10</left>
+            <top>0</top>
+            <width>427</width>
+            <height>47</height>
+            <info>ListItem.Label</info>
+            <font>FontSize_26</font>
+            <align>left</align>
+            <aligny>center</aligny>
+            <textcolor>black</textcolor>
+            <shadowcolor>99000000</shadowcolor>
+            <scroll>true</scroll>
+            <scrollspeed>20</scrollspeed>
+            <visible>!Control.HasFocus(450)</visible>
+          </control>
+        </focusedlayout>
+      </control>
+      <!-- Scrollbar -->
+      <control type="scrollbar" id="60">
+        <left>1255</left>
+        <top>202</top>
+        <width>25</width>
+        <height>260</height>
+        <!-- Changed from 145 to match list height -->
+        <texturesliderbackground border="0,14,0,14">osd_slider_bg.png</texturesliderbackground>
+        <texturesliderbar border="0,14,0,14"/>
+        <texturesliderbarfocus border="0,14,0,14"/>
+        <textureslidernib/>
+        <textureslidernibfocus>osd_slider_nib_nf.png</textureslidernibfocus>
+        <onleft>450</onleft>
+        <onright>10000</onright>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+        <visible>Control.IsVisible(450)</visible>
+        <pagesize>10</pagesize>
+      </control>
+      <!-- Control Buttons -->
+      <control type="grouplist" id="10000">
+        <left>168</left>
+        <top>648</top>
+        <height>168</height>
+        <onup>450</onup>
+        <onleft>450</onleft>
+        <onright>450</onright>
+        <orientation>horizontal</orientation>
+        <align>left</align>
+        <defaultcontrol always="true">413</defaultcontrol>
+        <control type="button" id="413">
+          <description>Save</description>
+          <left>308</left>
+          <font>FontSize_40</font>
+          <width>160</width>
+          <height>55</height>
+          <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
+          <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
+          <align>center</align>
+          <aligny>center</aligny>
+          <font>FontSize_40</font>
+          <textcolor>99grey</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>44white</disabledcolor>
+          <shadowcolor>55000000</shadowcolor>
+          <textoffsety>4</textoffsety>
+          <label>$LOCALIZE[190]</label>
         </control>
-    </controls>
+        <control type="button" id="414">
+          <description>Cancel</description>
+          <left>308</left>
+          <font>FontSize_40</font>
+          <width>160</width>
+          <height>55</height>
+          <texturenofocus border="10,0,10,0">dialogs/keyboard/MenuItemNF.png</texturenofocus>
+          <texturefocus border="10,0,10,0">dialogs/keyboard/focus.png</texturefocus>
+          <align>center</align>
+          <aligny>center</aligny>
+          <font>FontSize_40</font>
+          <textcolor>99grey</textcolor>
+          <focusedcolor>black</focusedcolor>
+          <disabledcolor>44white</disabledcolor>
+          <shadowcolor>55000000</shadowcolor>
+          <textoffsety>4</textoffsety>
+          <label>$LOCALIZE[222]</label>
+        </control>
+      </control>
+    </control>
+  </controls>
 </window>

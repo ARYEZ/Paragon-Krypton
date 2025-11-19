@@ -1,152 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
-    <controls>
-        <include>BackgroundItems4</include>
-        <control type="group">
-            <left>60</left>
-            <top>199</top>
-            <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225"/>
-                <effect type="fade" start="0" end="100" time="225"/>
-            </animation>
-            <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225"/>
-                <effect type="fade" start="100" end="0" time="225"/>
-            </animation>
-            <control type="list" id="9000">
-                <left>70</left>
-                <top>75</top>
-                <width>295</width>
-                <height>185</height>
-                <onleft>9000</onleft>
-                <onright>187</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
-                <pagecontrol>-</pagecontrol>
-                <scrolltime>300</scrolltime>
-                <itemlayout height="45" width="285">
-                    <control type="image">
-                        <left/>
-                        <top/>
-                        <width>285</width>
-                        <height>45</height>
-                        <texture>buttons/catbullet_nofo.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>40</left>
-                        <top>0</top>
-                        <width>285</width>
-                        <height>45</height>
-                        <font>fontsize_32</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="45" width="285">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>285</width>
-                        <height>45</height>
-                        <texture border="1">buttons/catbullet_fo.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>40</left>
-                        <top>0</top>
-                        <width>285</width>
-                        <height>45</height>
-                        <font>fontsize_32</font>
-                        <textcolor>black</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item id="1">
-                        <label>14200</label>
-                        <label2>31430</label2>
-                        <onclick>ActivateWindow(PlayerSettings)</onclick>
-                        <icon>-</icon>
-                    </item>
-                    <item id="2">
-                        <label>14211</label>
-                        <label2>31431</label2>
-                        <onclick>ActivateWindow(MediaSettings)</onclick>
-                        <icon>-</icon>
-                    </item>
-                    <item id="3">
-                        <label>14204</label>
-                        <label2>31432</label2>
-                        <onclick>ActivateWindow(PVRSettings)</onclick>
-                        <icon>special://skin/backgrounds/tv.jpg</icon>
-                    </item>
-                    <item id="4">
-                        <label>24001</label>
-                        <label2>31433</label2>
-                        <onclick>ActivateWindow(AddonBrowser)</onclick>
-                        <icon>-</icon>
-                    </item>
-                    <item id="5">
-                        <label>14036</label>
-                        <label2>31434</label2>
-                        <onclick>ActivateWindow(ServiceSettings)</onclick>
-                        <icon>-</icon>
-                    </item>
-                    <item id="6">
-                        <label>14206</label>
-                        <label2>31436</label2>
-                        <onclick>ActivateWindow(InterfaceSettings)</onclick>
-                        <icon>-</icon>
-                    </item>
-                    <item id="7">
-                        <label>13000</label>
-                        <label2>31435</label2>
-                        <onclick>ActivateWindow(SystemSettings)</onclick>
-                        <icon>-</icon>
-                    </item>
-                </content>
-            </control>
-            <control type="label">
-                <description>header label</description>
-                <left>110</left>
-                <top>5</top>
-                <width>772</width>
-                <height>40</height>
-                <font>fontsize_70</font>
-                <label>kodi settings</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-        </control>
-        <control type="button" id="187">
-            <left>190r</left>
-            <top>85r</top>
-            <onleft>9000</onleft>
-            <onright>9001</onright>
-            <width>150</width>
-            <label>Back</label>
-            <align>center</align>
-            <aligny>center</aligny>
+  <defaultcontrol always="true">9000</defaultcontrol>
+  <controls>
+    <include>BackgroundItems4</include>
+    <control type="group">
+      <left>60</left>
+      <top>199</top>
+      <animation type="WindowOpen" reversible="false">
+        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225"/>
+        <effect type="fade" start="0" end="100" time="225"/>
+      </animation>
+      <animation type="WindowClose" reversible="false">
+        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225"/>
+        <effect type="fade" start="100" end="0" time="225"/>
+      </animation>
+      <control type="list" id="9000">
+        <left>70</left>
+        <top>75</top>
+        <width>295</width>
+        <height>185</height>
+        <onleft>9000</onleft>
+        <onright>187</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>300</scrolltime>
+        <itemlayout height="45" width="285">
+          <control type="image">
+            <left/>
+            <top/>
+            <width>285</width>
+            <height>45</height>
+            <texture>buttons/catbullet_nofo.png</texture>
+          </control>
+          <control type="label">
+            <left>40</left>
+            <top>0</top>
+            <width>285</width>
+            <height>45</height>
+            <font>fontsize_32</font>
             <textcolor>white</textcolor>
-            <texturefocus>buttons/focus.png</texturefocus>
-            <texturenofocus>buttons/MenuItemNF2.png</texturenofocus>
-            <onclick>ActivateWindow(videoosd)</onclick>
-        </control>
-        <control type="group">
-            <depth>DepthFooter</depth>
-            <include>HomeNowPlaying</include>
-        </control>
-        <include>MainWindowMouseButtons</include>
-        <include>BehindDialogFadeOut</include>
-        <include content="CommonWindowHeader">
-            <param name="Icon" value="icon_system"/>
-            <param name="Label" value="$LOCALIZE[5]"/>
-        </include>
-    </controls>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="45" width="285">
+          <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>285</width>
+            <height>45</height>
+            <texture border="1">buttons/catbullet_fo.png</texture>
+          </control>
+          <control type="label">
+            <left>40</left>
+            <top>0</top>
+            <width>285</width>
+            <height>45</height>
+            <font>fontsize_32</font>
+            <textcolor>black</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </focusedlayout>
+        <content>
+          <item id="1">
+            <label>14200</label>
+            <label2>31430</label2>
+            <onclick>ActivateWindow(PlayerSettings)</onclick>
+            <icon>-</icon>
+          </item>
+          <item id="2">
+            <label>14211</label>
+            <label2>31431</label2>
+            <onclick>ActivateWindow(MediaSettings)</onclick>
+            <icon>-</icon>
+          </item>
+          <item id="3">
+            <label>14204</label>
+            <label2>31432</label2>
+            <onclick>ActivateWindow(PVRSettings)</onclick>
+            <icon>special://skin/backgrounds/tv.jpg</icon>
+          </item>
+          <item id="4">
+            <label>24001</label>
+            <label2>31433</label2>
+            <onclick>ActivateWindow(AddonBrowser)</onclick>
+            <icon>-</icon>
+          </item>
+          <item id="5">
+            <label>14036</label>
+            <label2>31434</label2>
+            <onclick>ActivateWindow(ServiceSettings)</onclick>
+            <icon>-</icon>
+          </item>
+          <item id="6">
+            <label>14206</label>
+            <label2>31436</label2>
+            <onclick>ActivateWindow(InterfaceSettings)</onclick>
+            <icon>-</icon>
+          </item>
+          <item id="7">
+            <label>13000</label>
+            <label2>31435</label2>
+            <onclick>ActivateWindow(SystemSettings)</onclick>
+            <icon>-</icon>
+          </item>
+        </content>
+      </control>
+      <control type="label">
+        <description>header label</description>
+        <left>110</left>
+        <top>5</top>
+        <width>772</width>
+        <height>40</height>
+        <font>fontsize_70</font>
+        <label>kodi settings</label>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+      </control>
+    </control>
+    <control type="button" id="187">
+      <left>190r</left>
+      <top>85r</top>
+      <onleft>9000</onleft>
+      <onright>9001</onright>
+      <width>150</width>
+      <label>Back</label>
+      <align>center</align>
+      <aligny>center</aligny>
+      <textcolor>white</textcolor>
+      <texturefocus>buttons/focus.png</texturefocus>
+      <texturenofocus>buttons/MenuItemNF2.png</texturenofocus>
+      <onclick>ActivateWindow(videoosd)</onclick>
+    </control>
+    <control type="group">
+      <depth>DepthFooter</depth>
+      <include>HomeNowPlaying</include>
+    </control>
+    <include>MainWindowMouseButtons</include>
+    <include>BehindDialogFadeOut</include>
+    <include content="CommonWindowHeader">
+      <param name="Icon" value="icon_system"/>
+      <param name="Label" value="$LOCALIZE[5]"/>
+    </include>
+  </controls>
 </window>
