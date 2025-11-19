@@ -186,7 +186,7 @@
         <width>200</width>
         <height>200</height>
         <aspectratio align="center" aligny="center">scale</aspectratio>
-        <texture background="true">special://skin/extras/icons/Skin.png</texture>
+        <texture background="true"></texture>
       </control>
       <control type="label">
         <centerleft>50%</centerleft>
@@ -217,7 +217,7 @@
 				<width>96</width>
 				<height>96</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true">special://skin/extras/icons/Kodi.png</texture>
+				<texture background="true"></texture>
 			</control>
 			-->
     </control>

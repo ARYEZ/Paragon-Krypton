@@ -43,7 +43,7 @@
 			<width>96</width>
 			<height>96</height>
 			<aspectratio>stretch</aspectratio>
-			<texture background="true">special://skin/extras/icons/Kodi.png</texture>
+			<texture background="true"></texture>
 		</control>
 		-->
   </controls>

@@ -13,8 +13,8 @@
     <value>$INFO[ListItem.Icon]</value>
   </variable>
   <variable name="HomeWidgetsGenresThumbs">
-    <value condition="String.IsEqual(Container(20).ListItem.Property(widgetType),movies)">$INFO[ListItem.Label,special://skin/extras/moviesgenres/,.jpg]</value>
-    <value condition="String.IsEqual(Container(20).ListItem.Property(widgetType),tvshows)">$INFO[ListItem.Label,special://skin/extras/tvshowsgenres/,.jpg]</value>
+    <value condition="String.IsEqual(Container(20).ListItem.Property(widgetType),movies)">$INFO[ListItem.Label,</value>
+    <value condition="String.IsEqual(Container(20).ListItem.Property(widgetType),tvshows)">$INFO[ListItem.Label,</value>
   </variable>
   <include name="HomeWidgets_Thumb">
     <param name="width">142</param>
@@ -169,7 +169,7 @@
       <width>191</width>
       <height>191</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="special://skin/extras/moviesgenres/default.png">$VAR[HomeWidgetsGenresThumbs]</texture>
+      <texture background="true" fallback="</texture>
       <bordersize>ThumbsBordersize6pix</bordersize>
     </control>
   </include>
@@ -179,7 +179,7 @@
       <width>191</width>
       <height>191</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="special://skin/extras/moviesgenres/default.png">$VAR[HomeWidgetsGenresThumbs]</texture>
+      <texture background="true" fallback="</texture>
       <bordersize>ThumbsBordersize6pix</bordersize>
     </control>
     <include>HomeWidgets_FocusTexture</include>
@@ -190,7 +190,7 @@
       <width>191</width>
       <height>191</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="special://skin/extras/musicgenres/default.png">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</texture>
+      <texture background="true" fallback="</texture>
       <bordersize>ThumbsBordersize6pix</bordersize>
     </control>
   </include>
@@ -200,7 +200,7 @@
       <width>191</width>
       <height>191</height>
       <aspectratio align="center" aligny="center">scale</aspectratio>
-      <texture background="true" fallback="special://skin/extras/musicgenres/default.png">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</texture>
+      <texture background="true" fallback="</texture>
       <bordersize>ThumbsBordersize6pix</bordersize>
     </control>
     <include>HomeWidgets_FocusTexture</include>
@@ -743,7 +743,7 @@
     <texture>icons/arrow_widgets_right.png</texture>
   </include>
   <variable name="HomeWidgetContent_Top250Movies">
-    <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/Top250Movies.xsp</value>
+    <value condition="!Window.IsVisible(3050)"></value>
   </variable>
   <variable name="HomeWidgetsHeaderLabels">
     <value condition="Control.HasFocus(150)">$VAR[QuickNav_WidgetName]</value>
