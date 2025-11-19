@@ -395,45 +395,21 @@
           <include>TopMenuButton</include>
           <label>24020</label>
         </control>
-        <control type="button" id="8">
-          <description>Update</description>
-          <include>TopMenuButton</include>
-          <label>24069</label>
-        </control>
         <control type="button" id="6">
           <description>Install/UnInstall</description>
           <include>TopMenuButton</include>
           <label>-</label>
         </control>
-        <!--
-	<control type="togglebutton" id="130">
-		<description>Auto-Update</description>
-		<label>$INFO[Control.GetLabel(13)]: $LOCALIZE[31012]</label>
-		<altlabel>$INFO[Control.GetLabel(13)]: $LOCALIZE[31011]</altlabel>
-	  	<include>TopMenuButton</include>
-	</control>
-	-->
         <control type="button" id="12">
           <description>Use</description>
           <include>TopMenuButton</include>
           <label>518</label>
         </control>
-        <control type="button" id="10">
-          <description>What's New</description>
+        <control type="togglebutton" id="7">
+          <description>Enable/Disable</description>
           <include>TopMenuButton</include>
-          <onclick>RunScript(script.skin.helper.service,action=textviewer,header=$LOCALIZE[24054],message='"$INFO[ListItem.AddonNews]"')</onclick>
-          <label>24054</label>
-          <visible>!String.IsEmpty(ListItem.AddonNews)</visible>
-        </control>
-        <control type="togglebutton" id="86">
-          <description>Preview</description>
-          <include>TopMenuButton</include>
-          <label>$LOCALIZE[1000]</label>
-          <altlabel>$LOCALIZE[29915]</altlabel>
-          <onclick>SetProperty(addoninfo,1)</onclick>
-          <altclick>ClearProperty(addoninfo)</altclick>
-          <usealttexture>!String.IsEmpty(Window.Property(addoninfo))</usealttexture>
-          <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+          <label>24021</label>
+          <altlabel>24022</altlabel>
         </control>
       </control>
       <!-- Top Content Info -->
