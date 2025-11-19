@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
     <!-- Search Dialog -->
-    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[3][/B]" condition="" icon="icons/videos.png" description="$LOCALIZE[31381]">
+    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[3][/B]" condition="" icon="" description="$LOCALIZE[31381]">
         <onselect condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;musicvideos=true)</onselect>
         <onselect condition="!System.hasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onselect>
     </setting>
-    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[2][/B]" condition="" icon="icons/music.png" description="$LOCALIZE[31382]">
+    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[2][/B]" condition="" icon="" description="$LOCALIZE[31382]">
         <onselect condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true)</onselect>
         <onselect condition="!System.hasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onselect>
     </setting>
-    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[24001][/B]" condition="" icon="icons/addons.png" description="$LOCALIZE[31383]">
+    <setting id="SearchType" value="||SKIPSTRING||" label="[B]$LOCALIZE[24001][/B]" condition="" icon="" description="$LOCALIZE[31383]">
         <onselect condition="True">ActivateWindow(addonbrowser,addons://search/,return)</onselect>
     </setting>
-    <setting id="SearchType" value="||SKIPSTRING||" label="[B]YouTube[/B]" condition="" icon="icons/youtube.png" description="$LOCALIZE[31384]">
+    <setting id="SearchType" value="||SKIPSTRING||" label="[B]YouTube[/B]" condition="" icon="" description="$LOCALIZE[31384]">
         <onselect condition="System.hasAddon(plugin.video.youtube)">ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/list/,return)</onselect>
         <onselect condition="!System.hasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onselect>
     </setting>
-    <setting id="SearchType" value="||SKIPSTRING||" label="[B]TheMovieDB[/B]" condition="" icon="icons/tmdb.png" description="$LOCALIZE[31385]">
+    <setting id="SearchType" value="||SKIPSTRING||" label="[B]TheMovieDB[/B]" condition="" icon="" description="$LOCALIZE[31385]">
         <onselect condition="System.hasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=moviedbbrowser,search=True)</onselect>
         <onselect condition="!System.hasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onselect>
     </setting>
     <!-- Update IMDB Info  -->
-    <setting id="IMDBUpdate" value="||SKIPSTRING||" label="$LOCALIZE[13409]" condition="" icon="special://skin/extras/icons/UpdateIMDb.png" description="">
+    <setting id="IMDBUpdate" value="||SKIPSTRING||" label="$LOCALIZE[13409]" condition="" icon="" description="">
         <onselect condition="True">RunScript(script.imdbupdate,movies|top250,hidden))</onselect>
     </setting>
-    <setting id="IMDBUpdate" value="||SKIPSTRING||" label="$LOCALIZE[20074]" condition="" icon="special://skin/extras/icons/UpdateIMDb.png" description="">
+    <setting id="IMDBUpdate" value="||SKIPSTRING||" label="$LOCALIZE[20074]" condition="" icon="" description="">
         <onselect condition="True">RunScript(script.imdbupdate,mpaa,hidden))</onselect>
     </setting>
     <!-- Quick Navigation Widgets -->
@@ -51,31 +51,31 @@
     <setting id="QuickNavWidgetMusicType" value="4" label="$LOCALIZE[31249]" condition="" icon="" description=""/>
     <setting id="QuickNavWidgetMusicType" value="5" label="$LOCALIZE[31202]" condition="" icon="" description=""/>
     <!-- Download Extra Art -->
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Poster[/B]" condition="" icon="icons/movies.png" description="$LOCALIZE[31155]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Poster[/B]" condition="" icon="" description="$LOCALIZE[31155]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,poster)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearLogo[/B]" condition="" icon="icons/movies.png" description="$LOCALIZE[31160]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearLogo[/B]" condition="" icon="" description="$LOCALIZE[31160]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,clearlogo)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]DiscArt[/B]" condition="" icon="icons/movies.png" description="$LOCALIZE[31165]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]DiscArt[/B]" condition="" icon="" description="$LOCALIZE[31165]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,discart)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Landscape[/B]" condition="" icon="icons/movies.png" description="$LOCALIZE[31152]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Landscape[/B]" condition="" icon="" description="$LOCALIZE[31152]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,landscape)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Poster[/B]" condition="" icon="icons/tvshows.png" description="$LOCALIZE[31150]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Poster[/B]" condition="" icon="" description="$LOCALIZE[31150]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,poster)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearLogo[/B]" condition="" icon="icons/tvshows.png" description="$LOCALIZE[31146]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearLogo[/B]" condition="" icon="" description="$LOCALIZE[31146]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,clearlogo)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearArt[/B]" condition="" icon="icons/tvshows.png" description="$LOCALIZE[31147]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]ClearArt[/B]" condition="" icon="" description="$LOCALIZE[31147]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,clearart)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Landscape[/B]" condition="" icon="icons/tvshows.png" description="$LOCALIZE[31148]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Landscape[/B]" condition="" icon="" description="$LOCALIZE[31148]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,landscape)</onselect>
     </setting>
-    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Banner[/B]" condition="" icon="icons/tvshows.png" description="$LOCALIZE[31149]">
+    <setting id="ExtraArt" value="||SKIPSTRING||" label="[B]Banner[/B]" condition="" icon="" description="$LOCALIZE[31149]">
         <onselect condition="True">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,banner)</onselect>
     </setting>
     <!-- RSS Video Feeds -->
@@ -211,11 +211,11 @@
     <setting id="RSSVideoFeedURL" value="YouTube" label="YouTube Spotlight" condition="" icon="https://yt3.ggpht.com/-dL2jeHlm2Ok/AAAAAAAAAAI/AAAAAAAAAAA/ZCMMkRj-hrw/s176-c-k-no-mo-rj-c0xffffff/photo.jpg" description="">
         <onselect condition="True">Skin.SetString(RSSVideoFeedType,User)</onselect>
     </setting>
-    <setting id="RSSVideoFeedURL" value="||PROMPTSTRING||" label="Custom YouTube User ID" condition="" icon="icons/youtube_red.png" description="">
+    <setting id="RSSVideoFeedURL" value="||PROMPTSTRING||" label="Custom YouTube User ID" condition="" icon="" description="">
         <onselect condition="True">Skin.SetString(RSSVideoFeedType,User)</onselect>
         <onselect condition="True">Skin.SetString(RSSVideoFeedURL.Label)</onselect>
     </setting>
-    <setting id="RSSVideoFeedURL" value="||PROMPTSTRING||" label="Custom YouTube Channel ID" condition="" icon="icons/youtube_red.png" description="">
+    <setting id="RSSVideoFeedURL" value="||PROMPTSTRING||" label="Custom YouTube Channel ID" condition="" icon="" description="">
         <onselect condition="True">Skin.SetString(RSSVideoFeedType,Channel)</onselect>
         <onselect condition="True">Skin.SetString(RSSVideoFeedURL.Label)</onselect>
     </setting>

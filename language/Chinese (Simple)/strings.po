@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kodi Media Center language file
 # Addon Name: Paragon
 # Addon id: skin.paragon
@@ -815,3 +816,822 @@ msgstr "你还未添加任何项目到收藏夹。[CR]高亮选择一个项目�
 msgctxt "#31432"
 msgid "Mouse usage is not supported.[CR]Please disable it from Settings>System>Input Devices>[CR]\"Enable mouse and Touch Screen support\"."
 msgstr "不支持鼠标操作。[CR]请在设置》系统》输入设备》[CR]“启用鼠标和触摸板支持”中关闭它。"
+=======
+# Kodi Media Center language file
+# Addon Name: Paragon
+# Addon id: skin.paragon
+# Addon Provider: Nessus
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Chinese (Simple) (http://www.transifex.com/projects/p/xbmc-skins/language/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "直播电视"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "电视指南"
+
+msgctxt "#31002"
+msgid "TV Shows"
+msgstr "剧集"
+
+msgctxt "#31003"
+msgid "Aired"
+msgstr "首播"
+
+msgctxt "#31004"
+msgid "Premiere"
+msgstr "首映"
+
+msgctxt "#31005"
+msgid "Track Number"
+msgstr "音轨号"
+
+msgctxt "#31006"
+msgid "Working..."
+msgstr "工作中..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "请稍候..."
+
+msgctxt "#31008"
+msgid "System auto shutdown in"
+msgstr "系统自动关机于"
+
+msgctxt "#31009"
+msgid "Context Menu"
+msgstr "功能菜单"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
+
+msgctxt "#31011"
+msgid "On"
+msgstr "开"
+
+msgctxt "#31012"
+msgid "Off"
+msgstr "关"
+
+msgctxt "#31013"
+msgid "Enable Home Menu Animation"
+msgstr "启用首页菜单动画"
+
+msgctxt "#31016"
+msgid "File Manager"
+msgstr "文件管理器"
+
+msgctxt "#31017"
+msgid "Karaoke Song Selector"
+msgstr "卡拉OK歌曲选择器"
+
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "预告片"
+
+msgctxt "#31019"
+msgid "Search for movies directed by"
+msgstr "直接搜索电影"
+
+msgctxt "#31020"
+msgid "Found"
+msgstr "找到"
+
+msgctxt "#31021"
+msgid "Music Library"
+msgstr "音乐资料库"
+
+msgctxt "#31022"
+msgid "Music Files"
+msgstr "音乐文件"
+
+msgctxt "#31023"
+msgid "Info"
+msgstr "信息"
+
+msgctxt "#31024"
+msgid "Page"
+msgstr "页"
+
+msgctxt "#31025"
+msgid "Items"
+msgstr "项"
+
+msgctxt "#31026"
+msgid "Scrolling..."
+msgstr "滚动..."
+
+msgctxt "#31027"
+msgid "Memory Used:"
+msgstr "己用内存："
+
+msgctxt "#31028"
+msgid "Move Left"
+msgstr "左移"
+
+msgctxt "#31029"
+msgid "Move Right"
+msgstr "右移"
+
+msgctxt "#31030"
+msgid "AM"
+msgstr "上午"
+
+msgctxt "#31031"
+msgid "PM"
+msgstr "下午"
+
+msgctxt "#31032"
+msgid "User Login"
+msgstr "用户登录"
+
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "频道组"
+
+msgctxt "#31034"
+msgid "Teletext"
+msgstr "图文电视"
+
+msgctxt "#31035"
+msgid "REC"
+msgstr "录制"
+
+msgctxt "#31036"
+msgid "Close"
+msgstr "关闭"
+
+msgctxt "#31037"
+msgid "Change Rating"
+msgstr "修改评分"
+
+msgctxt "#31038"
+msgid "Esc"
+msgstr "Esc"
+
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "IP地址"
+
+msgctxt "#31040"
+msgid "Created by"
+msgstr "创建者"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "创建者"
+
+msgctxt "#31080"
+msgid "Slide"
+msgstr "幻灯片"
+
+msgctxt "#31081"
+msgid "Gallery"
+msgstr "相册"
+
+msgctxt "#31082"
+msgid "3D Wall"
+msgstr "3D墙"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "封面墙"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "海报"
+
+msgctxt "#31085"
+msgid "Thumbnails"
+msgstr "缩略图"
+
+msgctxt "#31086"
+msgid "Banner List"
+msgstr "横幅列表"
+
+msgctxt "#31087"
+msgid "VideoWall Fanart"
+msgstr "视频墙同人画"
+
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "列表墙"
+
+msgctxt "#31094"
+msgid "Choose Movies Widget"
+msgstr "选择电影小插件"
+
+msgctxt "#31095"
+msgid "Choose TV Shows Widget"
+msgstr "选择剧集小部件"
+
+msgctxt "#31096"
+msgid "Choose Music Widget"
+msgstr "选择音乐小部件"
+
+msgctxt "#31097"
+msgid "Choose RSS Video Feed Widget"
+msgstr "选择RSS视频订阅小部件"
+
+msgctxt "#31101"
+msgid "Show Weather Info"
+msgstr "显示天气预报"
+
+msgctxt "#31102"
+msgid "Hide Now Playing Video Info"
+msgstr "隐藏当前播放视频信息"
+
+msgctxt "#31103"
+msgid "Hide Now Playing Music Info"
+msgstr "隐藏当前播放音乐信息"
+
+msgctxt "#31124"
+msgid "Flashing Lights"
+msgstr "闪动灯光"
+
+msgctxt "#31125"
+msgid "Edit Info"
+msgstr "编辑信息"
+
+msgctxt "#31130"
+msgid "Disable Fanart in all sections"
+msgstr "在所有界面停用同人画"
+
+msgctxt "#31131"
+msgid "Show Only on Home Screen"
+msgstr "只在主屏幕显示"
+
+msgctxt "#31132"
+msgid "Hide Background Video"
+msgstr "隐藏背景视频"
+
+msgctxt "#31135"
+msgid "Single Image"
+msgstr "单个图片"
+
+msgctxt "#31136"
+msgid "Multi Image"
+msgstr "多个图片"
+
+msgctxt "#31137"
+msgid "Enable Notifications"
+msgstr "启用通知"
+
+msgctxt "#31139"
+msgid "Enable Add-ons Notifications"
+msgstr "启用扩展通知"
+
+msgctxt "#31140"
+msgid "Enable Weather Alerts Notifications"
+msgstr "启用天气预报通知"
+
+msgctxt "#31141"
+msgid "Choose Lyrics Add-on"
+msgstr "选择歌词插件"
+
+msgctxt "#31142"
+msgid "Choose Subtitles Add-on"
+msgstr "选择字幕插件"
+
+msgctxt "#31143"
+msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
+msgstr "在剧集启用节目预告信息 [COLOR=55white](需要 Next Aired 插件)[/COLOR]"
+
+msgctxt "#31144"
+msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgstr "在剧集启用主题音乐 [COLOR=55white](需要 TV Tunes 插件)[/COLOR]"
+
+msgctxt "#31145"
+msgid "Download music themes for all TV Shows"
+msgstr "为所有剧集下载主题音乐"
+
+msgctxt "#31146"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all TV Shows"
+msgstr "为所有剧集下载 [COLOR=selected]logo.png[/COLOR]"
+
+msgctxt "#31147"
+msgid "Download [COLOR=selected]clearart.png[/COLOR] for all TV Shows"
+msgstr "为所有剧集下载 [COLOR=selected]clearart.png[/COLOR]"
+
+msgctxt "#31148"
+msgid "Download [COLOR=selected]landscape.jpg[/COLOR] for all TV Shows"
+msgstr "为所有剧集下载 [COLOR=selected]landscape.jpg[/COLOR]"
+
+msgctxt "#31149"
+msgid "Download [COLOR=selected]banner.jpg[/COLOR] for all TV Shows"
+msgstr "为所有剧集下载 [COLOR=selected]banner.jpg[/COLOR]"
+
+msgctxt "#31150"
+msgid "Download [COLOR=selected]poster.jpg[/COLOR] for all TV Shows"
+msgstr "为所有剧集下载 [COLOR=selected]poster.jpg[/COLOR]"
+
+msgctxt "#31151"
+msgid "Show RSS feed in whole skin"
+msgstr "在整个皮肤显示 RSS 新闻"
+
+msgctxt "#31153"
+msgid "Enable login screen"
+msgstr "启用登录屏"
+
+msgctxt "#31154"
+msgid "Choose Trailers Add-on"
+msgstr "选择预告片插件"
+
+msgctxt "#31158"
+msgid "Views"
+msgstr "视图"
+
+msgctxt "#31159"
+msgid "Show FullScreenInfo instead of the SeekBar"
+msgstr "显示全屏信息而非进度条"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "为所有电影下载[COLOR=selected]logo.png[/COLOR]"
+
+msgctxt "#31161"
+msgid "Show Library Totals"
+msgstr "显示资料库总计"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "启用自助终端模式"
+
+msgctxt "#31163"
+msgid "Cast info"
+msgstr "演职员信息"
+
+msgctxt "#31164"
+msgid "Press DOWN for more info"
+msgstr "按下键显示更多信息"
+
+msgctxt "#31165"
+msgid "Download [COLOR=selected]disc.png[/COLOR] for all Movies"
+msgstr "为所有电影下载[COLOR=selected]disc.png[/COLOR]"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "本地字幕可用"
+
+msgctxt "#31167"
+msgid "Settings Level:"
+msgstr "设置等级："
+
+msgctxt "#31168"
+msgid "Reset Level"
+msgstr "重置等级"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "重置皮肤"
+
+msgctxt "#31170"
+msgid "All Skin Settings will revert back to their default state.[CR]Are you sure you want to proceed ?"
+msgstr "所有皮肤设置将恢复到默认状态。[CR]你确认要继续吗？"
+
+msgctxt "#31171"
+msgid "Update Art"
+msgstr "更新艺术图片"
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "我的电影"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "我的剧集"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "我的音乐"
+
+msgctxt "#31203"
+msgid "New Search"
+msgstr "新的搜索"
+
+msgctxt "#31204"
+msgid "Please check your weather settings"
+msgstr "请检查你的天气设置"
+
+msgctxt "#31205"
+msgid "Browse the most recently added movies"
+msgstr "浏览最新加入的电影"
+
+msgctxt "#31206"
+msgid "Browse the most recently added episodes"
+msgstr "浏览最新加入的剧集"
+
+msgctxt "#31207"
+msgid "Browse the most recently added albums"
+msgstr "浏览最新加入的专辑"
+
+msgctxt "#31208"
+msgid "Browse all movies in progress"
+msgstr "浏览所有正在观看的电影"
+
+msgctxt "#31209"
+msgid "Browse all shows in progress"
+msgstr "浏览所有正在观看的剧集"
+
+msgctxt "#31210"
+msgid "Browse all music in progress"
+msgstr "浏览所有正在聆听的音乐"
+
+msgctxt "#31211"
+msgid "Browse all movies in your library"
+msgstr "浏览你资料库中所有电影"
+
+msgctxt "#31212"
+msgid "Browse all shows in your library"
+msgstr "浏览你资料库中所有剧集"
+
+msgctxt "#31213"
+msgid "Browse all music in your library"
+msgstr "浏览你资料库中所有音乐"
+
+msgctxt "#31214"
+msgid "Airing"
+msgstr "播出"
+
+msgctxt "#31215"
+msgid "Next Airs"
+msgstr "即将播映"
+
+msgctxt "#31216"
+msgid "Last Aired"
+msgstr "最后播映"
+
+msgctxt "#31217"
+msgid "Wide Thumb"
+msgstr "宽缩略图"
+
+msgctxt "#31218"
+msgid "Landscape"
+msgstr "横向"
+
+msgctxt "#31219"
+msgid "Logo"
+msgstr "Logo"
+
+msgctxt "#31220"
+msgid "Extra Info"
+msgstr "扩展信息"
+
+msgctxt "#31221"
+msgid "Get Extra Art"
+msgstr "获取附加艺术图片"
+
+msgctxt "#31222"
+msgid "Get TV Tune"
+msgstr "获取 TV Tune"
+
+msgctxt "#31223"
+msgid "36 Hour Forecast"
+msgstr "36小时预报"
+
+msgctxt "#31224"
+msgid "Hourly Forecast"
+msgstr "每小时预报"
+
+msgctxt "#31225"
+msgid "Weekend Forecast"
+msgstr "周末预报"
+
+msgctxt "#31226"
+msgid "10 Days Forecast"
+msgstr "10天天气预报"
+
+msgctxt "#31227"
+msgid "From"
+msgstr "从"
+
+msgctxt "#31228"
+msgid "at"
+msgstr "于"
+
+msgctxt "#31229"
+msgid "Last Updated"
+msgstr "最近更新"
+
+msgctxt "#31230"
+msgid "Data Provider"
+msgstr "数据来源"
+
+msgctxt "#31231"
+msgid "Max Humidity"
+msgstr "最大湿度"
+
+msgctxt "#31232"
+msgid "Min Humidity"
+msgstr "最小湿度"
+
+msgctxt "#31233"
+msgid "Chance of Precipitation"
+msgstr "降雨概率"
+
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "当前天气预报"
+
+msgctxt "#31236"
+msgid "Forecast"
+msgstr "天气预报"
+
+msgctxt "#31237"
+msgid "View"
+msgstr "视图"
+
+msgctxt "#31238"
+msgid "No Shows Airing Today"
+msgstr "今天没有剧集播出"
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "剧集已列出"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "今日播出剧集"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "最近加入的影片"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "最新加入剧集"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "最新加入音乐"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "最新电影"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "最新剧集"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "最新音乐"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "随机电影"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "随机剧集"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "随机音乐"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "所有电影"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "所有剧集"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "所有音乐"
+
+msgctxt "#31253"
+msgid "Add YouTube UserID and Title"
+msgstr "添加YouTube UserID 和标题"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "YouTube搜索"
+
+msgctxt "#31255"
+msgid "RSS Video Feeds"
+msgstr "RSS视频订阅"
+
+msgctxt "#31256"
+msgid "In Cinemas Now"
+msgstr "正在影院上映"
+
+msgctxt "#31257"
+msgid "Trending Movies"
+msgstr "流行电影"
+
+msgctxt "#31258"
+msgid "Trending  TV Shows"
+msgstr "流行剧集"
+
+msgctxt "#31259"
+msgid "Top Artists"
+msgstr "顶尖艺人"
+
+msgctxt "#31280"
+msgid "Open Playlist"
+msgstr "打开列表"
+
+msgctxt "#31281"
+msgid "Save Playlist"
+msgstr "保存列表"
+
+msgctxt "#31282"
+msgid "Close Playlist"
+msgstr "关闭列表"
+
+msgctxt "#31283"
+msgid "System Music Files"
+msgstr "系统音乐文件"
+
+msgctxt "#31284"
+msgid "Current Playlist"
+msgstr "当前播放列表"
+
+msgctxt "#31285"
+msgid "Playlist Options"
+msgstr "播放列表选项"
+
+msgctxt "#31300"
+msgid "Muted"
+msgstr "静音"
+
+msgctxt "#31301"
+msgid "Playing"
+msgstr "播放"
+
+msgctxt "#31302"
+msgid "Paused"
+msgstr "暂停"
+
+msgctxt "#31303"
+msgid "Rewinding:"
+msgstr "后退:"
+
+msgctxt "#31304"
+msgid "Forwarding:"
+msgstr "快进:"
+
+msgctxt "#31305"
+msgid "Finish Time:"
+msgstr "结束时间:"
+
+msgctxt "#31306"
+msgid "Customize Background"
+msgstr "自定义背景"
+
+msgctxt "#31307"
+msgid "Enable Visualization"
+msgstr "启用视觉效果"
+
+msgctxt "#31308"
+msgid "Visualization Type"
+msgstr "视觉效果类型"
+
+msgctxt "#31309"
+msgid "Visualization Presets"
+msgstr "视觉效果预设"
+
+msgctxt "#31310"
+msgid "Visualization Settings"
+msgstr "可视化效果设置"
+
+msgctxt "#31311"
+msgid "Enable Music Fanart SlideShow"
+msgstr "使用音乐同人画幻灯片"
+
+msgctxt "#31312"
+msgid "Enable Artist SlideShow"
+msgstr "启用演员幻灯片"
+
+msgctxt "#31313"
+msgid "Animated Backgrounds"
+msgstr "动态背景图"
+
+msgctxt "#31314"
+msgid "Hide Diffuse Colors"
+msgstr "隐藏漫射颜色"
+
+msgctxt "#31315"
+msgid "Hide Scrolling Titles"
+msgstr "隐藏滚动标题"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "正在播放"
+
+msgctxt "#31350"
+msgid "Available Groups"
+msgstr "可用组"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "增加组"
+
+msgctxt "#31352"
+msgid "Rename Group"
+msgstr "更名组"
+
+msgctxt "#31353"
+msgid "Delete Group"
+msgstr "删除组"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "更新视频资料库"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "更新音乐资料库"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "清理视频资料"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "清理音乐资料库"
+
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "快速浏览"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "启用快速浏览"
+
+msgctxt "#31378"
+msgid "Custom Item"
+msgstr "自定义项"
+
+msgctxt "#31409"
+msgid "Choose from a variety of settings and customization options to make \"Paragon\" fit your needs and taste."
+msgstr "自定义一系列设置和选项来让 \"Paragon\" 符合你的需求和品味."
+
+msgctxt "#31410"
+msgid "With Kodi you can have several profiles and the auto login option if the login screen is disabled."
+msgstr "在Kodi你可以设置多个用户配置，以及在登录屏禁用时的自动登录选项。"
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "配置用户界面设置"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "配置视频设置"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "配置皮肤设置"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "配置音乐设置"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "配置图片设置"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "配置天气设置"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "配置服务设置"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "配置系统设置"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "配置用户设置"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "配置皮肤设置"
+
+msgctxt "#31431"
+msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "你还未添加任何项目到收藏夹。[CR]高亮选择一个项目，功能菜单中选择“添加到收藏夹”。"
+
+msgctxt "#31432"
+msgid "Mouse usage is not supported.[CR]Please disable it from Settings>System>Input Devices>[CR]\"Enable mouse and Touch Screen support\"."
+msgstr "不支持鼠标操作。[CR]请在设置》系统》输入设备》[CR]“启用鼠标和触摸板支持”中关闭它。"
+>>>>>>> 8fb59b8255ebfa6e1386d887b3ea7807aee8f6f8
