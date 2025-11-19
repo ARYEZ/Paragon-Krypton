@@ -1674,6 +1674,111 @@
       <content>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=8</content>
     </control>
   </include>
+  <!-- Keyboard Letter Variables -->
+  <variable name="KeyQ">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">Q</value>
+    <value>q</value>
+  </variable>
+  <variable name="KeyW">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">W</value>
+    <value>w</value>
+  </variable>
+  <variable name="KeyE">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">E</value>
+    <value>e</value>
+  </variable>
+  <variable name="KeyR">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">R</value>
+    <value>r</value>
+  </variable>
+  <variable name="KeyT">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">T</value>
+    <value>t</value>
+  </variable>
+  <variable name="KeyY">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">Y</value>
+    <value>y</value>
+  </variable>
+  <variable name="KeyU">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">U</value>
+    <value>u</value>
+  </variable>
+  <variable name="KeyI">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">I</value>
+    <value>i</value>
+  </variable>
+  <variable name="KeyO">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">O</value>
+    <value>o</value>
+  </variable>
+  <variable name="KeyP">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">P</value>
+    <value>p</value>
+  </variable>
+  <variable name="KeyA">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">A</value>
+    <value>a</value>
+  </variable>
+  <variable name="KeyS">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">S</value>
+    <value>s</value>
+  </variable>
+  <variable name="KeyD">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">D</value>
+    <value>d</value>
+  </variable>
+  <variable name="KeyF">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">F</value>
+    <value>f</value>
+  </variable>
+  <variable name="KeyG">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">G</value>
+    <value>g</value>
+  </variable>
+  <variable name="KeyH">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">H</value>
+    <value>h</value>
+  </variable>
+  <variable name="KeyJ">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">J</value>
+    <value>j</value>
+  </variable>
+  <variable name="KeyK">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">K</value>
+    <value>k</value>
+  </variable>
+  <variable name="KeyL">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">L</value>
+    <value>l</value>
+  </variable>
+  <variable name="KeyZ">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">Z</value>
+    <value>z</value>
+  </variable>
+  <variable name="KeyX">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">X</value>
+    <value>x</value>
+  </variable>
+  <variable name="KeyC">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">C</value>
+    <value>c</value>
+  </variable>
+  <variable name="KeyV">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">V</value>
+    <value>v</value>
+  </variable>
+  <variable name="KeyB">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">B</value>
+    <value>b</value>
+  </variable>
+  <variable name="KeyN">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">N</value>
+    <value>n</value>
+  </variable>
+  <variable name="KeyM">
+    <value condition="!String.IsEmpty(Window.Property(KeyboardShift)) | !String.IsEmpty(Window.Property(KeyboardCaps))">M</value>
+    <value>m</value>
+  </variable>
   <variable name="StatusSkinShortcuts">
     <value condition="System.HasAddon(script.skinshortcuts)">$INFO[System.AddonVersion(script.skinshortcuts),v.]</value>
     <value>$LOCALIZE[31017]</value>
