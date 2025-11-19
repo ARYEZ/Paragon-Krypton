@@ -4,22 +4,6 @@
   <!-- <onload condition="[system.getbool(input.enablemouse) + Window.Previous(AppearanceSettings)]">ActivateWindow(1110)</onload> -->
   <controls>
     <include>BackgroundItems51</include>
-    <control type="button" id="10">
-      <description>Default Category Button</description>
-      <width>285</width>
-      <height>45</height>
-      <font>FontSize_32</font>
-      <textcolor>white</textcolor>
-      <focusedtextcolor>white</focusedtextcolor>
-      <disabledcolor>33white</disabledcolor>
-      <texturefocus>buttons/catbullet_fo.png</texturefocus>
-      <texturenofocus>buttons/catbullet_nofo.png</texturenofocus>
-      <align>left</align>
-      <aligny>center</aligny>
-      <textwidth>250</textwidth>
-      <textoffsetx>40</textoffsetx>
-      <pulseonselect>false</pulseonselect>
-    </control>
     <control type="group" id="9001">
       <left>100</left>
       <top>216</top>
