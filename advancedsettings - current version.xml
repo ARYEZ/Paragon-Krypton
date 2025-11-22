@@ -54,6 +54,23 @@
             <resolution>640x480@60.000000</resolution>
             <resolution>640x480@59.940479</resolution>
             <resolution>720x400@70.081657</resolution>
+            <!-- 4K/UHD modes from HDMI2 (4K display) -->
+            <resolution>4096x2160@24.000000</resolution>
+            <resolution>4096x2160@23.976000</resolution>
+            <resolution>3840x2160@60.000000</resolution>
+            <resolution>3840x2160@59.940201</resolution>
+            <resolution>3840x2160@50.000000</resolution>
+            <resolution>3840x2160@30.000000</resolution>
+            <resolution>3840x2160@29.969999</resolution>
+            <resolution>3840x2160@25.000000</resolution>
+            <resolution>3840x2160@24.000000</resolution>
+            <resolution>3840x2160@23.976000</resolution>
+            <!-- Additional 1920x1080 modes to blacklist -->
+            <resolution>1920x1080@120.000000</resolution>
+            <resolution>1920x1080@119.879997</resolution>
+            <resolution>1920x1080@100.000000</resolution>
+            <resolution>1920x1080@24.000000</resolution>
+            <resolution>1920x1080@23.976080</resolution>
         </blacklist>
     </resolutions>
 </advancedsettings>
